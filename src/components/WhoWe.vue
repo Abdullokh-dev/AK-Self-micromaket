@@ -1,5 +1,5 @@
 <script setup>
-import 'youtube-video-element';
+
 </script>
 
 <template>
@@ -25,7 +25,7 @@ import 'youtube-video-element';
         </button>
       </div>
       <div class="col-6">
-        <youtube-video controls src="https://www.youtube.com/watch?v=rubNgGj3pYo"></youtube-video>
+        ...
       </div>
     </div>
   </div>

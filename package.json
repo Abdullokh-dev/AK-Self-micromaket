@@ -8,9 +8,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@egjs/vue3-flicking": "^4.10.7",
     "vue": "^3.3.2",
-    "vueperslides": "^3.5.1",
-    "youtube-video-element": "^0.2.0"
+    "vueperslides": "^3.5.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

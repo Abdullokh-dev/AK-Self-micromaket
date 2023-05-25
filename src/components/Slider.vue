@@ -1,35 +1,55 @@
 <script setup>
-import { VueperSlides, VueperSlide } from 'vueperslides'
-import 'vueperslides/dist/vueperslides.css'
-import {reactive} from "vue";
-const slides = reactive([
-  {
-    title: 'Slide #1',
-    content: 'Slide 1 content.',
-    image: "https://bigbendfarflung.com/wp-content/uploads/2020/03/ashley-knedler-Pf5Pj7A5ddA-unsplash-1.jpg"
-  },
-  {
-    title: 'Slide #2',
-    content: "Slide 2 content.",
-    image: "https://bigbendfarflung.com/wp-content/uploads/2020/03/ashley-knedler-Pf5Pj7A5ddA-unsplash-1.jpg"
-  }
-])
+import Flicking from "@egjs/vue3-flicking";
+import '@egjs/vue3-flicking/dist/flicking.css';
+import '@egjs/vue3-flicking/dist/flicking-inline.css'
 </script>
 
 <template>
   <div class="row">
-    <div class="col-12">
-      <vueper-slides :arrows="false" :dragging-distance="70" prevent-y-scroll>
-        <vueper-slide v-for="slide in slides"
-                      :key="slide"
-                      :title="slide.title.toString()"
-                      :image="slide.image"
-        />
-      </vueper-slides>
+    <div class="col-12 p-0">
+      <Flicking :options="{ align: 'prev', circular: true }" @move-end="onMoveEnd">
+        <div class="panel first-slide">
+
+          <div class="row d-flex justify-content-center">
+            <div class="col-12 col-xl-6">
+              <img src="../assets/vector.png" width="186" alt="" class="vector">
+              <img src="../assets/bottle.png" alt="#" draggable="false" class="bottle">
+            </div>
+
+
+            <div class="col-12 col-xl-6"></div>
+          </div>
+        </div>
+        <div class="panel">2</div>
+        <div class="panel">3</div>
+      </Flicking>
     </div>
   </div>
 </template>
 
 
 <style scoped>
+.first-slide {
+  width: 100vw;
+  height: 90vh;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-background-size: cover ;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background: url(../assets/img.png) no-repeat bottom right fixed;
+}
+
+.bottle {
+  position: absolute;
+  margin-top: 140px;
+  right: 0;
+  width: 80vw;
+  max-width: 546px;
+}
+
+.vector {
+
+}
+
 </style>
