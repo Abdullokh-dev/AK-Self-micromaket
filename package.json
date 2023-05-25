@@ -10,6 +10,7 @@
   "dependencies": {
     "@egjs/vue3-flicking": "^4.10.7",
     "vue": "^3.3.2",
+    "vue3-youtube": "^0.1.9",
     "vueperslides": "^3.5.1"
   },
   "devDependencies": {

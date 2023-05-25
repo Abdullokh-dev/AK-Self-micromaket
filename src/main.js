@@ -1,4 +1,5 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import YouTube from 'vue3-youtube'
 
-createApp(App).mount('#app')
+createApp(App).component('YouTube', YouTube).mount('#app')

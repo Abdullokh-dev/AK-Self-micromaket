@@ -15,7 +15,7 @@ window.onscroll = function() {
     <div class="col d-flex justify-content-center">
       <nav class="navbar navbar-expand-xl" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand ms-5 mt-2 mb-3" href="#">
+          <a class="navbar-brand ms-4 mt-2 mb-3" href="#">
             <svg width="82" height="43" viewBox="0 0 82 43" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.17509 37.1136C8.88563 37.1136 9.45052 37.3238 9.86974 37.7443C10.2961 38.1647 10.5092 38.7989 10.5092 39.6469V42.9055H8.48417V39.9728C8.48417 39.5733 8.40601 39.279 8.24969 39.0898C8.10048 38.9006 7.88731 38.806 7.6102 38.806C7.30467 38.806 7.05953 38.9111 6.87478 39.1213C6.69004 39.3315 6.59767 39.6504 6.59767 40.0779V42.9055H4.57261V39.9728C4.57261 39.1949 4.28129 38.806 3.69864 38.806C3.386 38.806 3.13731 38.9111 2.95256 39.1213C2.76782 39.3315 2.67545 39.6504 2.67545 40.0779V42.9055H0.650391V37.2082H2.57953V37.8073C2.79269 37.5761 3.04493 37.4044 3.33626 37.2923C3.63469 37.1731 3.95799 37.1136 4.30616 37.1136C4.71117 37.1136 5.07355 37.1871 5.39329 37.3343C5.71304 37.4815 5.97239 37.7057 6.17134 38.0071C6.39872 37.7197 6.68649 37.499 7.03466 37.3448C7.38283 37.1907 7.76297 37.1136 8.17509 37.1136Z" fill="black"/>
               <path d="M11.7874 37.2082H13.8124V42.9055H11.7874V37.2082ZM12.7999 36.5775C12.4304 36.5775 12.132 36.4759 11.9046 36.2726C11.6773 36.0694 11.5636 35.8171 11.5636 35.5158C11.5636 35.2145 11.6773 34.9622 11.9046 34.7589C12.132 34.5557 12.4304 34.4541 12.7999 34.4541C13.1694 34.4541 13.4678 34.5522 13.6952 34.7484C13.9226 34.9376 14.0363 35.1829 14.0363 35.4842C14.0363 35.7996 13.9226 36.0624 13.6952 36.2726C13.4678 36.4759 13.1694 36.5775 12.7999 36.5775Z" fill="black"/>
@@ -37,8 +37,13 @@ window.onscroll = function() {
           </svg>
           </a>
 
-          <button class="navbar-toggler me-4" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+          <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <svg width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="39.9585" height="3.4842" rx="1.7421" fill="black"/>
+              <rect y="11.9473" width="39.9585" height="3.4842" rx="1.7421" fill="black"/>
+              <rect y="23.8936" width="39.9585" height="3.4842" rx="1.7421" fill="black"/>
+            </svg>
+
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Mobile Version -->
@@ -48,14 +53,17 @@ window.onscroll = function() {
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     for clients
                   </button>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col mx-3">
+                      <div class="own-hr"></div>
+                    </div>
+                  </div>
                 </h2>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <ul>
-                      <li>Micromarket</li>
-                      <li>Subsidy system</li>
-                      <li>FAQ</li>
-                    </ul>
+                    <div><span class="toggled-item">Micromarket</span></div>
+                    <div><span class="toggled-item">Subsidy system</span></div>
+                    <div><span class="toggled-item">FAQ</span></div>
                   </div>
                 </div>
               </div>
@@ -64,30 +72,31 @@ window.onscroll = function() {
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                     for suppliers
                   </button>
+                  <div class="row d-flex justify-content-center">
+                    <div class="col mx-3">
+                      <div class="own-hr"></div>
+                    </div>
+                  </div>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <ul>
-                      <li>Micromarket</li>
-                      <li>Subsidy system</li>
-                      <li>FAQ</li>
-                    </ul>
+                    <div><span class="toggled-item">Micromarket</span></div>
+                    <div><span class="toggled-item">Subsidy system</span></div>
+                    <div><span class="toggled-item">FAQ</span></div>
                   </div>
                 </div>
               </div>
               <div class="accordion-item">
                 <h2 class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    Accordion Item #3
+                    contacts
                   </button>
                 </h2>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <ul>
-                      <li>Micromarket</li>
-                      <li>Subsidy system</li>
-                      <li>FAQ</li>
-                    </ul>
+                    <div><span class="toggled-item">Micromarket</span></div>
+                    <div><span class="toggled-item">Subsidy system</span></div>
+                    <div><span class="toggled-item">FAQ</span></div>
                   </div>
                 </div>
               </div>
@@ -130,7 +139,7 @@ window.onscroll = function() {
             </ul>
 
             <form class="d-flex d-none d-xl-flex me-5" role="search">
-              <button type="button" class="btn-call">
+              <button type="button" class="btn-call me-2">
                 <svg width="19" height="27" viewBox="0 0 19 27" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M5.21031 0.643421C5.85886 0.425394 6.55481 0.461615 7.18232 0.746056C7.80983 1.0305 8.33103 1.546 8.65917 2.20674L8.76885 2.45297L9.75001 4.88388C10.0478 5.62172 10.1444 6.44089 10.028 7.23949C9.91149 8.0381 9.58702 8.78091 9.09492 9.37553L8.8978 9.59367L7.35196 11.2016C7.07332 11.4958 7.2823 12.6344 8.29013 14.5811C9.19718 16.3328 9.93527 17.1508 10.2984 17.1954H10.3621L10.4407 17.1789L13.479 16.1427C13.8873 16.0031 14.3231 15.9976 14.7342 16.1268C15.1452 16.2561 15.5142 16.5146 15.797 16.8715L15.9319 17.0616L17.9431 20.1684C18.3373 20.7773 18.5337 21.5178 18.5 22.2679C18.4663 23.0179 18.2046 23.7328 17.7578 24.2948L17.577 24.503L16.7737 25.3524C16.0524 26.1141 15.15 26.6289 14.174 26.8354C13.1979 27.0419 12.1891 26.9316 11.2677 26.5175C8.39981 25.2285 5.79426 22.2837 3.42734 17.7127C1.05597 13.1301 0.0703661 9.13591 0.510552 5.71512C0.643754 4.68106 1.02564 3.70653 1.61566 2.89502C2.20568 2.08352 2.9818 1.46534 3.8616 1.10614L4.14764 1.00037L5.21031 0.643421Z" fill="#6357AD"/>
                 </svg>
@@ -212,5 +221,66 @@ ul.dropdown-menu.show {
 
 .navbar-toggler {
   border: none;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active{
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-button:focus,
+.accordion-button:active{
+  outline: none;
+  box-shadow: none;
+  color: #3F3290;
+}
+
+.accordion-button {
+  background-color: #BEE2E5;
+  color: #6357AD;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.accordion {
+  --bs-accordion-bg: #BEE2E5;
+  --bs-accordion-active-color: #3F3290;
+}
+
+.accordion-item {
+  border: none;
+}
+
+.accordion-button::after {
+  background-image: none;
+  transform: none;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url("../assets/toogler.png");
+}
+
+.own-hr {
+  border-top: 1px solid #6357AD;
+  width: 100%;
+}
+
+
+.toggled-item {
+  font-weight: 400;
+  color: black;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.toggled-item:hover {
+  color: #6357AD;
+}
+
+@media only screen and (max-width: 768px) {
+  #navbar {
+    width: 100%;
+  }
 }
 </style>
