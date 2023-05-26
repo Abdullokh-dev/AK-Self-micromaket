@@ -10,7 +10,7 @@ import WhoWe from "./components/WhoWe.vue";
 </script>
 
 <template>
-<div class="container-fluid">
+<div class="container-fluid main-container">
   <Header />
   <Slider />
   <WhoWe />
@@ -20,9 +20,17 @@ import WhoWe from "./components/WhoWe.vue";
 </div>
 </template>
 
-<style scoped>
+<style>
  * {
    font-family: 'Montserrat', sans-serif;
    font-weight: 700;
+ }
+
+ button {
+   border: none;
+ }
+
+ .main-container {
+   background: #F5F8FF;
  }
 </style>

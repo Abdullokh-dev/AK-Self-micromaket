@@ -1,0 +1,15 @@
+iframe {
+    width: 100% !important;
+    height: 335px !important;
+    border-radius: 20px;
+    object-fit: cover;
+}
+@media only screen and (max-width: 992px) {
+    iframe {
+        height: 50vw !important;
+    }
+
+    .first-slide {
+        height: 1000px;
+    }
+}
