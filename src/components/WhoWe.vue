@@ -7,7 +7,7 @@ import YouTube from 'vue3-youtube'
 <template>
 <div class="row d-flex justify-content-center">
   <div class="col-12 col-xl-10">
-    <div class="row">
+    <div class="row flex-row-reverse">
       <div class="col-12 text-center title">
         Who are we?
       </div>
@@ -16,33 +16,34 @@ import YouTube from 'vue3-youtube'
         <img alt="#" class="bg-index" src="../assets/bg-index.png" height="70">
       </div>
 
-      <div class="col-12 col-lg-6">
-        <div class="d-flex justify-content-center justify-content-lg-start">
-          <span class="text-bolder ms-0 ms-md-5 ms-xl-0 text-center text-lg-start">
-            micromarket with delicious and
-            nutritious food according to your preferences
-          </span>
-        </div>
-        <div class="d-flex justify-content-center justify-content-lg-start mt-4">
-          <span class="text-bottom px-md-5 px-xl-0 text-center text-lg-start">
-            Salads, first and hot dishes, rolls, desserts, fruits,
-            snacks, coffee, soft drinks, ice cream, and much more
-          </span>
-        </div>
-
-        <div class="d-flex justify-content-center justify-content-lg-start">
-          <button type="button" class="btn btn-dark ms-0 ms-md-5 ms-xl-0 rounded-pill mt-5 px-4">
-            Download the presentation
-          </button>
-        </div>
-      </div>
-      <div class="col-12 col-lg-6 d-flex justify-content-center mt-5 mt-lg-0">
+      <div class="col-12 col-lg-6 d-flex justify-content-center">
         <YouTube
           class="video-card"
           id="videoCard"
           src="https://youtu.be/3GsKVNkwS1o"
           @ready="onReady"
           ref="youtube" />
+      </div>
+
+      <div class="col-12 col-lg-6 mt-2 mt-lg-0">
+        <div class="d-flex justify-content-start">
+          <span class="text-bolder ms-3 ms-md-5 ms-xl-0 text-start">
+            micromarket with delicious and
+            nutritious food according to your preferences
+          </span>
+        </div>
+        <div class="d-flex justify-content-start mt-4">
+          <span class="text-bottom ms-3 ms-md-5 ms-xl-0 text-start">
+            Salads, first and hot dishes, rolls, desserts, fruits,
+            snacks, coffee, soft drinks, ice cream, and much more
+          </span>
+        </div>
+
+        <div class="d-flex justify-content-center justify-content-lg-start">
+          <button type="button" class="btn btn-dark ms-0 ms-md-5 ms-xl-0 rounded-pill my-4 my-lg-0 mt-lg-5 px-4">
+            Download the presentation
+          </button>
+        </div>
       </div>
     </div>
   </div>

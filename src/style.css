@@ -4,12 +4,13 @@ iframe {
     border-radius: 20px;
     object-fit: cover;
 }
+
 @media only screen and (max-width: 992px) {
     iframe {
-        height: 50vw !important;
+        max-height: 360px;
     }
 
     .first-slide {
-        height: 1000px;
+        \height: 1000px;
     }
 }

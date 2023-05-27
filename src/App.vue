@@ -3,8 +3,8 @@
 import Slider from "./components/Slider.vue";
 import Header from "./components/Header.vue";
 import WhoWe from "./components/WhoWe.vue";
-// import Belt from "./components/Belt.vue";
-// import Advantages from "./components/Advantages.vue";
+import Belt from "./components/Belt.vue";
+import Advantages from "./components/Advantages.vue";
 // import Assortment from "./components/Assortment.vue";
 
 </script>
@@ -14,8 +14,8 @@ import WhoWe from "./components/WhoWe.vue";
   <Header />
   <Slider />
   <WhoWe />
-<!--  <Belt />-->
-<!--  <Advantages />-->
+  <Belt />
+  <Advantages />
 <!--  <Assortment />-->
 </div>
 </template>
