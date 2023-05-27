@@ -8,6 +8,7 @@ import Advantages from "./components/Advantages.vue";
 import Assortment from "./components/Assortment.vue";
 import Systems from "./components/Systems.vue";
 import Projects from "./components/Projects.vue";
+import HowWeWork from "./components/HowWeWork.vue";
 
 </script>
 
@@ -21,6 +22,7 @@ import Projects from "./components/Projects.vue";
   <Assortment />
   <Systems />
   <Projects />
+  <HowWeWork />
 </div>
 </template>
 

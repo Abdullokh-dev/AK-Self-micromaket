@@ -24,7 +24,7 @@
         <div class="col-12">
           <div class="row d-flex justify-content-center">
 
-            <div class="col-12 col-md-6 col-lg-4 col-xl-3 text-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center">
               <div class="title my-5">light snacks</div>
               <div class="system-img checked-img">
                 <img src="../assets/system-1.png" alt="">
