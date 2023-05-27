@@ -9,6 +9,7 @@ import Assortment from "./components/Assortment.vue";
 import Systems from "./components/Systems.vue";
 import Projects from "./components/Projects.vue";
 import HowWeWork from "./components/HowWeWork.vue";
+import FormRequest from "./components/FormRequest.vue";
 
 </script>
 
@@ -23,6 +24,7 @@ import HowWeWork from "./components/HowWeWork.vue";
   <Systems />
   <Projects />
   <HowWeWork />
+  <FormRequest />
 </div>
 </template>
 
