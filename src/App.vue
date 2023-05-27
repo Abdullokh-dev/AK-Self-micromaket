@@ -12,6 +12,7 @@ import HowWeWork from "./components/HowWeWork.vue";
 import FormRequest from "./components/FormRequest.vue";
 import Reviews from "./components/Reviews.vue";
 import Partners from "./components/Partners.vue";
+import Footer from "./components/Footer.vue";
 
 </script>
 
@@ -29,6 +30,7 @@ import Partners from "./components/Partners.vue";
   <FormRequest />
   <Reviews />
   <Partners />
+  <Footer />
 </div>
 </template>
 
@@ -38,8 +40,12 @@ import Partners from "./components/Partners.vue";
    font-weight: 700;
  }
 
- button {
+ button, input {
    border: none;
+ }
+
+ input {
+   outline: none;
  }
 
  .main-container {

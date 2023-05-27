@@ -8,24 +8,21 @@ const slideNum = reactive({
   number: 1
 })
 
-// single ref
 watch(
   () => width.value,
   () => {
-    if(width.value <= 767) {
-      slideNum.number = 1
-      console.log('768 gacha')
-    } else if(width.value <= 1200) {
-      slideNum.number = 2
-      console.log('1200 gacha')
-    } else if(width.value >= 1200) {
-      slideNum.number = 3
-      console.log('1200 dan kotta')
-    }
+      if(width.value <= 767) {
+        slideNum.number = 1
+      } else if(width.value <= 1200) {
+        slideNum.number = 2
+      } else if(width.value >= 1200) {
+        slideNum.number = 3
+      }
     },
   {immediate: true}
 )
 </script>
+
 <template>
   <div class="row main-row">
     <div class="col-12 text-center main-title">
@@ -81,6 +78,7 @@ watch(
           </div>
         </SplideSlide>
       </Splide>
+
     </div>
   </div>
 </template>
@@ -89,6 +87,7 @@ watch(
 .main-row {
   margin-top: 95px;
 }
+
 .main-title {
   font-size: 32px;
   font-weight: 800;
@@ -147,5 +146,4 @@ watch(
   }
 
 }
-
 </style>
