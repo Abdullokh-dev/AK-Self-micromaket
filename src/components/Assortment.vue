@@ -1,7 +1,7 @@
 <template>
   <div class="row mt-5">
     <div class="col-12 text-center main-title">
-      Assortment
+      assortment
     </div>
     <!-- Bg INDEX -->
     <div>

@@ -49,6 +49,7 @@ export default {
 }
 </script>
 
+
 <style scoped>
 .main-row {
   background-color: #31C2B0;
