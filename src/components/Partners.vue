@@ -1,5 +1,4 @@
 <script setup>
-
 </script>
 <template>
   <div class="row mt-5 main-row">
@@ -12,16 +11,32 @@
     </div>
   </div>
   <div class="row">
-    <div class="col d-flex position-relative">
-      <div class="marquee">
-        <span>
-          <img src="../assets/clip/img.png" alt="#" height="100">
-        </span>
+    <div class="col p-0">
+      <!-- First Belt -->
+      <div class="brand-wheel">
+        <div class="brand-slide">
+          <div class="logo-div">
+            <img alt="#" src="../assets/clip/img.png" height="50">
+          </div>
+        </div>
+        <div class="brand-slide delay">
+          <div class="logo-div">
+            <img alt="#" src="../assets/clip/img.png" height="50">
+          </div>
+        </div>
       </div>
-      <div class="marquee marquee2">
-        <span>
-          <img src="../assets/clip/img.png" alt="#" height="100">
-        </span>
+      <!-- Second Belt -->
+      <div class="brand-wheel">
+        <div class="brand-slide">
+          <div class="logo-div">
+            <img alt="#" src="../assets/clip/img_1.png" height="50">
+          </div>
+        </div>
+        <div class="brand-slide delay">
+          <div class="logo-div">
+            <img alt="#" src="../assets/clip/img_1.png" height="50">
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -33,6 +48,7 @@
 }
 
 .main-title {
+  margin: 96px 0 20px 0;
   font-size: 32px;
   font-weight: 800;
   line-height: 32px;
@@ -41,34 +57,95 @@
 
 .bg-index-drop {
   position: relative;
-  left: 53%;
+  left: 55%;
   z-index: 0;
-  margin-top: -50px;
+  margin-top: -80px;
 }
 
-.marquee {
-  margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  position: absolute;
-}
-
-.marquee span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 15s linear infinite;
-}
-
-.marquee2 span {
-  animation-delay: 7.5s;
-}
-
-@keyframes marquee {
+@keyframes fade-in {
   0% {
-    transform: translate(0, 0);
+    opacity: 0;
   }
   100% {
-    transform: translate(-100%, 0);
+    opacity: 1;
+  }
+}
+
+.brand-wheel {
+  flex-direction: row;
+  align-items: center;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+  background-color: white;
+  --animationspeed: 45s;
+  --animationdelay: calc(var(--animationspeed) / 2);
+}
+
+.brand-wheel::before {
+  position: absolute;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  width: 5%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.brand-wheel::after {
+  position: absolute;
+  background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100%;
+  width: 5%;
+  z-index: 2;
+  pointer-events: none;
+  right: 0;
+}
+
+.brand-slide {
+  flex-shrink: 0;
+  position: absolute;
+  animation-name: slidelogo;
+  animation-duration: var(--animationspeed);
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  min-width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.brand-slide.delay {
+  transform: translateX(100%);
+  animation-name: slidelogo2;
+}
+
+.brand-wheel:hover .brand-slide {
+  animation-play-state: paused;
+}
+
+.logo-div {
+  display: inline-flex;
+  align-self: center;
+  animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+  padding: 0 20px 0 20px;
+}
+
+@keyframes slidelogo {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes slidelogo2 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
   }
 }
 </style>
