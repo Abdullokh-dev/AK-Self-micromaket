@@ -92,7 +92,7 @@
           </div>
         </div>
 
-        <div class="col-12 d-flex justify-content-center">
+        <div class="col-6 d-flex justify-content-center">
           <button type="button" class="btn btn-dark rounded-pill m-3">
             I want a free tasting
           </button>
@@ -129,7 +129,7 @@ export default {
 }
 
 .main-description {
-  max-width: 762px !important;
+  max-width: 762px;
   font-size: 20px;
   font-weight: 400;
   line-height: 32px;

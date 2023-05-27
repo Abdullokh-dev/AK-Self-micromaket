@@ -6,6 +6,8 @@ import WhoWe from "./components/WhoWe.vue";
 import Belt from "./components/Belt.vue";
 import Advantages from "./components/Advantages.vue";
 import Assortment from "./components/Assortment.vue";
+import Systems from "./components/Systems.vue";
+import Projects from "./components/Projects.vue";
 
 </script>
 
@@ -17,6 +19,8 @@ import Assortment from "./components/Assortment.vue";
   <Belt />
   <Advantages />
   <Assortment />
+  <Systems />
+  <Projects />
 </div>
 </template>
 
