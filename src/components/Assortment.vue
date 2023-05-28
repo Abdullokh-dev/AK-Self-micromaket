@@ -28,7 +28,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -46,13 +46,13 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img_1.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
                 <div class="card-body">
-                  <div class="card-title mt-2 mt-md-0">grain coffee</div>
-                  <div class="card-description">Now you can buy alertness! 20 types of drinks, alternative milk options </div>
+                  <div class="card-title mt-2 mt-md-0">breakfasts</div>
+                  <div class="card-description">With self. early mornings at work won't be so heavy </div>
                 </div>
               </div>
             </div>
@@ -64,7 +64,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img_2.png" class="card-img-top" alt="#" draggable="false">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -82,12 +82,12 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img_3.png" class="card-img-top" alt="#">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
                 <div class="card-body">
-                  <div class="card-title mt-2 mt-md-0">filling snacks</div>
+                  <div class="card-title mt-2 mt-md-0">Filling snacks</div>
                   <div class="card-description">Fresh sandwiches, shawarma and other snacks - we will not leave you hungry</div>
                 </div>
               </div>
@@ -100,12 +100,12 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img_7.png" class="card-img-top" alt="#" draggable="false">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
                 <div class="card-body">
-                  <div class="card-title mt-2 mt-md-0">organic and healthy</div>
+                  <div class="card-title mt-2 mt-md-0">Organic and healthy</div>
                   <div class="card-description">Protein bars and other healthy food without leaving the office.</div>
                 </div>
               </div>
@@ -118,7 +118,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img_4.png" class="card-img-top" alt="#" draggable="false">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -136,7 +136,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img_5.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -154,7 +154,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img_6.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -211,6 +211,7 @@ import MyButton from "./MyButton.vue";
   border: none;
   border-radius: 20px;
   --bs-card-inner-border-radius: 20px;
+  box-shadow: 0 4px 29px 0 #0000001A;
 }
 
 .card-body {
@@ -219,9 +220,14 @@ import MyButton from "./MyButton.vue";
 
 .card-image > img {
   padding: 22px;
-  min-height: 166px;
   background-color: #FFC54A;
   border-radius: 20px 0 0 20px;
+  width: 100%;
+  /*max-height: 270px;*/
+  /* Magic! */
+  /*max-width: 60vw;*/
+  /*max-height: 270px;*/
+  /*min-height: 166px;*/
 }
 
 .card-title {
