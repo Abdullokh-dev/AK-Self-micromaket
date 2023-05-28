@@ -2,7 +2,7 @@
 </script>
 
 <template>
-<div class="row d-flex justify-content-center main-row mt-5">
+<div class="row d-flex justify-content-center main-row mt-5 pb-5">
   <div class="col-11 col-md-12 col-lg-10 main-col">
     <div class="row">
 
@@ -21,7 +21,7 @@
           <img alt="#" class="bg-index-drop" src="../assets/subsidy/card.png" height="70">
         </div>
       </div>
-      <div class="col-12 col-md-6 mt-md-5 ps-lg-5">
+      <div class="col-12 col-md-6 mt-md-5 ps-lg-5 my-4">
         <div class="info mt-md-3 pt-lg-2">
           Self.supsidy allows companies to flexibly manage the subsidy provided and gives employees the opportunity to use the subsidy in our micromarkets at their discretion.
         </div>

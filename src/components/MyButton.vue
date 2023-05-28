@@ -29,7 +29,7 @@ const props = defineProps({
 })
 </script>
 <template>
-  <button class="button rounded-pill"
+  <button class="btn button rounded-pill"
           :type="type"
           @click="onClick"
           :style="{height: height + 'px', backgroundColor: background, color: color, maxWidth: maxWidth + 'px'}"

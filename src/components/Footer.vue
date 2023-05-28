@@ -1,4 +1,5 @@
 <script setup>
+import MyButton from "./MyButton.vue";
 </script>
 
 <template>
@@ -13,19 +14,29 @@
         <!-- HALF -->
         <div class="col-12 col-lg-8 col-xl-6">
           <div class="row pe-xl-5">
-            <div class="col-12 col-lg-5 pe-lg-3 align-items-end">
+            <div class="col-12 col-lg-5 d-lg-none align-items-end">
               <div>
                 <input type="text" placeholder="name" class="ps-3 mt-lg-4">
               </div>
             </div>
 
-            <div class="col-12 col-lg-5 pe-lg-3">
+            <div class="col-12 col-lg-5 d-lg-none">
               <div>
                 <input type="text" placeholder="phone" class="ps-3 mt-3 mt-lg-4">
               </div>
             </div>
 
-            <div class="col-12 col-lg-2 p-lg-0">
+            <div class="d-none d-lg-block col-6 text-center mt-4 pt-3">
+              <div class="phone-num">
+                + 971 58 528 86 07
+              </div>
+            </div>
+
+            <div class="d-none d-lg-block col-2 pt-1 pb-4">
+              <MyButton text="request a call back" height="51" class="px-4 mt-4"/>
+            </div>
+
+            <div class="col-12 col-lg-2 d-lg-none">
               <div class="text-center mt-4 pt-lg-1">
                 <button type="button" class="btn btn-dark rounded-pill px-4 py-2">Send</button>
               </div>
@@ -34,11 +45,11 @@
         </div>
         <!-- HALF end-->
         <div class="text-center d-lg-none">
-          <button type="button" class="btn btn-dark rounded-pill px-4 py-2 mt-2">+ 971 58 528 86 07</button>
+          <MyButton text="+ 971 58 528 86 07" background="#6357AD" class="px-4 py-2 mt-2"/>
         </div>
         <!-- HALF -->
         <div class="col-12 col-lg-4 col-xl-6">
-          <div class="d-flex mt-5 mt-lg-4 pt-lg-2 align-items-end align-items-lg-center">
+          <div class="d-flex mt-5 mt-lg-4 pt-lg-2 ps-lg-5 align-items-end align-items-lg-center">
             <img src="../assets/footer/img.png" height="56" alt="" class="ms-xl-5 footer-logo">
 
             <div class="ms-auto pb-lg-1 ms-xl-0 ms-xl-5 ps-xl-5">
@@ -123,6 +134,12 @@ input::placeholder {
   font-weight: 700;
   line-height: 29px;
   color: #BEE2E5;
+}
+
+.phone-num {
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
 }
 
 @media only screen and (min-width: 992px) {
