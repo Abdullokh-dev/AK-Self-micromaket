@@ -30,7 +30,7 @@ watch(
     </div>
     <!-- Bg INDEX -->
     <div>
-      <img alt="#" class="bg-index-drop" src="../assets/bg-index.png" height="70">
+      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70">
     </div>
   </div>
 
@@ -47,7 +47,7 @@ watch(
               "I really like the service and food. As a rule, by the evening there is nothing left, everything is bought up by employees. A large selection from sweet to healthy food, any consumer will find a delicacy according to taste. Thank you!"
             </div>
             <div class="image d-flex align-items-end position-absolute bottom-0">
-              <img src="../assets/customer-1.png" alt="">
+              <img src="../assets/home/customer-1.png" alt="">
             </div>
           </div>
         </SplideSlide>
@@ -60,7 +60,7 @@ watch(
               "I want to share my opinion about the product range in the micromarket of our office! I really like pancakes with meat and cheese, it's really cool that cheese and meat are sliced ​​and not mixed into porridge. But they run out very quickly, bring more :)"
             </div>
             <div class="image d-flex align-items-end position-absolute bottom-0">
-              <img src="../assets/customer-2.png" alt="">
+              <img src="../assets/home/customer-2.png" alt="">
             </div>
           </div>
         </SplideSlide>
@@ -73,7 +73,7 @@ watch(
               "We love eating dishes from Self kiosks, everything is always fresh and there is a wide choice! The variety of snacks is especially pleasing, protein bars are my real love and ice cream in the summer was more than ever! Thank you very much for your work!!"
             </div>
             <div class="image d-flex align-items-end position-absolute bottom-0">
-              <img src="../assets/customer-3.png" alt="">
+              <img src="../assets/home/customer-3.png" alt="">
             </div>
           </div>
         </SplideSlide>

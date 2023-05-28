@@ -1,13 +1,12 @@
 <script setup>
 
+import SubsContent from "../components/SubsContent.vue";
+import SubsBelt from "../components/SubsBelt.vue";
 </script>
 
 <template>
-<div class="row">
-  <div class="col">
-    <h1>Subsidy Page</h1>
-  </div>
-</div>
+  <SubsContent />
+  <SubsBelt />
 </template>
 
 <style scoped>

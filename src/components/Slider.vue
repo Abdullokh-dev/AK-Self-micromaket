@@ -21,7 +21,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             <div class="col-lg-1"></div>
             <div class="col-12 col-lg-5">
               <div class="ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
-                <img src="../assets/vector.png" width="185" alt="" class="vector">
+                <img src="../assets/home/vector.png" width="185" alt="" class="vector">
               </div>
               <div class="mt-2 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
                 <span class="description">
@@ -41,7 +41,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             </div>
             <!-- First half 50% -->
             <div class="col-12 col-lg-6 d-flex justify-content-center">
-                <img src="../assets/bottle.png" alt="#" draggable="false" class="bottle">
+                <img src="../assets/home/bottle.png" alt="#" draggable="false" class="bottle">
             </div>
             <!-- mobile button -->
             <div class="col-12 text-center">
@@ -61,7 +61,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-lg-5">
               <div class="ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0 mt-4 mt-lg-0">
-                <img src="../assets/vector-light.png" width="185" alt="" class="vector">
+                <img src="../assets/home/vector-light.png" width="185" alt="" class="vector">
               </div>
               <div class="mt-2 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
               <span class="description text-light">
@@ -97,7 +97,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-lg-5">
               <div class="ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0 mt-4 mt-lg-0">
-                <img src="../assets/vector-light.png" width="185" alt="" class="vector">
+                <img src="../assets/home/vector-light.png" width="185" alt="" class="vector">
               </div>
               <div class="mt-2 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
                 <span class="description text-light">
@@ -117,7 +117,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             <div class="col-12 col-lg-6 d-flex justify-content-center">
               <div class="row">
                 <div class="col d-flex align-items-center">
-                  <img src="../assets/coffee-bar.png" alt="#" draggable="false" class="third-slide-img mt-lg-5 pt-lg-5">
+                  <img src="../assets/home/coffee-bar.png" alt="#" draggable="false" class="third-slide-img mt-lg-5 pt-lg-5">
                 </div>
               </div>
             </div>
@@ -152,7 +152,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: url(../assets/img.png) no-repeat bottom right fixed;
+  background: url(../assets/home/img.png) no-repeat bottom right fixed;
 }
 
 .second-slide {
@@ -160,7 +160,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background: url(../assets/img-coffee.png) #31C2B0 no-repeat bottom center fixed;
+  background: url(../assets/home/img-coffee.png) #31C2B0 no-repeat bottom center fixed;
 }
 
 .third-slide {
@@ -239,16 +239,16 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
     min-width: 450px;
   }
   .second-slide {
-    background: url(../assets/img-md-coffee.png) #31C2B0 no-repeat right fixed;
+    background: url(../assets/home/img-md-coffee.png) #31C2B0 no-repeat right fixed;
   }
   .third-slide {
-    background: url(../assets/img_2.png) #6357AD no-repeat bottom right fixed;
+    background: url(../assets/home/img_2.png) #6357AD no-repeat bottom right fixed;
   }
 }
 
 @media only screen and (min-width: 1199px) {
   .second-slide {
-    background: url(../assets/img-coffee.png) #31C2B0 no-repeat right fixed;
+    background: url(../assets/home/img-coffee.png) #31C2B0 no-repeat right fixed;
   }
 }
 

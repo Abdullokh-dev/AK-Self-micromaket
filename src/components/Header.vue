@@ -258,7 +258,7 @@ ul.dropdown-menu.show {
 }
 
 .accordion-button:not(.collapsed)::after {
-  background-image: url("../assets/toogler.png");
+  background-image: url("../assets/home/toogler.png");
 }
 
 .own-hr {

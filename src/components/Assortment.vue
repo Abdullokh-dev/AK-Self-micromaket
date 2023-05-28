@@ -9,7 +9,7 @@ import MyButton from "./MyButton.vue";
     </div>
     <!-- Bg INDEX -->
     <div>
-      <img alt="#" class="bg-index-drop" src="../assets/bg-index.png" height="70">
+      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70">
     </div>
     <div class="col-12 d-flex justify-content-center text-center mt-4">
       <div class="main-description">
@@ -28,7 +28,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -46,7 +46,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -64,7 +64,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -82,7 +82,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -100,7 +100,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -118,7 +118,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -136,7 +136,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -154,7 +154,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/card-coffee.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card-coffee.png" class="card-img-top" alt="...">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
