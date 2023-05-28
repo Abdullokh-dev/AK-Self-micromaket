@@ -12,7 +12,7 @@ import MyButton from "./MyButton.vue";
           </div>
         </div>
         <!-- HALF -->
-        <div class="col-12 col-lg-8 col-xl-6">
+        <div class="col-12 col-lg-8 col-xl-7 col-xxl-6">
           <div class="row pe-xl-5">
             <div class="col-12 col-lg-5 d-lg-none align-items-end">
               <div>
@@ -48,7 +48,7 @@ import MyButton from "./MyButton.vue";
           <MyButton text="+ 971 58 528 86 07" background="#6357AD" class="px-4 py-2 mt-2"/>
         </div>
         <!-- HALF -->
-        <div class="col-12 col-lg-4 col-xl-6">
+        <div class="col-12 col-lg-4 col-xl-5 col-xxl-6">
           <div class="d-flex mt-5 mt-lg-4 pt-lg-2 ps-lg-5 align-items-end align-items-lg-center">
             <img src="../assets/footer/img.png" height="56" alt="" class="ms-xl-5 footer-logo">
 

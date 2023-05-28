@@ -1,3 +1,17 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
+.main-container {
+    background: #F5F8FF;
+}
+
 iframe {
     width: 100% !important;
     height: 335px !important;

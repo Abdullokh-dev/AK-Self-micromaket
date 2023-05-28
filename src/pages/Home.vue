@@ -16,7 +16,7 @@ import Partners from "../components/Partners.vue";
   <Slider />
   <WhoWe />
   <Belt />
-  <Advantages />
+  <Advantages ref="targetRef" />
   <Assortment />
   <Systems />
   <Projects />

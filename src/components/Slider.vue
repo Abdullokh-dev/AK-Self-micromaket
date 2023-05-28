@@ -34,7 +34,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
                 </span>
               </div>
               <div class="d-none d-lg-block">
-                <button type="button" class="btn px-4 rounded-pill mt-4">
+                <button type="button" class="btn px-4 rounded-pill mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   leave an application
                 </button>
               </div>
@@ -46,7 +46,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             <!-- mobile button -->
             <div class="col-12 text-center">
               <div class="d-block d-lg-none">
-                <button type="button" class="btn px-4 rounded-pill mb-5">
+                <button type="button" class="btn px-4 rounded-pill mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   leave an application
                 </button>
               </div>
@@ -74,7 +74,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
               </span>
               </div>
               <div class="d-none d-lg-block">
-                <button type="button" class="btn px-4 rounded-pill mt-4">
+                <button type="button" class="btn px-4 rounded-pill mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   leave an application
                 </button>
               </div>
@@ -82,7 +82,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             <!--Second Slide mobile button-->
             <div class="row align-items-end">
               <div class="col-12 d-block d-lg-none text-center mb-5 pb-4">
-                <button type="button" class="btn px-4 rounded-pill">
+                <button type="button" class="btn px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   leave an application
                 </button>
               </div>
@@ -110,7 +110,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
                 </span>
               </div>
               <div class="d-none d-lg-block">
-                <MyButton text="leave an application" background="#31C2B0" class="mt-4 px-4" />
+                <MyButton text="leave an application" background="#31C2B0" class="mt-4 px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" />
               </div>
             </div>
             <!-- Third half 50% -->
@@ -124,7 +124,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             <!--Third mobile button -->
             <div class="col-12 text-center">
               <div class="d-block d-lg-none">
-                <button type="button" class="btn px-4 rounded-pill mb-5">
+                <button type="button" class="btn px-4 rounded-pill mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   leave an application
                 </button>
               </div>
