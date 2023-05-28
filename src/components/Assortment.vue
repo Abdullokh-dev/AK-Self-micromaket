@@ -31,7 +31,7 @@ const download = (url) => {
     <div class="col-11">
       <div class="row">
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -49,7 +49,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -67,7 +67,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-4 mt-md-2 mt-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2 mt-lg-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -85,7 +85,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-4 mt-md-2 mt-xl-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2 mt-xl-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -103,7 +103,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-4 mt-md-2">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -121,7 +121,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-4 mt-md-2">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -139,7 +139,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-4 mt-md-2">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -157,7 +157,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-4 mt-md-2">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -216,8 +216,7 @@ const download = (url) => {
 
 .card {
   border: none;
-  border-radius: 20px;
-  --bs-card-inner-border-radius: 20px;
+  border-radius: 10px;
   box-shadow: 0 4px 29px 0 #0000001A;
 }
 
@@ -228,21 +227,40 @@ const download = (url) => {
 .card-image > img {
   padding: 22px;
   background-color: #FFC54A;
-  border-radius: 20px 0 0 20px;
+  border-radius: 10px 0 0 10px;
   width: 100%;
 }
 
 .card-title {
-  font-size: 18px;
+  font-size: 12px;
+  line-height: 15px;
   font-weight: 700;
-  line-height: 23px;
 }
 
 .card-description {
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 400;
-  line-height: 19px;
+  line-height: 15px;
   text-align: left;
+}
+@media only screen and (min-width: 576px) {
+  .card {
+    border-radius: 20px;
+    --bs-card-inner-border-radius: 20px;
+  }
+  .card-image > img {
+    border-radius: 20px 0 0 20px;
+  }
+
+  .card-title {
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .card-description {
+    line-height: 19px;
+    font-size: 15px;
+  }
 }
 
 @media only screen and (min-width: 768px) {

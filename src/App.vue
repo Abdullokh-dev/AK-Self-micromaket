@@ -39,7 +39,7 @@ import MyButton from "./components/MyButton.vue";
             <div class="d-flex justify-content-start mt-3">
               <input class="form-check-input w-full ms-4" type="checkbox" value="" id="invalidCheck" required>
               <label class="form-check-label ms-2 info" for="invalidCheck">
-                Нажимая «Отправить», вы соглашаетесь с политикой конфиденциальности
+                By clicking "Submit", you agree to the privacy policy
               </label>
             </div>
 
@@ -103,5 +103,6 @@ input::placeholder {
   font-weight: 600;
   line-height: 16px;
   text-align: left;
+  margin-top: 4px;
 }
 </style>
