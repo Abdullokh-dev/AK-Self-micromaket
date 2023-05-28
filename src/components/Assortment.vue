@@ -29,9 +29,9 @@ const download = (url) => {
 
   <div class="row d-flex justify-content-center">
     <div class="col-11">
-      <div class="row">
+      <div class="row mt-4">
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-md-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -39,7 +39,7 @@ const download = (url) => {
                   <img src="../assets/home/card/img.png" class="card-img-top" alt="..." draggable="false">
                 </div>
               </div>
-              <div class="col-6 col-md-12 ps-0 ps-md-2">
+              <div class="col-6 col-md-12 ps-0 px-md-4 pt-2">
                 <div class="card-body">
                   <div class="card-title mt-2 mt-md-0">grain coffee</div>
                   <div class="card-description">Now you can buy alertness! 20 types of drinks, alternative milk options </div>
@@ -49,7 +49,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -57,7 +57,7 @@ const download = (url) => {
                   <img src="../assets/home/card/img_1.png" class="card-img-top" alt="..." draggable="false">
                 </div>
               </div>
-              <div class="col-6 col-md-12 ps-0 ps-md-2">
+              <div class="col-6 col-md-12 ps-0 px-md-4 pt-2">
                 <div class="card-body">
                   <div class="card-title mt-2 mt-md-0">breakfasts</div>
                   <div class="card-description">With self. early mornings at work won't be so heavy </div>
@@ -67,7 +67,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2 mt-lg-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -75,7 +75,7 @@ const download = (url) => {
                   <img src="../assets/home/card/img_2.png" class="card-img-top" alt="#" draggable="false">
                 </div>
               </div>
-              <div class="col-6 col-md-12 ps-0 ps-md-2">
+              <div class="col-6 col-md-12 ps-0 px-md-4 pt-2">
                 <div class="card-body">
                   <div class="card-title mt-2 mt-md-0">main courses</div>
                   <div class="card-description">Ready-made dishes from the best suppliers</div>
@@ -85,7 +85,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2 mt-xl-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -93,9 +93,9 @@ const download = (url) => {
                   <img src="../assets/home/card/img_3.png" class="card-img-top" alt="#" draggable="false">
                 </div>
               </div>
-              <div class="col-6 col-md-12 ps-0 ps-md-2">
+              <div class="col-6 col-md-12 ps-0 px-md-4 pt-2">
                 <div class="card-body">
-                  <div class="card-title mt-2 mt-md-0">Filling snacks</div>
+                  <div class="card-title mt-2 mt-md-0">filling snacks</div>
                   <div class="card-description">Fresh sandwiches, shawarma and other snacks - we will not leave you hungry</div>
                 </div>
               </div>
@@ -103,7 +103,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -111,9 +111,9 @@ const download = (url) => {
                   <img src="../assets/home/card/img_7.png" class="card-img-top" alt="#" draggable="false">
                 </div>
               </div>
-              <div class="col-6 col-md-12 ps-0 ps-md-2">
+              <div class="col-6 col-md-12 ps-0 px-md-4 pt-2">
                 <div class="card-body">
-                  <div class="card-title mt-2 mt-md-0">Organic and healthy</div>
+                  <div class="card-title mt-2 mt-md-0">organic and healthy</div>
                   <div class="card-description">Protein bars and other healthy food without leaving the office.</div>
                 </div>
               </div>
@@ -121,7 +121,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -129,7 +129,7 @@ const download = (url) => {
                   <img src="../assets/home/card/img_4.png" class="card-img-top" alt="#" draggable="false">
                 </div>
               </div>
-              <div class="col-6 col-md-12 ps-0 ps-md-2">
+              <div class="col-6 col-md-12 ps-0 px-md-4 pt-2">
                 <div class="card-body">
                   <div class="card-title mt-2 mt-md-0">snacks and bars</div>
                   <div class="card-description">Favorite chocolates, snacks, nuts, and other quick snacks</div>
@@ -139,7 +139,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -147,7 +147,7 @@ const download = (url) => {
                   <img src="../assets/home/card/img_5.png" class="card-img-top" alt="..." draggable="false">
                 </div>
               </div>
-              <div class="col-6 col-md-12 ps-0 ps-md-2">
+              <div class="col-6 col-md-12 ps-0 px-md-4 pt-2">
                 <div class="card-body">
                   <div class="card-title mt-2 mt-md-0">refreshing drinks</div>
                   <div class="card-description">No need to leave the office to buy a cold Pepsi or energy drink anymore</div>
@@ -157,7 +157,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 p-3 mt-md-2">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -165,7 +165,7 @@ const download = (url) => {
                   <img src="../assets/home/card/img_6.png" class="card-img-top" alt="..." draggable="false">
                 </div>
               </div>
-              <div class="col-6 col-md-12 ps-0 ps-md-2">
+              <div class="col-6 col-md-12 ps-0 px-md-4 pt-2">
                 <div class="card-body">
                   <div class="card-title mt-2 mt-md-0">ice cream</div>
                   <div class="card-description">Cool down even on the hottest day with delicious ice cream</div>
@@ -175,7 +175,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 my-4">
+        <div class="col-12 my-4 mt-5">
           <div class="row">
             <div class="col-12 col-md-6 text-center text-md-end">
               <MyButton text="I want a free tasting" background="#6357AD" class="me-1 w-100" max-width="396" />
