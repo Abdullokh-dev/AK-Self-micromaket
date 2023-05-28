@@ -34,7 +34,7 @@ window.onscroll = function() {
               <path fill-rule="evenodd" clip-rule="evenodd" d="M61.6089 8.6396H57.9716V15.6283H61.6089V31.6418H69.4897V15.6283H74.0088C74.1358 15.6283 74.1741 15.59 74.1741 15.4632V8.6396H69.4897C69.4897 5.7115 72.0891 6.16327 74.1741 6.16327V0H71.1066C69.6946 0.0360754 68.292 0.169584 67.1126 0.597934C66.5195 0.813347 66.0833 1.01286 65.5599 1.3037C65.317 1.43861 65.1063 1.56827 64.8836 1.72899C62.6394 3.34819 61.6089 5.86412 61.6089 8.6396Z" fill="black"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M48.2172 31.6418H56.0429V1.21061H48.2172V31.6418Z" fill="black"/>
               <path fill-rule="evenodd" clip-rule="evenodd" d="M73.7885 23.7176V31.6418H81.8347C81.9607 31.6418 81.9994 31.6041 82 31.4797V23.7147C81.9994 23.5902 81.9607 23.5525 81.8347 23.5525H73.9538C73.8269 23.5525 73.7885 23.5908 73.7885 23.7176Z" fill="black"/>
-          </svg>
+            </svg>
           </a>
 
           <button class="navbar-toggler me-2" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -44,6 +44,7 @@ window.onscroll = function() {
               <rect y="23.8936" width="39.9585" height="3.4842" rx="1.7421" fill="black"/>
             </svg>
           </button>
+
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Mobile Version -->
             <div class="accordion accordion-flush d-flex-block d-xl-none mb-4" id="accordionFlushExample">
@@ -264,7 +265,6 @@ ul.dropdown-menu.show {
   border-top: 1px solid #6357AD;
   width: 100%;
 }
-
 
 .toggled-item {
   font-weight: 400;
