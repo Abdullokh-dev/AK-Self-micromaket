@@ -8,7 +8,7 @@
     </div>
     <!-- Bg INDEX -->
     <div>
-      <img alt="#" class="bg-index-drop" src="../assets/subsidy/bg-drop.png" height="70">
+      <img alt="#" class="bg-index-drop" src="../assets/subsidy/bg-drop.png" height="70" draggable="false">
     </div>
   </div>
 
@@ -23,7 +23,7 @@
               the ordering company determines the size of the subsidy.
             </div>
             <div class="col-12 d-flex align-items-end justify-content-center mb-4">
-              <img src="../assets/subsidy/money.png" alt="#" width="80">
+              <img src="../assets/subsidy/money.png" alt="#" width="80" draggable="false">
             </div>
           </div>
         </div>
@@ -35,7 +35,7 @@
               employees make purchases in the micro-market in a free mode, using electronic cards.
             </div>
             <div class="col-12 d-flex align-items-end justify-content-center mb-4">
-              <img src="../assets/subsidy/btn.png" alt="#" width="80">
+              <img src="../assets/subsidy/btn.png" alt="#" width="80" draggable="false">
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@
               the system takes into account the amount of purchased products and drinks for each employee.
             </div>
             <div class="col-12 d-flex align-items-end justify-content-center mb-4">
-              <img src="../assets/subsidy/apelsin.png" alt="#" width="80">
+              <img src="../assets/subsidy/apelsin.png" alt="#" width="80" draggable="false">
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
               the company or employees compensate for expenses according to a report with details on each product and drink.
             </div>
             <div class="col-12 d-flex align-items-end justify-content-center mb-4">
-              <img src="../assets/subsidy/money-2.png" alt="#" width="80">
+              <img src="../assets/subsidy/money-2.png" alt="#" width="80" draggable="false">
             </div>
           </div>
         </div>
@@ -97,7 +97,6 @@
   line-height: 32px;
   color: #BEE2E5;
   padding: 16px 0 0 22px;
-
 }
 
 .my-card-info {

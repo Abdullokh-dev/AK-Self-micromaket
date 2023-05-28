@@ -21,7 +21,7 @@ import MyButton from "./MyButton.vue";
         </div>
         <div class="col-12 col-lg-6 text-center">
           <div class="image">
-            <img src="../assets/subsidy/img.png" alt="subsidy" class="ms-0 ms-lg-5">
+            <img src="../assets/subsidy/img.png" alt="subsidy" class="ms-0 ms-lg-5" draggable="false">
           </div>
         </div>
       </div>
