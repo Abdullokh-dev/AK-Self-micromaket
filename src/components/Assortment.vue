@@ -1,4 +1,5 @@
 <script setup>
+
 import MyButton from "./MyButton.vue";
 </script>
 
@@ -28,7 +29,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card/img.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img.png" class="card-img-top" alt="..." draggable="false">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -46,7 +47,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card/img_1.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img_1.png" class="card-img-top" alt="..." draggable="false">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -82,7 +83,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card/img_3.png" class="card-img-top" alt="#">
+                  <img src="../assets/home/card/img_3.png" class="card-img-top" alt="#" draggable="false">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -136,7 +137,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card/img_5.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img_5.png" class="card-img-top" alt="..." draggable="false">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -154,7 +155,7 @@ import MyButton from "./MyButton.vue";
             <div class="row">
               <div class="col-6 col-md-12">
                 <div class="card-image">
-                  <img src="../assets/home/card/img_6.png" class="card-img-top" alt="...">
+                  <img src="../assets/home/card/img_6.png" class="card-img-top" alt="..." draggable="false">
                 </div>
               </div>
               <div class="col-6 col-md-12 ps-0 ps-md-2">
@@ -177,7 +178,6 @@ import MyButton from "./MyButton.vue";
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -223,11 +223,6 @@ import MyButton from "./MyButton.vue";
   background-color: #FFC54A;
   border-radius: 20px 0 0 20px;
   width: 100%;
-  /*max-height: 270px;*/
-  /* Magic! */
-  /*max-width: 60vw;*/
-  /*max-height: 270px;*/
-  /*min-height: 166px;*/
 }
 
 .card-title {
