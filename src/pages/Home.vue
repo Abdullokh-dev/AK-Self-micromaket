@@ -13,15 +13,15 @@ import Partners from "../components/Partners.vue";
 </script>
 
 <template>
-  <Slider />
-  <WhoWe />
-  <Belt />
-  <Advantages ref="targetRef" />
-  <Assortment />
+<!--  <Slider />-->
+<!--  <WhoWe />-->
+<!--  <Belt />-->
+<!--  <Advantages />-->
+<!--  <Assortment />-->
   <Systems />
   <Projects />
-  <HowWeWork />
-  <FormRequest />
+<!--  <HowWeWork />-->
+<!--  <FormRequest />-->
   <Reviews />
   <Partners />
 </template>

@@ -391,7 +391,7 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1px) {
     .splide__arrow svg {
         display: none;
     }
