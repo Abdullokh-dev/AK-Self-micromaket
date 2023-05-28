@@ -1,4 +1,5 @@
 <script setup>
+
 import Slider from "../components/Slider.vue";
 import WhoWe from "../components/WhoWe.vue";
 import Belt from "../components/Belt.vue";

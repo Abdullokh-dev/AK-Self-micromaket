@@ -1,6 +1,13 @@
 <script setup>
-
 import MyButton from "./MyButton.vue";
+import axios from "axios";
+import {saveAs} from 'file-saver';
+const download = (url) => {
+  axios.get(url, {responseType: 'blob'})
+    .then(response => {
+      saveAs(response.data, 'Abdullokh Khamzaev');
+    })
+}
 </script>
 
 <template>
@@ -174,7 +181,7 @@ import MyButton from "./MyButton.vue";
               <MyButton text="I want a free tasting" background="#6357AD" class="me-1 w-100" max-width="396" />
             </div>
             <div class="col-12 col-md-6 text-center text-md-start mt-4 mb-4 mt-md-0">
-              <MyButton text="download the presentation" class="w-100 ms-1" max-width="396" />
+              <MyButton text="download the assortment" @click="download('CV.pdf')" class="w-100 ms-1" max-width="396" />
             </div>
           </div>
         </div>
