@@ -37,7 +37,7 @@
   height: 15px;
   margin: 0 10px;
   border-radius: 50%;
-  background-color: #6357AD;
+  background-color: #ECFCFD;
   cursor: pointer;
   font-size: 1rem;
 }
@@ -50,7 +50,7 @@
 }
 
 .flicking-pagination-bullet-active {
-  background-color: white;
+  background-color: #3F3290;
 }
 
 .flicking-pagination-scroll .flicking-pagination-bullet {
