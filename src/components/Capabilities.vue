@@ -8,14 +8,14 @@
     </div>
     <!-- Bg INDEX -->
     <div>
-      <img alt="#" class="bg-index-drop" src="../assets/subsidy/bg-drop.png" height="70">
+      <img alt="#" class="bg-index-drop" src="../assets/subsidy/bg-drop.png" height="70" draggable="false">
     </div>
   </div>
   <div class="row d-flex justify-content-center">
     <div class="col-12 col-md-11">
       <!-- Bg INDEX -->
       <div>
-        <img alt="#" class="bg-index" src="../assets/subsidy/bg.png" width="70">
+        <img alt="#" class="bg-index" src="../assets/subsidy/bg.png" width="70" draggable="false">
       </div>
       <div class="row">
         <div class="col-12 my-card m-0 mt-md-4">
@@ -58,9 +58,7 @@
           </div>
         </div>
       </div>
-
     </div>
-
   </div>
 </template>
 
@@ -89,7 +87,6 @@
 
 .my-card {
   background-color: white;
-  /*border-radius: 20px;*/
   padding: 32px;
   z-index: 1;
 }

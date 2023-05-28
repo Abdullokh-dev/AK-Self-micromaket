@@ -50,7 +50,7 @@ import MyButton from "./MyButton.vue";
         <!-- HALF -->
         <div class="col-12 col-lg-4 col-xl-5 col-xxl-6">
           <div class="d-flex mt-5 mt-lg-4 pt-lg-2 ps-lg-5 align-items-end align-items-lg-center">
-            <img src="../assets/footer/img.png" height="56" alt="" class="ms-xl-5 footer-logo">
+            <img src="../assets/footer/img.png" height="56" alt="" class="ms-xl-5 footer-logo" draggable="false">
 
             <div class="ms-auto pb-lg-1 ms-xl-0 ms-xl-5 ps-xl-5">
               <button type="button" class="btn social p-0">

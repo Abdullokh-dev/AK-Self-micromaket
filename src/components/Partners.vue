@@ -7,7 +7,7 @@
     </div>
     <!-- Bg INDEX -->
     <div>
-      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70">
+      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
     </div>
   </div>
   <div class="row">
@@ -16,12 +16,12 @@
       <div class="brand-wheel">
         <div class="brand-slide">
           <div class="logo-div">
-            <img alt="#" src="../assets/clip/img.png" height="50">
+            <img alt="#" src="../assets/clip/img.png" height="50" draggable="false">
           </div>
         </div>
         <div class="brand-slide delay">
           <div class="logo-div">
-            <img alt="#" src="../assets/clip/img.png" height="50">
+            <img alt="#" src="../assets/clip/img.png" height="50" draggable="false">
           </div>
         </div>
       </div>
@@ -29,12 +29,12 @@
       <div class="brand-wheel">
         <div class="brand-slide">
           <div class="logo-div">
-            <img alt="#" src="../assets/clip/img_1.png" height="50">
+            <img alt="#" src="../assets/clip/img_1.png" height="50" draggable="false">
           </div>
         </div>
         <div class="brand-slide delay">
           <div class="logo-div">
-            <img alt="#" src="../assets/clip/img_1.png" height="50">
+            <img alt="#" src="../assets/clip/img_1.png" height="50" draggable="false">
           </div>
         </div>
       </div>

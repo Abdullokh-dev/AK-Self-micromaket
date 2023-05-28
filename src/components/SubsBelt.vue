@@ -13,12 +13,12 @@
           </div>
           <!-- Bg INDEX -->
           <div class="d-none d-lg-inline-block">
-            <img alt="#" class="bg-index-drop-2" src="../assets/subsidy/card-2.png" height="110">
+            <img alt="#" class="bg-index-drop-2" src="../assets/subsidy/card-2.png" height="110" draggable="false">
           </div>
         </div>
         <!-- Bg INDEX -->
         <div class="d-lg-none">
-          <img alt="#" class="bg-index-drop" src="../assets/subsidy/card.png" height="70">
+          <img alt="#" class="bg-index-drop" src="../assets/subsidy/card.png" height="70" draggable="false">
         </div>
       </div>
       <div class="col-12 col-md-6 mt-md-5 ps-lg-5 my-4">

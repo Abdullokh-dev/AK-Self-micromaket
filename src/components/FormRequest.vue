@@ -36,11 +36,11 @@ import MyButton from "./MyButton.vue";
     </div>
     <!-- Juice  -->
     <div class="d-none d-xl-block">
-      <img alt="#" class="bg-index juice" src="../assets/home/juice.png" height="238">
+      <img alt="#" class="bg-index juice" src="../assets/home/juice.png" height="238" draggable="false">
     </div>
     <!-- Pizza -->
     <div class="d-none d-xl-block">
-      <img alt="#" class="bg-index pizza" src="../assets/home/pizza.png" height="205">
+      <img alt="#" class="bg-index pizza" src="../assets/home/pizza.png" height="205" draggable="false">
     </div>
   </div>
 </template>

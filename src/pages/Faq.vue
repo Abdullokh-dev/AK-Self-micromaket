@@ -170,11 +170,6 @@
           </div>
         </div>
       </div>
-
-      <!-- Bg Image -->
-      <div class="d-none d-lg-block">
-        <img src="../assets/faq/img_2.png" class="bg-right-second" width="130" alt="" draggable="false">
-      </div>
     </div>
   </div>
 </template>
@@ -236,13 +231,6 @@ h1 > span {
 .bg-right {
   position: absolute;
   top: 20%;
-  right: 0;
-  z-index: -1;
-}
-
-.bg-right-second {
-  position: absolute;
-  bottom: 100px;
   right: 0;
   z-index: -1;
 }
