@@ -1,6 +1,5 @@
 <script setup>
 import { Splide, SplideSlide } from '@splidejs/vue-splide';
-// import '../styles/splide-sea-green.css';
 import {reactive, watch} from "vue";
 import { useWindowSize } from '@vueuse/core'
 const { width, height } = useWindowSize();
