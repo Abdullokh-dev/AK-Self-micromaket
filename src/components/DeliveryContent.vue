@@ -15,7 +15,7 @@ import MyButton from "./MyButton.vue";
           <div class="additional-info mt-4">
             This will allow you to present your products to a constant paying audience on a daily basis, who will become your potential customers.
           </div>
-          <div class="mt-4 pt-3">
+          <div class="mt-4 mb-5 pt-3">
             <MyButton text="Leave an application" class="px-4"/>
           </div>
         </div>

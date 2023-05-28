@@ -127,9 +127,7 @@ window.onscroll = function() {
                   for suppliers
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" @click="$router.push('/')">Micromarket</a></li>
-                  <li><a class="dropdown-item" href="#" @click="$router.push('/subsidy')">Subsidy system</a></li>
-                  <li><a class="dropdown-item" href="#" @click="$router.push('/faq')">FAQ</a></li>
+                  <li><a class="dropdown-item" href="#" @click="$router.push('/delivery')">Delivery</a></li>
                 </ul>
               </li>
 
