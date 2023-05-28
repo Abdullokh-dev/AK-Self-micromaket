@@ -8,12 +8,12 @@ import MyButton from "./MyButton.vue";
 
       <div class="row">
         <div class="col-12 col-lg-6">
-          <h1 class="title"><span>subsidy system</span></h1>
+          <h1 class="title"><span>for suppliers</span></h1>
           <div class="info mt-5">
-            make your employees more productive and happier
+            placement of your products in the micromarket
           </div>
           <div class="additional-info mt-4">
-            Connection of the subsidy system is an additional but not mandatory service. All connection terms are discussed individually.
+            This will allow you to present your products to a constant paying audience on a daily basis, who will become your potential customers.
           </div>
           <div class="mt-4 pt-3">
             <MyButton text="Leave an application" class="px-4"/>
@@ -21,7 +21,7 @@ import MyButton from "./MyButton.vue";
         </div>
         <div class="col-12 col-lg-6 text-center">
           <div class="image">
-            <img src="../assets/subsidy/img.png" alt="subsidy" class="ms-0 ms-lg-5" draggable="false">
+            <img src="../assets/delivery/img.png" alt="subsidy" class="ms-0 ms-lg-5" draggable="false">
           </div>
         </div>
       </div>

@@ -1,4 +1,13 @@
 <script setup>
+// Disable toggle when outside clicked
+$(window).on('click', function(event){
+  let clickOver = $(event.target)
+  if ($('.navbar .navbar-toggler').attr('aria-expanded') == 'true' && clickOver.closest('.navbar').length === 0) {
+    // Click on navbar toggler button
+    $('button[aria-expanded="true"]').click();
+  }
+});
+
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   let currentScrollPos = window.pageYOffset;
@@ -80,9 +89,7 @@ window.onscroll = function() {
                 </div>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <div><span class="toggled-item" @click="$router.push('/')">Micromarket</span></div>
-                    <div><span class="toggled-item" @click="$router.push('/subsidy')">Subsidy system</span></div>
-                    <div><span class="toggled-item" @click="$router.push('/faq')">FAQ</span></div>
+                    <div><span class="toggled-item" @click="$router.push('/delivery')">Deliver</span></div>
                   </div>
                 </div>
               </div>

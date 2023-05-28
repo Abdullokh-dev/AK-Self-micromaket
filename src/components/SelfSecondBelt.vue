@@ -10,7 +10,7 @@ import MyButton from "./MyButton.vue";
     <div class="row flex-md-row-reverse">
       <div class="col-12 col-md-6 mt-5 pt-md-5">
         <div class="title ps-4 ps-md-0">
-          To connect subsidies in your office, fill out an application.
+          to connect subsidies in your office, fill out an application.
         </div>
         <div class="text-center text-md-start my-5">
           <MyButton text="Leave an application" class="px-4"/>
