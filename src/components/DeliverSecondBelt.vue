@@ -5,7 +5,7 @@ import MyButton from "./MyButton.vue";
 
 <template>
   <div class="row my-5 d-flex justify-content-center">
-    <div class="col-11 mt-5 rounded-5 main-row ps-0">
+    <div class="col-11 mt-5 mb-5 rounded-5 main-row ps-0">
 
       <div class="row flex-md-row-reverse">
         <div class="col-12 col-md-6 mt-5 pt-md-5">
