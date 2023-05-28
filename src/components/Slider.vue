@@ -7,7 +7,7 @@ import "../styles/pagination.css";
 
 import {ref} from "vue";
 import MyButton from "./MyButton.vue";
-const plugins = ref([new Pagination({ type: 'bullet' })])
+const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration: 5000, direction: "NEXT", stopOnHover: false })])
 </script>
 
 <template>
