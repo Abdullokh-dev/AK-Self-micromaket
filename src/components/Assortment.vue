@@ -92,13 +92,15 @@
           </div>
         </div>
 
-        <div class="col-6 d-flex justify-content-center">
-          <button type="button" class="btn btn-dark rounded-pill m-3">
-            I want a free tasting
-          </button>
-          <button type="button" class="btn btn-dark rounded-pill m-3">
-            download the presentation
-          </button>
+        <div class="col-12 my-4">
+          <div class="row">
+            <div class="col-12 col-md-6 text-center text-md-end">
+              <MyButton text="I want a free tasting" background="#6357AD" class="me-1 w-100" max-width="396" />
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-start mt-4 mb-4 mt-md-0">
+              <MyButton text="download the presentation" class="w-100 ms-1" max-width="396" />
+            </div>
+          </div>
         </div>
 
       </div>
@@ -108,8 +110,10 @@
 </template>
 
 <script>
+import MyButton from "./MyButton.vue";
 export default {
-  name: "Assortment"
+  name: "Assortment",
+  components: {MyButton}
 }
 </script>
 
@@ -162,14 +166,5 @@ export default {
   font-weight: 400;
   line-height: 19px;
   text-align: left;
-}
-
-.btn-dark {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 29px;
-  text-align: center;
-  height: 68px;
-  padding: 0 40px 0 40px;
 }
 </style>

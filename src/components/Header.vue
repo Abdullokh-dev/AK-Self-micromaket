@@ -43,13 +43,12 @@ window.onscroll = function() {
               <rect y="11.9473" width="39.9585" height="3.4842" rx="1.7421" fill="black"/>
               <rect y="23.8936" width="39.9585" height="3.4842" rx="1.7421" fill="black"/>
             </svg>
-
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Mobile Version -->
             <div class="accordion accordion-flush d-flex-block d-xl-none mb-4" id="accordionFlushExample">
               <div class="accordion-item">
-                <h2 class="accordion-header">
+                <div class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                     for clients
                   </button>
@@ -58,7 +57,7 @@ window.onscroll = function() {
                       <div class="own-hr"></div>
                     </div>
                   </div>
-                </h2>
+                </div>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
                     <div><span class="toggled-item">Micromarket</span></div>
@@ -68,7 +67,7 @@ window.onscroll = function() {
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header">
+                <div class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                     for suppliers
                   </button>
@@ -77,7 +76,7 @@ window.onscroll = function() {
                       <div class="own-hr"></div>
                     </div>
                   </div>
-                </h2>
+                </div>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
                     <div><span class="toggled-item">Micromarket</span></div>
@@ -87,11 +86,11 @@ window.onscroll = function() {
                 </div>
               </div>
               <div class="accordion-item">
-                <h2 class="accordion-header">
+                <div class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
                     contacts
                   </button>
-                </h2>
+                </div>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
                     <div><span class="toggled-item">Micromarket</span></div>

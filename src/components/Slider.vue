@@ -6,6 +6,7 @@ import { Pagination, AutoPlay } from "@egjs/flicking-plugins";
 import "../styles/pagination.css";
 
 import {ref} from "vue";
+import MyButton from "./MyButton.vue";
 const plugins = ref([new Pagination({ type: 'bullet' })])
 </script>
 
@@ -109,9 +110,7 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
                 </span>
               </div>
               <div class="d-none d-lg-block">
-                <button type="button" class="btn px-4 rounded-pill mt-4">
-                  leave an application
-                </button>
+                <MyButton text="leave an application" background="#31C2B0" class="mt-4 px-4" />
               </div>
             </div>
             <!-- Third half 50% -->
@@ -205,6 +204,7 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
 
 .rounded-pill {
   background-color: #6357AD;
+  height: 64px;
   color: white;
   font-size: 24px;
   font-weight: 700;

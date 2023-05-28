@@ -1,7 +1,5 @@
 <script setup>
-// toDo
-import { defineComponent } from 'vue'
-import YouTube from 'vue3-youtube'
+import MyButton from "./MyButton.vue";
 </script>
 
 <template>
@@ -21,7 +19,6 @@ import YouTube from 'vue3-youtube'
           class="video-card"
           id="videoCard"
           src="https://youtu.be/3GsKVNkwS1o"
-          @ready="onReady"
           ref="youtube" />
       </div>
 
@@ -40,9 +37,7 @@ import YouTube from 'vue3-youtube'
         </div>
 
         <div class="d-flex justify-content-center justify-content-lg-start">
-          <button type="button" class="btn btn-dark ms-0 ms-md-5 ms-xl-0 rounded-pill my-4 my-lg-0 mt-lg-5 px-4">
-            Download the presentation
-          </button>
+          <MyButton text="Download the presentation" class="ms-0 ms-md-5 ms-xl-0 my-4 my-lg-0 mt-lg-5 px-4"/>
         </div>
       </div>
     </div>
@@ -79,16 +74,6 @@ import YouTube from 'vue3-youtube'
   font-weight: 400;
   line-height: 28px;
   max-width: 430px;
-}
-
-.btn-dark {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 44px;
-  text-align: center;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .video-card {

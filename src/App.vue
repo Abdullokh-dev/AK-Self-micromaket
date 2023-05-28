@@ -2,7 +2,7 @@
 
 import Slider from "./components/Slider.vue";
 import Header from "./components/Header.vue";
-// import WhoWe from "./components/WhoWe.vue";
+import WhoWe from "./components/WhoWe.vue";
 import Belt from "./components/Belt.vue";
 import Advantages from "./components/Advantages.vue";
 import Assortment from "./components/Assortment.vue";
@@ -20,7 +20,7 @@ import Footer from "./components/Footer.vue";
 <div class="container-fluid main-container">
   <Header />
   <Slider />
-<!--  <WhoWe />-->
+  <WhoWe />
   <Belt />
   <Advantages />
   <Assortment />
@@ -40,11 +40,8 @@ import Footer from "./components/Footer.vue";
    font-weight: 700;
  }
 
- button, input {
-   border: none;
- }
-
  input {
+   border: none;
    outline: none;
  }
 
