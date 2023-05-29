@@ -2,7 +2,7 @@ version: '3'
 
 services:
     node:
-        container_name: ${DOCKER_PROJECT_NAME}_node
+        container_name: self-micro-maker_node
         image: node:16.12-buster
         volumes:
           - ./:var/www/html
