@@ -178,7 +178,7 @@ const download = (url) => {
         <div class="col-12 my-4 mt-5">
           <div class="row">
             <div class="col-12 col-md-6 text-center text-md-end">
-              <MyButton text="I want a free tasting" background="#6357AD" class="me-1 w-100" max-width="396" />
+              <MyButton text="I want a free tasting" background="#6357AD" class="me-1 w-100" max-width="396" data-bs-toggle="modal" data-bs-target="#staticBackdrop" />
             </div>
             <div class="col-12 col-md-6 text-center text-md-start mt-4 mb-4 mt-md-0">
               <MyButton text="download the assortment" @click="download('assortment.pdf')" class="w-100 ms-1" max-width="396" />
@@ -243,6 +243,7 @@ const download = (url) => {
   line-height: 15px;
   text-align: left;
 }
+
 @media only screen and (min-width: 576px) {
   .card {
     border-radius: 20px;

@@ -33,7 +33,7 @@ import MyButton from "./MyButton.vue";
             </div>
 
             <div class="d-none d-lg-block col-2 pt-1 pb-4">
-              <MyButton text="request a call back" height="51" class="px-4 mt-4"/>
+              <MyButton text="request a call back" height="51" class="px-4 mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
             </div>
 
             <div class="col-12 col-lg-2 d-lg-none">
