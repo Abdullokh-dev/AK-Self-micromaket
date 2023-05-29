@@ -11,6 +11,10 @@ const router = createRouter({
       component: Home
     },
     {
+      path: '/:pathMatch(.*)*',
+      component: Home
+    },
+    {
       path: '/subsidy',
       component: () => import('../pages/Subsidy.vue')
     },
