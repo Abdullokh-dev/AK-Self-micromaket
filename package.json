@@ -12,13 +12,13 @@
     "@egjs/vue3-flicking": "^4.10.7",
     "@splidejs/vue-splide": "^0.6.12",
     "@vueuse/core": "^10.1.2",
-    "vue": "^3.3.2",
-    "vue-router": "^4.1.6",
     "aos": "^3.0.0-beta.6",
     "axios": "^1.3.4",
+    "file-saver": "^2.0.5",
+    "vue": "^3.3.2",
+    "vue-router": "^4.1.6",
     "vue3-youtube": "^0.1.9",
-    "vueperslides": "^3.5.1",
-    "file-saver": "^2.0.5"
+    "vueperslides": "^3.5.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.2.3",

@@ -2,6 +2,17 @@
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import MyButton from "./components/MyButton.vue";
+
+const foo = () => {
+  $.ajax({
+    url: '/mail.php',
+    type: 'POST',
+    data: {id:id},
+    success: function(data) {
+      console.log(data);
+    }
+  });
+}
 </script>
 
 <template>
@@ -44,7 +55,7 @@ import MyButton from "./components/MyButton.vue";
             </div>
 
             <div class="mt-4">
-              <MyButton text="Send" type="submit" class="my-3 px-4"/>
+              <MyButton text="Send" type="submit" class="my-3 px-4" @click="foo"/>
             </div>
           </form>
         </div>
