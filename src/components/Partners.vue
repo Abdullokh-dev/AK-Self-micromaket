@@ -10,31 +10,35 @@
       <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
     </div>
   </div>
-  <div class="row">
-    <div class="col p-0">
+  <div class="row d-flex justify-content-center main-row">
+    <div class="col p-0 d-flex justify-content-center">
       <!-- First Belt -->
       <div class="brand-wheel">
         <div class="brand-slide">
           <div class="logo-div">
-            <img alt="#" src="../assets/clip/img.png" height="50" draggable="false">
+            <img alt="#" src="../assets/clip/img.png" height="50" draggable="false" width="1500">
           </div>
         </div>
         <div class="brand-slide delay">
           <div class="logo-div">
-            <img alt="#" src="../assets/clip/img.png" height="50" draggable="false">
+            <img alt="#" src="../assets/clip/img.png" height="50" draggable="false" width="1500">
           </div>
         </div>
       </div>
-      <!-- Second Belt -->
+    </div>
+  </div>
+  <div class="row d-flex justify-content-center main-row pb-5">
+    <div class="col p-0 d-flex justify-content-center">
+      <!-- First Belt -->
       <div class="brand-wheel">
         <div class="brand-slide">
           <div class="logo-div">
-            <img alt="#" src="../assets/clip/img_1.png" height="50" draggable="false">
+            <img alt="#" src="../assets/clip/img_1.png" height="50" draggable="false" width="1500">
           </div>
         </div>
         <div class="brand-slide delay">
           <div class="logo-div">
-            <img alt="#" src="../assets/clip/img_1.png" height="50" draggable="false">
+            <img alt="#" src="../assets/clip/img_1.png" height="50" draggable="false" width="1500">
           </div>
         </div>
       </div>
@@ -75,6 +79,8 @@
   flex-direction: row;
   align-items: center;
   display: flex;
+  width: 100%;
+  max-width: 1600px;
   overflow: hidden;
   position: relative;
   height: 100px;
@@ -119,10 +125,6 @@
 .brand-slide.delay {
   transform: translateX(100%);
   animation-name: slidelogo2;
-}
-
-.brand-wheel:hover .brand-slide {
-  animation-play-state: paused;
 }
 
 .logo-div {
