@@ -2,23 +2,6 @@
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import MyButton from "./components/MyButton.vue";
-import {ref} from "vue";
-const name = ref('');
-const phone = ref('');
-const email = ref('');
-const comment = ref('');
-const sendMsg = () => Email.send({
-  Username : "hamzayevabdulloh452@gmail.com",
-  Password : "FAEA429B5CF0038E98805D7255EE6E04FE63",
-  Host: "smtp.elasticemail.com",
-  To : 'abdulloh3525dev@gmail.com',
-  From : "hamzayevabdulloh452@gmail.com",
-  Subject : "Application from self-micromarket.com: instalation",
-  Body : '<h1>' + name.value + '</h1>' + '<h2>' + phone.value + '</h2>' + '<h2>' + email.value + '</h2>' + '<h3>' + comment.value + '</h3>'
-}).then( () => {
-    alert("sent successfully")
-  }
-);
 </script>
 
 <template>
