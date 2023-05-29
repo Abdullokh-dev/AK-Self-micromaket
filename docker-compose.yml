@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+    node:
+        container_name: ${DOCKER_PROJECT_NAME}_node
+        image: node:16.12-buster
+        volumes:
+          - ./:var/www/html
+        working_dir: /var/www/html
+        command: /bin/sh -c "
+            echo 'npm version:' &&
+            npm -v &&
+            echo 'node version:' &&
+            node -v &&
+            echo '--------' &&
+            npm install &&
+            npm run build"
