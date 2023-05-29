@@ -16,12 +16,12 @@ import MyButton from "./components/MyButton.vue";
           <button type="button" class="btn-close pt-4 pe-4" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body pt-0">
-          <form class="was-validated text-center" @submit.prevent="sendMsg">
+          <form class="was-validated text-center" method="post" action="../mail.php">
             <div class="modal-title">
               leave an application
             </div>
             <div class="px-4 mt-3">
-              <input type="text" id="name" placeholder="Name" class="ps-3 form-control" required v-model="name" />
+              <input type="text" id="name" placeholder="Name" name="name" class="ps-3 form-control" required v-model="name" />
             </div>
 
             <div class="px-4 mt-3">
@@ -29,11 +29,11 @@ import MyButton from "./components/MyButton.vue";
             </div>
 
             <div class="px-4 mt-3">
-              <input type="email" placeholder="Email" class="ps-3 form-control" required v-model="email"/>
+              <input type="email" placeholder="Email" class="ps-3 form-control" name="email" required v-model="email"/>
             </div>
 
             <div class="px-4 mt-3">
-              <input type="text" placeholder="Comment" class="ps-3 form-control" required v-model="comment" />
+              <input type="text" placeholder="Comment" class="ps-3 form-control" name="comment" required v-model="comment" />
             </div>
 
             <div class="d-flex justify-content-start mt-3">
