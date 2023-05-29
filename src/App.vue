@@ -5,12 +5,7 @@ import MyButton from "./components/MyButton.vue";
 
 const foo = () => {
   $.ajax({
-    url: '/mail.php',
-    type: 'POST',
-    data: {id:id},
-    success: function(data) {
-      console.log(data);
-    }
+    url: '/mail.php'
   });
 }
 </script>
