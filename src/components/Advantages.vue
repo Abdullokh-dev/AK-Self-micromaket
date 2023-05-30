@@ -8,7 +8,7 @@
     <div class="p-0">
       <img alt="#" class="bg-index" src="../assets/home/cake.png" draggable="false">
     </div>
-    <div class="col text-center main-title">
+    <div class="col text-center main-title" id="advantages">
       Advantages
     </div>
     <!-- Bg INDEX -->

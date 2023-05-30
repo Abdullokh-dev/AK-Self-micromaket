@@ -37,8 +37,9 @@ const emailSend = () => {
 <div class="container-fluid main-container">
   <Header />
     <router-view />
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content rounded-4">
         <div class="modal-header">
@@ -80,7 +81,6 @@ const emailSend = () => {
       </div>
     </div>
   </div>
-
   <Footer />
 </div>
 </template>

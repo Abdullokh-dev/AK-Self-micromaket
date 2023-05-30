@@ -70,7 +70,7 @@ window.onscroll = function() {
                 </div>
                 <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <div><span class="toggled-item" @click="$router.push('/')">Micromarket</span></div>
+                    <div><a class="toggled-item" href="#advantages">Micromarket</a></div>
                     <div><span class="toggled-item" @click="$router.push('/subsidy')">Subsidy system</span></div>
                     <div><span class="toggled-item" @click="$router.push('/faq')">FAQ</span></div>
                   </div>
@@ -101,7 +101,7 @@ window.onscroll = function() {
                 </div>
                 <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <div><span class="toggled-item" @click="$router.push('/')">Micromarket</span></div>
+                    <div><a class="toggled-item" href="#advantages">Micromarket</a></div>
                     <div><span class="toggled-item" @click="$router.push('/subsidy')">Subsidy system</span></div>
                     <div><span class="toggled-item" @click="$router.push('/faq')">FAQ</span></div>
                   </div>
@@ -116,7 +116,7 @@ window.onscroll = function() {
                   for clients
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" @click="$router.push('/')" draggable="false">Micromarket</a></li>
+                  <li><a class="dropdown-item" href="#advantages" draggable="false">Micromarket</a></li>
                   <li><a class="dropdown-item" href="#" @click="$router.push('/subsidy')" draggable="false">Subsidy system</a></li>
                   <li><a class="dropdown-item" href="#" @click="$router.push('/faq')" draggable="false">FAQ</a></li>
                 </ul>
