@@ -1,5 +1,32 @@
 <script setup>
 import MyButton from "./MyButton.vue";
+import md5 from 'md5';
+const obj = reactive({
+  name: '',
+  email: '',
+  text: '',
+  h: ''
+})
+import axios from "axios";
+import {reactive, ref} from "vue";
+
+const emailSend = () => {
+  obj.h = md5(obj.name + obj.email + obj.text + 'self-micromarket.com')
+  axios.post("https://self-micromarket.com/send.php", obj,{
+    headers: {
+      'content-type': 'multipart/form-data'
+    }
+  })
+    .then(function (response) {
+      console.log(response);
+      obj.name = '';
+      obj.email = '';
+      obj.text = '';
+    })
+    .catch(function (error) {
+      console.warn(error);
+    });
+}
 </script>
 
 <template>
@@ -17,18 +44,18 @@ import MyButton from "./MyButton.vue";
         </div>
 
         <div class="col-12 col-md-6 ps-lg-5 mt-2 mt-md-5 pt-md-4">
-          <form>
+          <form @submit.prevent="emailSend">
             <div class="mb-3">
-              <input type="text" class="ps-4" placeholder="name">
+              <input type="text" class="form-control ps-4" placeholder="name" v-model="obj.name" required>
             </div>
             <div class="mb-3">
-              <input type="email" class="ps-4" placeholder="email">
+              <input type="email" class="form-control ps-4" placeholder="email" v-model="obj.email" required>
             </div>
             <div class="mb-3">
-              <input type="text" class="ps-4" placeholder="text">
+              <input type="text" class="form-control ps-4" placeholder="text" v-model="obj.text" required>
             </div>
             <div class="text-center">
-              <MyButton text="request a call back" class="my-3 mb-5 px-4 w-full"/>
+              <MyButton type="submit" text="request a call back" class="my-3 mb-5 px-4 w-full"/>
             </div>
           </form>
         </div>

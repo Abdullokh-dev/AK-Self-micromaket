@@ -1,15 +1,4 @@
 <script setup>
-
-  // Note: I skipped the components here
-
-const scrollMeTo = (id)  => {
-  let element = document.getElementById(id)
-  // Calculate position to scroll to
-
-  const y = element.getBoundingClientRect().top + window.pageYOffset;
-  window.scrollTo({top: y, behavior: 'smooth'});
-}
-
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import MyButton from "./components/MyButton.vue";
@@ -21,9 +10,6 @@ const obj = reactive({
   text: '',
   h: ''
 })
-const name = ref('hello');
-const email = ref('');
-const text = ref('');
 import axios from "axios";
 import {reactive, ref} from "vue";
 
@@ -36,6 +22,10 @@ const emailSend = () => {
   })
     .then(function (response) {
       console.log(response);
+      obj.name = '';
+      obj.phone = '';
+      obj.email = '';
+      obj.text = '';
     })
     .catch(function (error) {
       console.warn(error);
