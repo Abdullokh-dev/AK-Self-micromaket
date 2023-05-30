@@ -2,6 +2,10 @@
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import MyButton from "./components/MyButton.vue";
+const submitted = ref(false)
+const back = () => {
+  submitted.value = true
+}
 import md5 from 'md5';
 const obj = reactive({
   name: '',
@@ -21,14 +25,30 @@ const emailSend = () => {
     }
   })
     .then(function (response) {
-      console.log(response);
+      alert(response);
       obj.name = '';
       obj.phone = '';
       obj.email = '';
       obj.text = '';
+      submitted.value = false
     })
     .catch(function (error) {
-      console.warn(error);
+      if (error.response) {
+        // The request was made and the server responded with a status code
+        // that falls out of the range of 2xx
+        console.log(error.response.data);
+        console.log(error.response.status);
+        console.log(error.response.headers);
+      } else if (error.request) {
+        // The request was made but no response was received
+        // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
+        // http.ClientRequest in node.js
+        console.log(error.request);
+      } else {
+        // Something happened in setting up the request that triggered an Error
+        console.log('Error', error.message);
+      }
+      console.log(error.config);
     });
 }
 </script>
@@ -45,7 +65,7 @@ const emailSend = () => {
         <div class="modal-header">
           <button type="button" class="btn-close pt-4 pe-4" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body pt-0">
+        <div class="modal-body pt-0" v-if="submitted !== true">
           <form class="was-validated text-center" @submit.prevent="emailSend">
             <div class="modal-title">
               leave an application
@@ -75,6 +95,21 @@ const emailSend = () => {
 
             <div class="mt-4">
               <MyButton text="Send" type="submit" class="my-3 px-4"/>
+            </div>
+          </form>
+        </div>
+
+        <div class="modal-body pt-0 d-flex justify-content-center" v-else>
+          <form class="was-validated text-center" @submit.prevent="emailSend">
+            <div class="mt-4">
+              <div class="success-box">
+                <div class="success-msg">
+                  Your application has been sent! <br /><br />
+                  We will contact you shortly.
+                </div>
+              </div>
+
+              <MyButton text="ok!" type="submit" class="my-3 px-4" @click="back" data-bs-dismiss="modal"/>
             </div>
           </form>
         </div>
@@ -133,5 +168,16 @@ input::placeholder {
   line-height: 16px;
   text-align: left;
   margin-top: 4px;
+}
+
+.success-box {
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 34px;
+  text-align: center;
+  margin: 20px 30px 0 30px;
 }
 </style>
