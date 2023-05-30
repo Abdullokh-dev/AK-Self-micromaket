@@ -15,8 +15,8 @@ const text = ref('');
 import axios from "axios";
 import {reactive, ref} from "vue";
 
-const createUser = () => {
-  obj.h = md5(obj.name+obj.email+obj.text)
+const emailSend = () => {
+  obj.h = md5(obj.name + obj.email + obj.text + 'self-micromarket.com')
   axios.post("http://self-micromarket.com/send.php", obj)
     .then(function (response) {
       console.log(response);
@@ -39,7 +39,7 @@ const createUser = () => {
           <button type="button" class="btn-close pt-4 pe-4" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body pt-0">
-          <form class="was-validated text-center" @submit.prevent="createUser">
+          <form class="was-validated text-center" @submit.prevent="emailSend">
             <div class="modal-title">
               leave an application
             </div>
