@@ -17,7 +17,7 @@ import {reactive, ref} from "vue";
 
 const emailSend = () => {
   obj.h = md5(obj.name + obj.email + obj.text + 'self-micromarket.com')
-  axios.post("https://self-micromarket.com/send.php", {obj},{
+  axios.post("https://self-micromarket.com/send.php", obj,{
     headers: {
       'content-type': 'multipart/form-data'
     }
