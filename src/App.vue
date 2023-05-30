@@ -2,6 +2,29 @@
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import MyButton from "./components/MyButton.vue";
+import md5 from 'md5';
+const obj = reactive({
+  name: '',
+  email: '',
+  text: '',
+  h: ''
+})
+const name = ref('hello');
+const email = ref('');
+const text = ref('');
+import axios from "axios";
+import {reactive, ref} from "vue";
+
+const createUser = () => {
+  obj.h = md5(obj.name+obj.email+obj.text)
+  axios.post("http://self-micromarket.com/send.php", obj)
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.warn(error);
+    });
+}
 </script>
 
 <template>
@@ -16,12 +39,12 @@ import MyButton from "./components/MyButton.vue";
           <button type="button" class="btn-close pt-4 pe-4" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body pt-0">
-          <form class="was-validated text-center" method="post" action="../mail.php">
+          <form class="was-validated text-center" @submit.prevent="createUser">
             <div class="modal-title">
               leave an application
             </div>
             <div class="px-4 mt-3">
-              <input type="text" id="name" placeholder="Name" name="name" class="ps-3 form-control" required v-model="name" />
+              <input type="text" id="name" placeholder="Name" name="name" class="ps-3 form-control" required v-model="obj.name" />
             </div>
 
             <div class="px-4 mt-3">
@@ -29,11 +52,11 @@ import MyButton from "./components/MyButton.vue";
             </div>
 
             <div class="px-4 mt-3">
-              <input type="email" placeholder="Email" class="ps-3 form-control" name="email" required v-model="email"/>
+              <input type="email" placeholder="Email" class="ps-3 form-control" name="email" required v-model="obj.email"/>
             </div>
 
             <div class="px-4 mt-3">
-              <input type="text" placeholder="Comment" class="ps-3 form-control" name="comment" required v-model="comment" />
+              <input type="text" placeholder="Comment" class="ps-3 form-control" name="comment" required v-model="obj.text" />
             </div>
 
             <div class="d-flex justify-content-start mt-3">
