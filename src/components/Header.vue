@@ -2,7 +2,7 @@
 // Disable toggle when outside clicked
 $(window).on('click', function(event){
   let clickOver = $(event.target)
-  if ($('.navbar .navbar-toggler').attr('aria-expanded') == 'true' && clickOver.closest('.navbar').length === 0) {
+  if ($('.navbar .navbar-toggler').attr('aria-expanded') === 'true' && clickOver.closest('.navbar').length === 0) {
     // Click on navbar toggler button
     $('button[aria-expanded="true"]').click();
   }
@@ -101,30 +101,20 @@ window.onscroll = function() {
                   for clients
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#advantages" draggable="false">Micromarket</a></li>
-                  <li><a class="dropdown-item" href="#" @click="$router.push('/subsidy')" draggable="false">Subsidy system</a></li>
-                  <li><a class="dropdown-item" href="#" @click="$router.push('/faq')" draggable="false">FAQ</a></li>
+                  <li><a class="dropdown-item" href="/#advantages" draggable="false">Micromarket</a></li>
+                  <li><a class="dropdown-item" @click="$router.push('/subsidy')" draggable="false">Subsidy system</a></li>
+                  <li><a class="dropdown-item" @click="$router.push('/faq')" draggable="false">FAQ</a></li>
                 </ul>
               </li>
 
               <li class="nav-item dropdown ms-lg-4">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" draggable="false">
+                <a class="nav-link dropdown-toggle" @click="$router.push('/delivery')" role="button" data-bs-toggle="dropdown" aria-expanded="false" draggable="false">
                   for suppliers
                 </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" @click="$router.push('/delivery')" draggable="false">Delivery</a></li>
-                </ul>
               </li>
 
               <li class="nav-item dropdown ms-lg-4">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" draggable="false">
-                  contacts
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#" @click="$router.push('/')" draggable="false">Micromarket</a></li>
-                  <li><a class="dropdown-item" href="#" @click="$router.push('/subsidy')" draggable="false">Subsidy system</a></li>
-                  <li><a class="dropdown-item" href="#" @click="$router.push('/faq')" draggable="false">FAQ</a></li>
-                </ul>
+                <a class="nav-link ms-3 ps-1" href="#footer" role="button" draggable="false">contacts</a>
               </li>
             </ul>
 
@@ -187,6 +177,10 @@ a.dropdown-item:hover {
 
 a.nav-link.dropdown-toggle::after {
   display: none;
+}
+
+.nav-link {
+  color: #6357AD;
 }
 
 .dropdown-menu[data-bs-popper] {
