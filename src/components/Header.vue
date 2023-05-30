@@ -68,43 +68,28 @@ window.onscroll = function() {
                     </div>
                   </div>
                 </div>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div id="flush-collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionFlushExample">
                   <div class="accordion-body">
-                    <div><a class="toggled-item" href="#advantages">Micromarket</a></div>
+                    <div><a class="toggled-item" href="/#advantages">Micromarket</a></div>
                     <div><span class="toggled-item" @click="$router.push('/subsidy')">Subsidy system</span></div>
                     <div><span class="toggled-item" @click="$router.push('/faq')">FAQ</span></div>
                   </div>
                 </div>
               </div>
+
               <div class="accordion-item">
-                <div class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    for suppliers
-                  </button>
+                <div class="accordion-header mt-3">
+                  <span class="my-link ms-3 ps-1" href="" role="button" @click="$router.push('/delivery')">for suppliers</span>
                   <div class="row d-flex justify-content-center">
                     <div class="col mx-3">
-                      <div class="own-hr"></div>
+                      <div class="mt-3 own-hr"></div>
                     </div>
                   </div>
                 </div>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <div><span class="toggled-item" @click="$router.push('/delivery')">Deliver</span></div>
-                  </div>
-                </div>
               </div>
               <div class="accordion-item">
-                <div class="accordion-header">
-                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                    contacts
-                  </button>
-                </div>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                  <div class="accordion-body">
-                    <div><a class="toggled-item" href="#advantages">Micromarket</a></div>
-                    <div><span class="toggled-item" @click="$router.push('/subsidy')">Subsidy system</span></div>
-                    <div><span class="toggled-item" @click="$router.push('/faq')">FAQ</span></div>
-                  </div>
+                <div class="accordion-header mt-3">
+                  <a class="my-link ms-3 ps-1" href="#footer" role="button">contacts</a>
                 </div>
               </div>
             </div>
@@ -175,8 +160,13 @@ window.onscroll = function() {
   font-size: 24px;
 }
 
-a {
+.my-link {
   color: #6357AD !important;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 a:hover {
@@ -259,15 +249,6 @@ ul.dropdown-menu.show {
   border: none;
 }
 
-.accordion-button::after {
-  background-image: none;
-  transform: none;
-}
-
-.accordion-button:not(.collapsed)::after {
-  background-image: url("../assets/home/toogler.png");
-}
-
 .own-hr {
   border-top: 1px solid #6357AD;
   width: 100%;
@@ -280,7 +261,7 @@ ul.dropdown-menu.show {
   cursor: pointer;
 }
 
-.toggled-item:hover {
+.toggled-item:hover, .my-link:hover {
   color: #6357AD;
 }
 
