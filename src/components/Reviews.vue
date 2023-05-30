@@ -35,7 +35,7 @@ watch(
   </div>
 
   <div class="row d-flex justify-content-center">
-    <div class="col-12 col-sm-10 col-md-10 col-md-12 d-flex justify-content-between"  style="max-width: 1800px">
+    <div class="col-11 col-sm-9 col-md-11 col-lg-10 p-0 d-flex justify-content-between"  style="max-width: 1800px">
 
       <Splide :options="{ perPage: slideNum.number, width: '100%' }" aria-label="My Favorite Images">
         <SplideSlide>
@@ -131,6 +131,10 @@ watch(
 
 .splide__slide {
   padding: 15px;
+}
+
+.splide {
+  padding: 20px 0 50px 0;
 }
 
 @media only screen and (min-width: 768px) {
