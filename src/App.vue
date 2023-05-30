@@ -1,4 +1,15 @@
 <script setup>
+
+  // Note: I skipped the components here
+
+const scrollMeTo = (id)  => {
+  let element = document.getElementById(id)
+  // Calculate position to scroll to
+
+  const y = element.getBoundingClientRect().top + window.pageYOffset;
+  window.scrollTo({top: y, behavior: 'smooth'});
+}
+
 import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import MyButton from "./components/MyButton.vue";
@@ -7,6 +18,7 @@ const obj = reactive({
   name: '',
   email: '',
   text: '',
+  phone: '',
   h: ''
 })
 const name = ref('hello');
@@ -16,7 +28,7 @@ import axios from "axios";
 import {reactive, ref} from "vue";
 
 const emailSend = () => {
-  obj.h = md5(obj.name + obj.email + obj.text + 'self-micromarket.com')
+  obj.h = md5(obj.name + obj.email + obj.text + obj.phone + 'self-micromarket.com')
   axios.post("https://self-micromarket.com/send.php", obj,{
     headers: {
       'content-type': 'multipart/form-data'
@@ -52,7 +64,7 @@ const emailSend = () => {
             </div>
 
             <div class="px-4 mt-3">
-              <input type="text" placeholder="Phone" class="ps-3 form-control" required v-model="phone"/>
+              <input type="text" placeholder="Phone" class="ps-3 form-control" required v-model="obj.phone"/>
             </div>
 
             <div class="px-4 mt-3">
