@@ -16,9 +16,9 @@ import MyButton from "./components/MyButton.vue";
 import md5 from 'md5';
 const obj = reactive({
   name: '',
+  phone: '',
   email: '',
   text: '',
-  phone: '',
   h: ''
 })
 const name = ref('hello');
@@ -28,7 +28,7 @@ import axios from "axios";
 import {reactive, ref} from "vue";
 
 const emailSend = () => {
-  obj.h = md5(obj.name + obj.email + obj.text + obj.phone + 'self-micromarket.com')
+  obj.h = md5(obj.name + obj.phone + obj.email + obj.text + 'self-micromarket.com')
   axios.post("https://self-micromarket.com/send.php", obj,{
     headers: {
       'content-type': 'multipart/form-data'
