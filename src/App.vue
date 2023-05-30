@@ -4,7 +4,7 @@ import Footer from "./components/Footer.vue";
 import MyButton from "./components/MyButton.vue";
 const submitted = ref(false)
 const back = () => {
-  submitted.value = true
+  submitted.value = false
 }
 import md5 from 'md5';
 const obj = reactive({
@@ -30,25 +30,18 @@ const emailSend = () => {
       obj.phone = '';
       obj.email = '';
       obj.text = '';
-      submitted.value = false
+      submitted.value = true
     })
     .catch(function (error) {
-      if (error.response) {
-        // The request was made and the server responded with a status code
-        // that falls out of the range of 2xx
-        console.log(error.response.data);
-        console.log(error.response.status);
-        console.log(error.response.headers);
-      } else if (error.request) {
-        // The request was made but no response was received
-        // `error.request` is an instance of XMLHttpRequest in the browser and an instance of
-        // http.ClientRequest in node.js
-        console.log(error.request);
+      if(error.message === 'Network Error') {
+        obj.name = '';
+        obj.phone = '';
+        obj.email = '';
+        obj.text = '';
+        submitted.value = true
       } else {
-        // Something happened in setting up the request that triggered an Error
-        console.log('Error', error.message);
+        alert('another problem')
       }
-      console.log(error.config);
     });
 }
 </script>
