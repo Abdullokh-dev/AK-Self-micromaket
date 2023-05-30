@@ -1,40 +1,14 @@
 <script setup>
-import {onMounted, ref} from "vue";
+import YouTube from 'vue3-youtube'
 import MyButton from "./MyButton.vue";
 import axios from "axios";
 import {saveAs} from 'file-saver';
-const result = ref()
-const youtubeURL = ref('https://youtu.be/3GsKVNkwS1o')
 const download = (url) => {
   axios.get(url, {responseType: 'blob'})
     .then(response => {
       saveAs(response.data, 'Presentation self');
     })
 }
-
-const loadURL = () => {
-  const youtubeEmbedTemplate = "https://www.youtube.com/embed/";
-  const url = youtubeURL.value.split(
-    /(vi\/|v%3D|v=|\/v\/|youtu\.be\/|\/embed\/)/
-  );
-  console.log("url", url);
-  const YId =
-    undefined !== url[2] ? url[2].split(/[^0-9a-z_/\\-]/i)[0] : url[0];
-  console.log("YId", YId);
-  if (YId === url[0]) {
-    console.log("not a youtube link");
-  } else {
-    console.log("it's  a youtube video");
-  }
-  const topOfQueue = youtubeEmbedTemplate.concat(YId);
-  console.log("topOfQueue", topOfQueue);
-  result.value = topOfQueue;
-  youtubeURL.value = "";
-}
-
-onMounted(() =>{
-  loadURL()
-})
 </script>
 
 <template>
@@ -50,7 +24,11 @@ onMounted(() =>{
       </div>
 
       <div class="col-12 col-lg-6 d-flex justify-content-center">
-        <iframe width="560" height="315" :src="result" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <YouTube
+          id="videoCard"
+          src="https://youtu.be/3GsKVNkwS1o"
+          ref="youtube"
+        />
       </div>
 
       <div class="col-12 col-lg-6 mt-2 mt-lg-0">
