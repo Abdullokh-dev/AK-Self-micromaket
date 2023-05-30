@@ -16,7 +16,7 @@ import MyButton from "./MyButton.vue";
             Connection of the subsidy system is an additional but not mandatory service. All connection terms are discussed individually.
           </div>
           <div class="mt-4 pt-3">
-            <MyButton text="Leave an application" class="px-4"/>
+            <MyButton text="leave an application" class="px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
           </div>
         </div>
         <div class="col-12 col-lg-6 text-center">

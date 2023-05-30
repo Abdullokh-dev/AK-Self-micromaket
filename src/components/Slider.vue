@@ -80,7 +80,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
               </div>
             </div>
             <!--Second Slide mobile button-->
-            <div class="row align-items-end">
+            <div class="row align-items-end m-0">
               <div class="col-12 d-block d-lg-none text-center mb-5 pb-4">
                 <button type="button" class="btn px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   leave an application
@@ -124,9 +124,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             <!--Third mobile button -->
             <div class="col-12 text-center">
               <div class="d-block d-lg-none">
-                <button type="button" class="btn px-4 rounded-pill mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  leave an application
-                </button>
+                <MyButton text="leave an application" background="#31C2B0" class="mt-4 px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" />
               </div>
             </div>
           </div>

@@ -16,7 +16,7 @@ import MyButton from "./MyButton.vue";
             This will allow you to present your products to a constant paying audience on a daily basis, who will become your potential customers.
           </div>
           <div class="mt-4 mb-5 pt-3">
-            <MyButton text="Leave an application" class="px-4"/>
+            <MyButton text="leave an application" class="px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
           </div>
         </div>
         <div class="col-12 col-lg-6 text-center">

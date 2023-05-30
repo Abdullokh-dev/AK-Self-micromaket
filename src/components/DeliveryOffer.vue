@@ -9,7 +9,7 @@
     </div>
     <!-- Bg INDEX -->
     <div>
-      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70">
+      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
     </div>
   </div>
 

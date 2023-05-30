@@ -10,10 +10,10 @@ import MyButton from "./MyButton.vue";
       <div class="row flex-md-row-reverse">
         <div class="col-12 col-md-6 mt-5 pt-md-5">
           <div class="title ps-4 mt-xl-4 ps-md-0">
-            Leave an application for cooperation, advertising, and promotion of your product and we will contact you!
+            leave an application for cooperation, advertising, and promotion of your product and we will contact you!
           </div>
           <div class="text-center text-md-start my-5">
-            <MyButton text="Leave an application" class="px-4"/>
+            <MyButton text="leave an application" class="px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" />
           </div>
         </div>
 

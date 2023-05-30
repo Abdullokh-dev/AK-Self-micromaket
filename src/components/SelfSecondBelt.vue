@@ -13,7 +13,7 @@ import MyButton from "./MyButton.vue";
           to connect subsidies in your office, fill out an application.
         </div>
         <div class="text-center text-md-start my-5">
-          <MyButton text="Leave an application" class="px-4"/>
+          <MyButton text="leave an application" class="px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
         </div>
       </div>
 
