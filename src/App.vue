@@ -19,7 +19,7 @@ const emailSend = () => {
   obj.h = md5(obj.name + obj.email + obj.text + 'self-micromarket.com')
   axios.post("https://self-micromarket.com/send.php", {obj},{
     headers: {
-      'content-type': 'application/x-www-form-urlencoded'
+      'content-type': 'multipart/form-data'
     }
   })
     .then(function (response) {
