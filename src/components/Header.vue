@@ -1,5 +1,4 @@
 <script setup>
-// Disable toggle when outside clicked
 $(window).on('click', function(event){
   let clickOver = $(event.target)
   if ($('.navbar .navbar-toggler').attr('aria-expanded') === 'true' && clickOver.closest('.navbar').length === 0) {
@@ -14,7 +13,7 @@ window.onscroll = function() {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-93px";
+    document.getElementById("navbar").style.top = "-100%";
   }
   prevScrollpos = currentScrollPos;
 }
@@ -24,7 +23,7 @@ window.onscroll = function() {
     <div class="col d-flex justify-content-center">
       <nav class="navbar navbar-expand-xl" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand ms-4 mt-2 mb-3" href="#" @click="$router.push('/')" draggable="false">
+          <a class="navbar-brand ms-4 mt-2 mb-3" href="#" @click="$router.push('/home')" draggable="false">
             <svg width="82" height="43" viewBox="0 0 82 43" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M8.17509 37.1136C8.88563 37.1136 9.45052 37.3238 9.86974 37.7443C10.2961 38.1647 10.5092 38.7989 10.5092 39.6469V42.9055H8.48417V39.9728C8.48417 39.5733 8.40601 39.279 8.24969 39.0898C8.10048 38.9006 7.88731 38.806 7.6102 38.806C7.30467 38.806 7.05953 38.9111 6.87478 39.1213C6.69004 39.3315 6.59767 39.6504 6.59767 40.0779V42.9055H4.57261V39.9728C4.57261 39.1949 4.28129 38.806 3.69864 38.806C3.386 38.806 3.13731 38.9111 2.95256 39.1213C2.76782 39.3315 2.67545 39.6504 2.67545 40.0779V42.9055H0.650391V37.2082H2.57953V37.8073C2.79269 37.5761 3.04493 37.4044 3.33626 37.2923C3.63469 37.1731 3.95799 37.1136 4.30616 37.1136C4.71117 37.1136 5.07355 37.1871 5.39329 37.3343C5.71304 37.4815 5.97239 37.7057 6.17134 38.0071C6.39872 37.7197 6.68649 37.499 7.03466 37.3448C7.38283 37.1907 7.76297 37.1136 8.17509 37.1136Z" fill="black"/>
               <path d="M11.7874 37.2082H13.8124V42.9055H11.7874V37.2082ZM12.7999 36.5775C12.4304 36.5775 12.132 36.4759 11.9046 36.2726C11.6773 36.0694 11.5636 35.8171 11.5636 35.5158C11.5636 35.2145 11.6773 34.9622 11.9046 34.7589C12.132 34.5557 12.4304 34.4541 12.7999 34.4541C13.1694 34.4541 13.4678 34.5522 13.6952 34.7484C13.9226 34.9376 14.0363 35.1829 14.0363 35.4842C14.0363 35.7996 13.9226 36.0624 13.6952 36.2726C13.4678 36.4759 13.1694 36.5775 12.7999 36.5775Z" fill="black"/>

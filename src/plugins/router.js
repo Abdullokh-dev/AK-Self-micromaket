@@ -7,7 +7,7 @@ const router = createRouter({
   base: import.meta.env.BASE_URL,
   routes: [
     {
-      path: '/',
+      path: '/home',
       component: Home
     },
     {

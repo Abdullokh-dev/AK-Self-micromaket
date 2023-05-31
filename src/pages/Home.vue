@@ -11,9 +11,11 @@ import HowWeWork from "../components/HowWeWork.vue";
 import FormRequest from "../components/FormRequest.vue";
 import Reviews from "../components/Reviews.vue";
 import Partners from "../components/Partners.vue";
+import Header from "../components/Header.vue";
 </script>
 
 <template>
+  <Header />
   <Slider />
   <WhoWe />
   <Belt />

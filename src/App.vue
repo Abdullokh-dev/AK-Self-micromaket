@@ -1,12 +1,15 @@
 <script setup>
-import Header from "./components/Header.vue";
 import Footer from "./components/Footer.vue";
 import MyButton from "./components/MyButton.vue";
+import axios from "axios";
+import md5 from 'md5';
+import {reactive, ref} from "vue";
 const submitted = ref(false)
+
 const back = () => {
   submitted.value = false
 }
-import md5 from 'md5';
+
 const obj = reactive({
   name: '',
   phone: '',
@@ -14,8 +17,6 @@ const obj = reactive({
   text: '',
   h: ''
 })
-import axios from "axios";
-import {reactive, ref} from "vue";
 
 const emailSend = () => {
   obj.h = md5(obj.name + obj.phone + obj.email + obj.text + 'self-micromarket.com')
@@ -48,11 +49,10 @@ const emailSend = () => {
 
 <template>
 <div class="container-fluid main-container">
-  <Header />
-    <router-view />
+  <router-view />
 
-    <!-- Modal -->
-    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <!-- Modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content rounded-4">
         <div class="modal-header">
@@ -109,6 +109,7 @@ const emailSend = () => {
       </div>
     </div>
   </div>
+  <!-- Footer -->
   <Footer />
 </div>
 </template>

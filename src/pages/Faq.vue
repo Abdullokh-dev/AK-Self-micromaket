@@ -1,7 +1,9 @@
 <script setup>
+import Header from "../components/Header.vue";
 </script>
 
 <template>
+  <Header />
   <div class="row d-flex main-row justify-content-center">
     <div class="col-12 col-md-10 main-col mb-5">
       <div class="ms-4 mb-5">
