@@ -15,7 +15,7 @@ const toggle = () => {
 }
 </script>
 <template>
-  <div class="row">
+  <div class="row" data-aos="fade-down" data-aos-delay="200" data-aos-duration="500">
     <div class="col d-flex justify-content-center">
       <nav class="navbar navbar-expand-xxl" id="navbar">
         <div class="container-fluid">

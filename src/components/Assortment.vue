@@ -12,7 +12,7 @@ const download = (url) => {
 
 <template>
   <div class="row mt-5">
-    <div class="col-12 text-center main-title">
+    <div class="col-12 text-center main-title" data-aos="flip-up">
       assortment
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
@@ -20,7 +20,7 @@ const download = (url) => {
       </div>
     </div>
     <div class="col-12 d-flex justify-content-center text-center mt-4">
-      <div class="main-description">
+      <div class="main-description" data-aos="fade-up">
         We carefully monitor the quality of our products and regularly update the micro-market assortment, selecting the
         best dishes that will suit you.
       </div>
@@ -31,7 +31,7 @@ const download = (url) => {
     <div class="col-11">
       <div class="row mt-4">
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-md-4 p-3">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-md-4 p-3" data-aos="zoom-in">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -49,7 +49,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3" data-aos="zoom-in"  data-aos-delay="300">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -67,7 +67,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3" data-aos="zoom-in"  data-aos-delay="300">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -85,7 +85,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3" data-aos="zoom-in"  data-aos-delay="300">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -103,7 +103,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3" data-aos="zoom-in"  data-aos-delay="300">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -121,7 +121,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3" data-aos="zoom-in"  data-aos-delay="300">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -139,7 +139,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3" data-aos="zoom-in"  data-aos-delay="300">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -157,7 +157,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3" data-aos="zoom-in"  data-aos-delay="300">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -177,10 +177,10 @@ const download = (url) => {
 
         <div class="col-12 my-4 mt-5">
           <div class="row">
-            <div class="col-12 col-md-6 text-center text-md-end">
+            <div class="col-12 col-md-6 text-center text-md-end" data-aos="fade-left">
               <MyButton text="I want a free tasting" background="#6357AD" class="me-1 w-100" max-width="396" data-bs-toggle="modal" data-bs-target="#staticBackdrop" />
             </div>
-            <div class="col-12 col-md-6 text-center text-md-start mt-4 mb-4 mt-md-0">
+            <div class="col-12 col-md-6 text-center text-md-start mt-4 mb-4 mt-md-0" data-aos="fade-right">
               <MyButton text="download the assortment" @click="download('assortment.pdf')" class="w-100 ms-1" max-width="396" />
             </div>
           </div>

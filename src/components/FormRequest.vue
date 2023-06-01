@@ -34,7 +34,7 @@ const emailSend = () => {
     <div class="col-11 col-xl-10">
       <div class="row text-light">
 
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6" data-aos="fade-right">
           <div class="bolder-text">
             want a micromarket in your office, but none of your colleagues want to do it?
           </div>
@@ -45,28 +45,28 @@ const emailSend = () => {
 
         <div class="col-12 col-md-6 ps-lg-5 mt-2 mt-md-5 pt-md-4">
           <form @submit.prevent="emailSend">
-            <div class="mb-3">
+            <div class="mb-3" data-aos="fade-right">
               <input type="text" class="form-control ps-4" placeholder="name" v-model="obj.name" required>
             </div>
-            <div class="mb-3">
+            <div class="mb-3" data-aos="fade-left">
               <input type="email" class="form-control ps-4" placeholder="email" v-model="obj.email" required>
             </div>
-            <div class="mb-3">
+            <div class="mb-3" data-aos="fade-right">
               <input type="text" class="form-control ps-4" placeholder="text" v-model="obj.text" required>
             </div>
             <div class="text-center">
-              <MyButton type="submit" text="request a call back" class="my-3 mb-5 px-4 w-full"/>
+              <MyButton type="submit" text="request a call back" class="my-3 mb-5 px-4 w-full" data-aos="zoom-in-up"/>
             </div>
           </form>
         </div>
       </div>
     </div>
     <!-- Juice  -->
-    <div class="d-none d-xl-block">
+    <div class="d-none d-xl-block" data-aos="fade-right">
       <img alt="#" class="bg-index juice" src="../assets/home/juice.png" height="238" draggable="false">
     </div>
     <!-- Pizza -->
-    <div class="d-none d-xl-block">
+    <div class="d-none d-xl-block" data-aos="fade-up" data-aos-delay="300">
       <img alt="#" class="bg-index pizza" src="../assets/home/pizza.png" height="205" draggable="false">
     </div>
   </div>
@@ -121,6 +121,7 @@ input::placeholder {
   }
 
   .juice {
+    position: absolute;
     bottom: -30px;
     left: 0;
   }

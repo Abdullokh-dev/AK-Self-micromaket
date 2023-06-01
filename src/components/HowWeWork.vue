@@ -3,7 +3,7 @@
 </script>
 <template>
   <div class="row mt-5">
-    <div class="col-12 text-center main-title">
+    <div class="col-12 text-center main-title" data-aos="flip-up">
       how we work?
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
@@ -15,8 +15,7 @@
   <div class="row d-flex justify-content-center">
     <div class="col-11">
       <div class="row">
-
-        <div class="col-12 col-md-6 col-xl-3 mt-3">
+        <div class="col-12 col-md-6 col-xl-3 mt-3" data-aos="fade-in" data-aos-delay="200">
           <div class="my-card">
             <div class="order-num">1</div>
             <div class="my-card-info">
@@ -24,7 +23,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-xl-3 mt-3">
+
+        <div class="col-12 col-md-6 col-xl-3 mt-3" data-aos="fade-in" data-aos-delay="200">
           <div class="my-card">
             <div class="order-num">2</div>
             <div class="my-card-info">
@@ -32,7 +32,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-xl-3 mt-3">
+
+        <div class="col-12 col-md-6 col-xl-3 mt-3" data-aos="fade-in" data-aos-delay="200">
           <div class="my-card">
             <div class="order-num">3</div>
             <div class="my-card-info">
@@ -40,7 +41,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-xl-3 mt-3">
+
+        <div class="col-12 col-md-6 col-xl-3 mt-3" data-aos="fade-in" data-aos-delay="200">
           <div class="my-card">
             <div class="order-num">4</div>
             <div class="my-card-info">
@@ -48,7 +50,8 @@
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6 col-xl-3 mt-3">
+
+        <div class="col-12 col-md-6 col-xl-3 mt-3" data-aos="fade-in" data-aos-delay="200">
           <div class="my-card">
             <div class="order-num">5</div>
             <div class="my-card-info">
@@ -56,7 +59,6 @@
             </div>
           </div>
         </div>
-
       </div>
     </div>
   </div>
@@ -90,7 +92,6 @@
   line-height: 32px;
   color: #BEE2E5;
   padding: 9px 0 0 16px;
-
 }
 
 .my-card-info {

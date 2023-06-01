@@ -3,8 +3,8 @@ import MyButton from "./MyButton.vue";
 </script>
 
 <template>
-  <div class="row main-row d-flex justify-content-center" id="footer">
-    <div class="col-11 col-sm-9 col-lg-12">
+  <div class="row d-flex justify-content-center" id="footer">
+    <div class="col-11 col-sm-9 col-lg-12 main-row">
       <div class="row flex-md-row-reverse">
         <div class="col d-lg-none">
           <div class="title text-center mt-5 mb-4">
@@ -33,7 +33,7 @@ import MyButton from "./MyButton.vue";
             </div>
 
             <div class="d-none d-lg-block col-2 pt-1 pb-4">
-              <MyButton text="request a call back" height="51" class="px-4 mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
+              <MyButton text="request a call back" height="51" class="px-4 mt-4" />
             </div>
 
             <div class="col-12 col-lg-2 d-lg-none">
@@ -109,7 +109,7 @@ import MyButton from "./MyButton.vue";
       </div>
     </div>
 
-    <div class="row bg-dark mt-3">
+    <div class="row bg-dark">
       <div class="col text-center my-2 footer-text">
         2023, Privacy policy
       </div>
@@ -118,6 +118,10 @@ import MyButton from "./MyButton.vue";
 </template>
 
 <style scoped>
+#footer {
+  background-color: white;
+}
+
 .main-row {
   background-color: #BEE2E5;
 }

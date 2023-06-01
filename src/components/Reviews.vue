@@ -25,7 +25,7 @@ watch(
 
 <template>
   <div class="row main-row">
-    <div class="col-12 text-center main-title">
+    <div class="col-12 text-center main-title" data-aos="flip-up">
       customer reviews
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
@@ -38,7 +38,7 @@ watch(
     <div class="col-11 col-sm-9 col-md-11 col-lg-10 p-0 d-flex justify-content-between"  style="max-width: 1800px">
 
       <Splide :options="{ perPage: slideNum.number, width: '100%' }" aria-label="My Favorite Images">
-        <SplideSlide>
+        <SplideSlide data-aos="zoom-in">
           <div class="rounded-5 align-items-end">
             <div class="customer-name">
               Alice James
@@ -51,7 +51,7 @@ watch(
             </div>
           </div>
         </SplideSlide>
-        <SplideSlide>
+        <SplideSlide data-aos="zoom-in">
           <div class="rounded-5">
             <div class="customer-name">
               Paul Gurok
@@ -64,7 +64,7 @@ watch(
             </div>
           </div>
         </SplideSlide>
-        <SplideSlide>
+        <SplideSlide data-aos="zoom-in">
           <div class="rounded-5">
             <div class="customer-name">
               Mary Senatorova

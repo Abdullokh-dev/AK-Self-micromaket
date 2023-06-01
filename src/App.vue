@@ -1,10 +1,20 @@
 <script setup>
-import Footer from "./components/Footer.vue";
-import MyButton from "./components/MyButton.vue";
-import axios from "axios";
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import Footer from './components/Footer.vue'
+import MyButton from './components/MyButton.vue'
+import axios from 'axios'
 import md5 from 'md5';
-import {reactive, ref} from "vue";
+import Swal from 'sweetalert2'
+import {reactive, ref} from 'vue'
 const submitted = ref(false)
+
+AOS.init({
+  delay: 100,
+  duration: 600,
+  once: false,
+  mirror: false
+});
 
 const back = () => {
   submitted.value = false
@@ -25,19 +35,34 @@ const emailSend = () => {
       'content-type': 'multipart/form-data'
     }
   })
-    .then(function (response) {
+    .then(function () {
       obj.name = '';
       obj.phone = '';
       obj.email = '';
       obj.text = '';
-      submitted.value = true
+      Swal.fire({
+        buttons: {
+          text: "OK",
+          value: true,
+          visible: true,
+          className: "",
+          closeModal: true,
+        },
+        timer: 2000,
+        icon: 'success',
+      }).then(() => {
+        submitted.value = true
+      });
     })
     .catch(function (error) {
       if(error.message === 'Network Error') {
-        submitted.value = false
-        alert('not working!!!')
-      } else {
-        alert('another problem')
+        Swal.fire({
+          title: 'network error',
+          text:   "wow",
+          icon: 'error',
+        }).then(() => {
+          submitted.value = false
+        });
       }
     });
 }
@@ -83,7 +108,7 @@ const emailSend = () => {
             </div>
 
             <div class="mt-4">
-              <MyButton text="send" type="submit" class="my-3 px-4"/>
+              <MyButton text="send" type="submit" class="my-3 px-4" data-bs-dismiss="modal"/>
             </div>
           </form>
         </div>

@@ -2,7 +2,7 @@
 </script>
 <template>
   <div class="row mt-5 main-row">
-    <div class="col-12 text-center main-title">
+    <div class="col-12 text-center main-title" data-aos="flip-up">
       our partners
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
@@ -11,7 +11,7 @@
     </div>
   </div>
   <div class="row d-flex justify-content-center main-row">
-    <div class="col p-0 d-flex justify-content-center">
+    <div class="col p-0 d-flex justify-content-center" data-aos="flip-down">
       <!-- First Belt -->
       <div class="brand-wheel">
         <div class="brand-slide">

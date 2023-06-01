@@ -15,7 +15,7 @@ const download = (url) => {
 <div class="row d-flex justify-content-center">
   <div class="col-12 col-xl-10">
     <div class="row flex-row-reverse">
-      <div class="col-12 text-center title mb-4">
+      <div class="col-12 text-center title mb-4" data-aos="flip-up">
         who are we?
         <!-- Bg INDEX -->
         <div class="d-none d-lg-block">
@@ -25,6 +25,7 @@ const download = (url) => {
 
       <div class="col-12 col-lg-6 d-flex justify-content-center">
         <YouTube
+          data-aos="fade-up"
           id="videoCard"
           src="https://youtu.be/3GsKVNkwS1o"
           ref="youtube"
@@ -34,13 +35,13 @@ const download = (url) => {
       <div class="col-12 col-lg-6 mt-2 mt-lg-0 mt-4">
         <div class="row d-flex justify-content-center justify-content-xl-start">
           <div class="col-12 col-md-11 col-lg-10">
-            <div>
-              <div class="text-bolder text-start">
+            <div data-aos="fade-up">
+              <div class="text-bolder text-start mt-3 mt-lg-0">
                 micromarket with delicious and
                 nutritious food according to your preferences
               </div>
             </div>
-            <div class="mt-4">
+            <div class="mt-4" data-aos="fade-up">
               <div class="text-bottom text-start">
                 Salads, first and hot dishes, rolls, desserts, fruits,
                 snacks, coffee, soft drinks, ice cream, and much more
@@ -49,7 +50,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="d-flex justify-content-center justify-content-lg-start">
+        <div class="d-flex justify-content-center justify-content-lg-start" data-aos="flip-up">
           <MyButton text="download the presentation" @click="download('presentation.pdf')" class="ms-0 ms-md-5 ms-xl-0 my-4 my-lg-0 mt-lg-5 px-4"/>
         </div>
       </div>

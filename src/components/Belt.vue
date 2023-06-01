@@ -3,7 +3,7 @@
     <div class="col-11 col-xl-12">
       <div class="row">
 
-        <div class="col-12 col-lg-4 p-0 text-center">
+        <div class="col-12 col-lg-4 p-0 text-center" data-aos="zoom-in">
           <div class="title">
             <div>
               №1
@@ -16,7 +16,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-4 text-center">
+        <div class="col-12 col-lg-4 text-center" data-aos="zoom-in"  data-aos-delay="100">
           <div class="title">
             1000
           </div>
@@ -27,7 +27,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-4 text-center">
+        <div class="col-12 col-lg-4 text-center" data-aos="zoom-in"  data-aos-delay="200">
           <div class="title">
             7
           </div>

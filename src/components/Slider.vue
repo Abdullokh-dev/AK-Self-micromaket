@@ -41,7 +41,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             </div>
             <!-- First half 50% -->
             <div class="col-12 col-lg-6 d-flex justify-content-center">
-                <img src="../assets/home/bottle.png" alt="#" draggable="false" class="bottle">
+                <img src="../assets/home/bottle.png" alt="#" draggable="false" class="bottle" height="509" data-aos="fade-left" data-aos-duration="1500">
             </div>
             <!-- mobile button -->
             <div class="col-12 text-center">
@@ -166,10 +166,9 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 }
 
 .bottle {
-  margin-right: -90px !important;
-  width: 100%;
-  min-width: 400px;
-  max-width: 504px;
+  margin-right: -130px !important;
+  width: 367px;
+  height: 350px;
 }
 
 .third-slide-img {
@@ -213,6 +212,15 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
   text-align: center;
 }
 
+@media only screen and (min-width: 768px) {
+  .bottle {
+    width: 100%;
+    min-width: 400px;
+    max-width: 504px;
+    height: 509px;
+  }
+}
+
 @media only screen and (min-width: 992px) {
   .vector {
     margin-top: 184px;
@@ -235,6 +243,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
   .bottle {
     margin: 127px 0 auto!important;
     min-width: 450px;
+    height: auto;
   }
 
   .second-slide {

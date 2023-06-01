@@ -6,14 +6,14 @@
   <div class="row main-row">
     <div class="col">
       <div class="row">
-        <div class="col-12 text-center main-title">
+        <div class="col-12 text-center main-title" data-aos="flip-up">
           convenience of modular systems
           <!-- Bg INDEX -->
           <div class="d-none d-lg-block">
             <img alt="#" class="bg-index" src="../assets/home/bg-index.png" height="70" draggable="false">
           </div>
         </div>
-        <div class="col-12 d-flex justify-content-center text-center">
+        <div class="col-12 d-flex justify-content-center text-center" data-aos="fade-up">
           <div class="main-description mt-4">
             The modular system allows you to create a micromarket even in the smallest space, which will harmoniously fit into any interior.
           </div>
@@ -24,7 +24,7 @@
         <div class="col-12">
           <div class="row d-flex justify-content-center">
 
-            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="100">
               <div class="title my-5">light snacks</div>
               <div class="system-container">
                 <div class="img-box system-img">
@@ -43,7 +43,7 @@
               <div class="description my-5"> from 8,6 sq.feet </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="200">
               <div class="title my-5">coffee break</div>
               <div class="system-container">
                 <div class="img-box system-img">
@@ -62,7 +62,7 @@
               <div class="description my-5">from 12,9 sq.feet</div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="300">
               <div class="title my-5">business lunch</div>
               <div class="system-container">
                 <div class="img-box system-img">
@@ -81,7 +81,7 @@
               <div class="description my-5">from 18,2 sq.feet</div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="400">
               <div class="title my-5">all inclusive</div>
               <div class="system-container">
                 <div class="img-box system-img">
@@ -99,7 +99,6 @@
               </div>
               <div class="description my-5">from 21,5 sq.feet</div>
             </div>
-
           </div>
         </div>
       </div>

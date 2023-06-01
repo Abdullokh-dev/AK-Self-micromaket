@@ -36,7 +36,7 @@ const foo = () => {
 
 <template>
   <div class="row mt-5 p-0 m-0">
-    <div class="col-12 text-center main-title p-0 m-0">
+    <div class="col-12 text-center main-title p-0 m-0" data-aos="zoom-in" data-aos-delay="100">
       completed projects
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
@@ -48,38 +48,38 @@ const foo = () => {
   <div class="row d-flex justify-content-center">
     <div class="col-11 col-md-12 p-0">
       <div class="col-12 p-0 m-0">
-        <Splide :options="options" aria-label="My Favorite Images">
+        <Splide :options="options" aria-label="My Favorite Images" data-aos="zoom-in">
           <SplideSlide @click="foo">
             <div class="image d-flex align-items-center">
               <img src="../assets/home/slide-1.png" alt="">
             </div>
           </SplideSlide>
-          <SplideSlide>
+          <SplideSlide data-aos="zoom-in">
             <div class="image">
               <img src="../assets/home/slide-2.png" alt="">
             </div>
           </SplideSlide>
-          <SplideSlide>
+          <SplideSlide data-aos="zoom-in">
             <div class="image">
               <img src="../assets/home/slide-3.png" alt="">
             </div>
           </SplideSlide>
-          <SplideSlide>
+          <SplideSlide data-aos="zoom-in">
             <div class="image">
               <img src="../assets/home/slide-4.png" alt="">
             </div>
           </SplideSlide>
-          <SplideSlide>
+          <SplideSlide data-aos="zoom-in">
             <div class="image">
               <img src="../assets/home/slide-5.png" alt="">
             </div>
           </SplideSlide>
-          <SplideSlide>
+          <SplideSlide data-aos="zoom-in">
             <div class="image">
               <img src="../assets/home/slide-6.png" alt="">
             </div>
           </SplideSlide>
-          <SplideSlide>
+          <SplideSlide data-aos="zoom-in">
             <div class="image">
               <img src="../assets/home/slide-7.png" alt="">
             </div>
