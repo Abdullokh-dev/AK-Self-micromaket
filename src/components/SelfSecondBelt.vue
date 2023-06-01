@@ -9,16 +9,16 @@ import MyButton from "./MyButton.vue";
 
     <div class="row flex-md-row-reverse">
       <div class="col-12 col-md-6 mt-5 pt-md-5">
-        <div class="title ps-4 ps-md-0">
+        <div class="title ps-4 ps-md-0" data-aos="fade-up">
           to connect subsidies in your office, fill out an application.
         </div>
-        <div class="text-center text-md-start my-5">
+        <div class="text-center text-md-start my-5" data-aos="flip-down">
           <MyButton text="leave an application" class="px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
         </div>
       </div>
 
       <div class="col-12 col-md-6 text-center">
-        <div class="mb-5 mt-md-5">
+        <div class="mb-5 mt-md-5" data-aos="flip-right">
           <img src="../assets/subsidy/wallet.png" alt="#" draggable="false">
         </div>
       </div>

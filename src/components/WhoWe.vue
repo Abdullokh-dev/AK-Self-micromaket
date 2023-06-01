@@ -12,7 +12,7 @@ const download = (url) => {
 </script>
 
 <template>
-<div class="row d-flex justify-content-center">
+  <div class="row d-flex justify-content-center">
   <div class="col-12 col-xl-10">
     <div class="row flex-row-reverse">
       <div class="col-12 text-center title mb-4" data-aos="flip-up">

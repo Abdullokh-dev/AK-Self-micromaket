@@ -8,7 +8,7 @@
       <div class="row">
 
         <div class="col-12 col-lg-4 col-xl-5 d-flex justify-content-center justify-content-xl-start mt-5 pt-4">
-          <div class="my-card mb-4">
+          <div class="my-card mb-4" data-aos="fade-zoom-in">
             <div class="card-text">
               more than 1000 micromarkets in 57 cities of world
             </div>
@@ -22,7 +22,7 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 col-xl mt-lg-5 d-md-flex justify-content-md-center">
-          <div class="list-text">
+          <div class="list-text" data-aos="fade-zoom-in" data-aos-delay="100">
             <div class="title mt-lg-4">what do we sell?</div>
             <ul class="mt-2">
               <li>
@@ -46,7 +46,7 @@
         </div>
 
         <div class="col-12 col-md-6 col-lg-4 col-xl mt-lg-5 pt-lg-3 d-md-flex justify-content-md-center">
-          <div class="list-text">
+          <div class="list-text" data-aos="fade-zoom-in" data-aos-delay="200">
             <div class="title">where do we place them?</div>
             <ul>
               <li>
@@ -81,7 +81,6 @@
     </div>
   </div>
 </template>
-
 
 <style scoped>
 .main-row {

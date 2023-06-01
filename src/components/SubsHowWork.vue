@@ -1,9 +1,10 @@
 <script setup>
+
 </script>
 
 <template>
   <div class="row">
-    <div class="col-12 text-center main-title">
+    <div class="col-12 text-center main-title" data-aos="fade-up">
       how do subsidies work?
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
@@ -16,7 +17,7 @@
     <div class="col-11">
       <div class="row">
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 p-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 p-4" data-aos="fade-zoom-in">
           <div class="my-card row">
             <div class="order-num col-12">1</div>
             <div class="my-card-info col-12">
@@ -28,7 +29,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 p-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 p-4" data-aos="fade-zoom-in" data-aos-delay="100">
           <div class="my-card row">
             <div class="order-num col-12">2</div>
             <div class="my-card-info col-12">
@@ -40,7 +41,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 p-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 p-4" data-aos="fade-zoom-in" data-aos-delay="200">
           <div class="my-card row">
             <div class="order-num col-12">3</div>
             <div class="my-card-info col-12">
@@ -52,7 +53,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 p-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 p-4" data-aos="fade-zoom-in" data-aos-delay="300" >
           <div class="my-card row">
             <div class="order-num col-12">4</div>
             <div class="my-card-info col-12">
@@ -89,6 +90,12 @@
   background-color: white;
   border-radius: 20px;
   box-shadow: 0 4px 3px 0 #0000001A;
+  transition: transform 750ms;
+}
+
+.my-card:hover,
+.my-card:focus {
+  transform: translateY(-10px);
 }
 
 .order-num {

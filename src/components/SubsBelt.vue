@@ -2,17 +2,17 @@
 </script>
 
 <template>
-<div class="row d-flex justify-content-center main-row mt-5 pb-5">
+  <div class="row d-flex justify-content-center main-row mt-5 pb-5">
   <div class="col-11 col-md-12 col-lg-10 main-col">
     <div class="row">
 
-      <div class="col-12 col-md-6">
+      <div class="col-12 col-md-6" data-aos="zoom-in">
         <div class="title-box">
           <div class="title mt-5 pe-lg-4">
             we are the developers of our own Self.Subsidy program.
           </div>
           <!-- Bg INDEX -->
-          <div class="d-none d-lg-inline-block">
+          <div class="d-none d-lg-inline-block" data-aos="fade-left" data-aos-delay="400">
             <img alt="#" class="bg-index-drop-2" src="../assets/subsidy/card-2.png" height="110" draggable="false">
           </div>
         </div>
@@ -21,7 +21,7 @@
           <img alt="#" class="bg-index-drop" src="../assets/subsidy/card.png" height="70" draggable="false">
         </div>
       </div>
-      <div class="col-12 col-md-6 mt-md-5 ps-lg-5 my-4">
+      <div class="col-12 col-md-6 mt-md-5 ps-lg-5 my-4" data-aos="zoom-in">
         <div class="info mt-md-3 pt-lg-2">
           self.supsidy allows companies to flexibly manage the subsidy provided and gives employees the opportunity to use the subsidy in our micromarkets at their discretion.
         </div>
@@ -81,7 +81,7 @@
 @media only screen and (min-width: 992px) {
   .bg-index-drop-2 {
     position: absolute;
-    left: 43vw;
+    left: 35vw;
     z-index: 0;
     margin-top: -170px;
   }
@@ -102,8 +102,7 @@
   }
   .bg-index-drop-2 {
     position: relative;
-    right: -100%;
-    margin-left: -150px;
+    margin-left: -20px;
     margin-top: -450px;
   }
 }

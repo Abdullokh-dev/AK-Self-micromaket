@@ -1,9 +1,10 @@
 <script setup>
+
 </script>
 
 <template>
   <div class="row">
-    <div class="col-12 text-center main-title">
+    <div class="col-12 text-center main-title" data-aos="fade-up">
       self.subsidy capabilities
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
@@ -18,31 +19,31 @@
         <img alt="#" class="bg-index" src="../assets/subsidy/bg.png" width="70" draggable="false">
       </div>
       <div class="row">
-        <div class="col-12 my-card m-0 mt-md-4">
+        <div class="col-12 my-card m-0 mt-md-4" data-aos="fade-up">
           <div class="box">
             <h1 class="title"> is it mandatory to connect the subsidy system? </h1>
             <div class="info">To improve the reputation in the eyes of employees and improve working conditions!</div>
           </div>
         </div>
-        <div class="col-12 my-card m-0 mt-md-4">
+        <div class="col-12 my-card m-0 mt-md-4" data-aos="fade-up">
           <div class="box">
             <h1 class="title"> what if employees do not spend their allocated subsidy?  </h1>
             <div class="info">The subsidy can accumulate or expire, depending on the parameters you have chosen.</div>
           </div>
         </div>
-        <div class="col-12 my-card m-0 mt-md-4">
+        <div class="col-12 my-card m-0 mt-md-4" data-aos="fade-up">
           <div class="box">
             <h1 class="title"> a what are subsidies for? </h1>
             <div class="info">To improve the reputation in the eyes of employees and improve working conditions!</div>
           </div>
         </div>
-        <div class="col-12 my-card m-0 mt-md-4">
+        <div class="col-12 my-card m-0 mt-md-4" data-aos="fade-up">
           <div class="box">
             <h1 class="title"> is it time-consuming to connect the subsidy? </h1>
             <div class="info">No, all we need from you is access cards and budget determination. We will set up and connect everything ourselves.</div>
           </div>
         </div>
-        <div class="col-12 my-card m-0 mt-md-4">
+        <div class="col-12 my-card m-0 mt-md-4" data-aos="fade-up">
           <div class="box">
             <h1 class="title"> how is the budget for subsidies determined? </h1>
             <div class="info">
@@ -92,8 +93,6 @@
 }
 
 h1 {
-  /*font-size: 24px;*/
-  /*line-height: 34px;*/
   line-height: 28px;
   font-size: 20px;
   font-weight: 700;
@@ -101,7 +100,6 @@ h1 {
 }
 
 .info {
-  /*font-size: 20px;*/
   line-height: 25px;
   font-weight: 400;
   text-align: left;

@@ -1,3 +1,7 @@
+<script setup>
+
+</script>
+
 <template>
   <div class="row d-flex justify-content-center main-row">
     <div class="col-11 col-xl-12">
@@ -42,12 +46,6 @@
     </div>
   </div>
 </template>
-
-<script>
-export default {
-  name: "Belt"
-}
-</script>
 
 <style scoped>
 .main-row {

@@ -13,7 +13,7 @@ onMounted(scrollTop)
   <Header />
   <div class="row d-flex main-row justify-content-center">
     <div class="col-12 col-md-10 main-col mb-5">
-      <div class="ms-4 mb-5">
+      <div class="ms-4 mb-5" data-aos="fade-up">
         <h1><span>FAQ</span></h1>
       </div>
       <!-- Bg Image -->
@@ -27,7 +27,7 @@ onMounted(scrollTop)
       </div>
 
       <div class="accordion accordion-flush" id="accordionFlushExample">
-        <div class="my-column">
+        <div class="my-column" data-aos="fade-up">
           <div class="accordion-item">
             <div class="accordion-header">
               <button class="accordion-button ps-2 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-1" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -42,7 +42,7 @@ onMounted(scrollTop)
           </div>
         </div>
 
-        <div class="my-column">
+        <div class="my-column" data-aos="fade-up">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-2" aria-expanded="false" aria-controls="flush-collapseTwo">
@@ -57,7 +57,7 @@ onMounted(scrollTop)
           </div>
         </div>
 
-        <div class="my-column">
+        <div class="my-column" data-aos="fade-up">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-3" aria-expanded="false" aria-controls="flush-3">
@@ -72,7 +72,7 @@ onMounted(scrollTop)
           </div>
         </div>
 
-        <div class="my-column">
+        <div class="my-column" data-aos="fade-up">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-4" aria-expanded="false" aria-controls="flush-3">
@@ -87,7 +87,7 @@ onMounted(scrollTop)
           </div>
         </div>
 
-        <div class="my-column">
+        <div class="my-column" data-aos="fade-up">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-5" aria-expanded="false" aria-controls="flush-3">
@@ -104,7 +104,7 @@ onMounted(scrollTop)
           </div>
         </div>
 
-        <div class="my-column">
+        <div class="my-column" data-aos="fade-up">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-6" aria-expanded="false" aria-controls="flush-3">
@@ -119,7 +119,7 @@ onMounted(scrollTop)
           </div>
         </div>
 
-        <div class="my-column">
+        <div class="my-column" data-aos="fade-up">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-7" aria-expanded="false" aria-controls="flush-3">
@@ -134,7 +134,7 @@ onMounted(scrollTop)
           </div>
         </div>
 
-        <div class="my-column">
+        <div class="my-column" data-aos="fade-up">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-8" aria-expanded="false" aria-controls="flush-3">
@@ -149,7 +149,7 @@ onMounted(scrollTop)
           </div>
         </div>
 
-        <div class="my-column">
+        <div class="my-column" data-aos="fade-up">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-9" aria-expanded="false" aria-controls="flush-3">
@@ -164,7 +164,7 @@ onMounted(scrollTop)
           </div>
         </div>
 
-        <div class="my-column">
+        <div class="my-column" data-aos="fade-up">
           <div class="accordion-item">
             <h2 class="accordion-header">
               <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-10" aria-expanded="false" aria-controls="flush-3">
@@ -227,10 +227,8 @@ h1 > span {
 
 .accordion-body {
   font-size: 18px;
-  /*font-size: 20px;*/
   font-weight: 400;
   line-height: 25px;
-  /*line-height: 28px;*/
   text-align: left;
   background-color: #F5F5F5;
 }

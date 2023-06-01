@@ -28,10 +28,6 @@ watch(
   },
   {immediate: true}
 )
-
-const foo = () => {
-  console.log("foo ishladi")
-}
 </script>
 
 <template>
@@ -49,7 +45,7 @@ const foo = () => {
     <div class="col-11 col-md-12 p-0">
       <div class="col-12 p-0 m-0">
         <Splide :options="options" aria-label="My Favorite Images" data-aos="zoom-in">
-          <SplideSlide @click="foo">
+          <SplideSlide>
             <div class="image d-flex align-items-center">
               <img src="../assets/home/slide-1.png" alt="">
             </div>

@@ -15,13 +15,13 @@ import MyButton from "./MyButton.vue";
         <div class="col-12 col-lg-8 col-xl-7 col-xxl-6">
           <div class="row pe-xl-5 text-center">
             <div class="col-12 col-lg-5 d-lg-none align-items-end">
-              <div>
+              <div data-aos="flip-down">
                 <input type="text" placeholder="name" class="ps-3 mt-lg-4">
               </div>
             </div>
 
             <div class="col-12 col-lg-5 d-lg-none">
-              <div>
+              <div data-aos="flip-down">
                 <input type="text" placeholder="phone" class="ps-3 mt-3 mt-lg-4">
               </div>
             </div>
@@ -37,7 +37,7 @@ import MyButton from "./MyButton.vue";
             </div>
 
             <div class="col-12 col-lg-2 d-lg-none">
-              <div class="text-center mt-4 pt-lg-1">
+              <div class="text-center mt-4 pt-lg-1" data-aos="zoom-in">
                 <button type="button" class="btn btn-dark rounded-pill px-4 py-2">Send</button>
               </div>
             </div>
@@ -46,7 +46,7 @@ import MyButton from "./MyButton.vue";
 
         <!-- HALF end-->
         <div class="text-center d-lg-none">
-          <a class="btn rounded-pill call-btn py-2 mt-3" href="tel:+971585288607"> + 971 58 528 86 07 </a>
+          <a class="btn rounded-pill call-btn py-2 mt-3" href="tel:+971585288607" data-aos="zoom-in"> + 971 58 528 86 07 </a>
         </div>
 
         <!-- HALF -->

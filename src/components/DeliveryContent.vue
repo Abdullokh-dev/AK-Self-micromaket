@@ -2,12 +2,12 @@
 
 import MyButton from "./MyButton.vue";
 </script>
+
 <template>
   <div class="row d-flex justify-content-center">
     <div class="col-11 col-md-10">
-
       <div class="row">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6" data-aos="flip-right">
           <h1 class="title"><span>for suppliers</span></h1>
           <div class="info mt-5">
             placement of your products in the micromarket
@@ -19,13 +19,12 @@ import MyButton from "./MyButton.vue";
             <MyButton text="leave an application" class="px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
           </div>
         </div>
-        <div class="col-12 col-lg-6 text-center">
+        <div class="col-12 col-lg-6 text-center" data-aos="flip-left">
           <div class="image">
             <img src="../assets/delivery/img.png" alt="subsidy" class="ms-0 ms-lg-5" draggable="false">
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>

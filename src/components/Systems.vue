@@ -114,9 +114,7 @@
       </div>
     </div>
   </div>
-
 </template>
-
 
 <style scoped>
 .main-title {
@@ -176,10 +174,12 @@
   -webkit-animation: waves 1.5s linear 0.5s forwards;
   animation: waves 1.5s infinite linear 0.5s forwards;
 }
+
 .system-container:hover .delay3 {
   -webkit-animation: waves 1.5s linear 0.9s forwards;
   animation: waves 1.5s infinite linear 0.9s forwards;
 }
+
 .system-container:hover .delay4 {
   -webkit-animation: waves 1.5s linear 1.3s forwards;
   animation: waves 1.5s infinite linear 1.3s forwards;
@@ -209,7 +209,6 @@
   -webkit-animation: waves infinite 1.5s linear 3.3s forwards;
   animation: waves 1.5s linear 3.3s forwards;
 }
-
 
 .img-box {
   position: relative;
@@ -247,7 +246,6 @@
     opacity: 0;
   }
 }
-
 
 .system-img > img{
   max-height: 50vw !important;
@@ -288,5 +286,4 @@
     left: 24%;
   }
 }
-
 </style>

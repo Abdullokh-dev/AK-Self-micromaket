@@ -224,8 +224,7 @@ const download = (url) => {
   transition: transform 750ms;
 }
 
-.card:hover,
-.card:focus {
+.card:hover, .card:focus {
   transform: translateY(-10px);
 }
 

@@ -5,7 +5,9 @@
 <template>
   <div class="row mt-5">
     <div class="col-12 text-center main-title">
-      we offer
+      <div data-aos="flip-up">
+        we offer
+      </div>
       <!-- Bg INDEX -->
       <div>
         <img alt="#" class="bg-index-drop d-none d-lg-block" src="../assets/home/bg-index.png" height="72" draggable="false">
@@ -18,7 +20,7 @@
 
       <div class="row">
         <div class="col-12 col-lg-6 d-flex justify-content-center">
-          <div class="list-text mt-4">
+          <div class="list-text mt-4" data-aos="zoom-in-right">
             <div class="info mt-lg-5">
               various collaboration opportunities aimedat increasing brand loyalty and recognition:
             </div>
@@ -36,7 +38,7 @@
           </div>
         </div>
         <div class="col-12 col-lg-6 text-center">
-          <div class="image mt-lg-4 pt-lg-3 mt-xl-0">
+          <div class="image mt-lg-4 pt-lg-3 mt-xl-0" data-aos="flip-left">
             <img src="../assets/delivery/img_1.png" alt="subsidy" class="ms-0 ms-lg-5" draggable="false">
           </div>
         </div>

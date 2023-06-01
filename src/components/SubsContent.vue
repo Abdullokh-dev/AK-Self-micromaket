@@ -5,9 +5,8 @@ import MyButton from "./MyButton.vue";
 <template>
   <div class="row d-flex justify-content-center">
     <div class="col-11 col-md-10">
-
       <div class="row">
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6" data-aos="flip-left">
           <h1 class="title"><span>subsidy system</span></h1>
           <div class="info mt-5">
             make your employees more productive and happier
@@ -20,12 +19,11 @@ import MyButton from "./MyButton.vue";
           </div>
         </div>
         <div class="col-12 col-lg-6 text-center">
-          <div class="image">
+          <div class="image" data-aos="flip-right">
             <img src="../assets/subsidy/img.png" alt="subsidy" class="ms-0 ms-lg-5" draggable="false">
           </div>
         </div>
       </div>
-
     </div>
   </div>
 </template>

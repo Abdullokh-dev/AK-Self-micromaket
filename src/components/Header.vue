@@ -144,7 +144,6 @@ const toggle = () => {
   position: fixed;
   top: 0;
   width: 85%;
-  /*height: 60px;*/
   display: block;
   transition: top 0.3s;
   z-index: 10;
