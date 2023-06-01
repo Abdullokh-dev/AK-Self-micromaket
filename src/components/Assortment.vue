@@ -183,7 +183,7 @@ const download = (url) => {
               <MyButton text="I want a free tasting" background="#6357AD" class="me-1 w-100" max-width="396" data-bs-toggle="modal" data-bs-target="#staticBackdrop" />
             </div>
             <div class="col-12 col-md-6 text-center text-md-start mt-4 mb-4 mt-md-0" data-aos="flip-up">
-              <MyButton text="download the assortment" @click="download('assortment.pdf')" class="w-100 ms-1" max-width="396" />
+              <MyButton text="download the assortment" @click="download('assortment.pdf')" class="w-100 ms-1 btn-component" max-width="396" />
             </div>
           </div>
         </div>
@@ -194,6 +194,10 @@ const download = (url) => {
 </template>
 
 <style scoped>
+.btn-component {
+  font-size: 20px !important;
+}
+
 .main-title {
   font-size: 32px;
   font-weight: 800;
@@ -253,6 +257,10 @@ const download = (url) => {
 }
 
 @media only screen and (min-width: 576px) {
+  .btn-component {
+    font-size: 22px !important;
+  }
+
   .card {
     border-radius: 20px;
     --bs-card-inner-border-radius: 20px;

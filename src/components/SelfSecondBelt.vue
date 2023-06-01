@@ -4,7 +4,7 @@ import MyButton from "./MyButton.vue";
 </script>
 
 <template>
-<div class="row my-5 d-flex justify-content-center">
+<div class="row mt-5 mb-md-5 d-flex justify-content-center">
   <div class="col-12 col-md-11 main-row ps-0">
 
     <div class="row flex-md-row-reverse">
@@ -24,7 +24,7 @@ import MyButton from "./MyButton.vue";
       </div>
     </div>
 
-    <div class="ps-0 drop position-absolute">
+    <div class="d-none d-lg-block ps-0 drop position-absolute">
       <img src="../assets/subsidy/drop.png" draggable="false" alt="">
     </div>
 

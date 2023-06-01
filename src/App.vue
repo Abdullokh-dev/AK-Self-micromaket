@@ -5,9 +5,9 @@ import Footer from './components/Footer.vue'
 import MyButton from './components/MyButton.vue'
 import axios from 'axios'
 import md5 from 'md5';
-import Swal from 'sweetalert2'
 import {reactive, ref} from 'vue'
 const submitted = ref(false)
+const unexpected = ref(false)
 
 AOS.init({
   delay: 100,
@@ -35,36 +35,23 @@ const emailSend = () => {
       'content-type': 'multipart/form-data'
     }
   })
-    .then(function () {
-      obj.name = '';
-      obj.phone = '';
-      obj.email = '';
-      obj.text = '';
-      Swal.fire({
-        buttons: {
-          text: "OK",
-          value: true,
-          visible: true,
-          className: "",
-          closeModal: true,
-        },
-        timer: 2000,
-        icon: 'success',
-      }).then(() => {
+    .then((respone) => {
+      if(respone.status === 201) {
+        obj.name = '';
+        obj.phone = '';
+        obj.email = '';
+        obj.text = '';
         submitted.value = true
-      });
-    })
-    .catch(function (error) {
-      if(error.message === 'Network Error') {
-        Swal.fire({
-          title: 'network error',
-          text:   "wow",
-          icon: 'error',
-        }).then(() => {
-          submitted.value = false
-        });
+        unexpected.value = false
+      } else {
+        submitted.value = false
+        unexpected.value = true
       }
-    });
+    })
+  .catch(() => {
+    submitted.value = true
+    unexpected.value = true
+  })
 }
 </script>
 
@@ -79,7 +66,7 @@ const emailSend = () => {
         <div class="modal-header">
           <button type="button" class="btn-close pt-4 pe-4" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body pt-0" v-if="submitted !== true">
+        <div class="modal-body pt-0" v-if="submitted === false">
           <form class="was-validated text-center" @submit.prevent="emailSend">
             <div class="modal-title">
               leave an application
@@ -108,16 +95,22 @@ const emailSend = () => {
             </div>
 
             <div class="mt-4">
-              <MyButton text="send" type="submit" class="my-3 px-4" data-bs-dismiss="modal"/>
+              <MyButton text="send" type="submit" class="my-3 px-4" />
             </div>
           </form>
         </div>
 
-        <div class="modal-body pt-0 d-flex justify-content-center" v-else>
+        <div class="modal-body pt-0 d-flex justify-content-center" v-if="submitted === true">
           <form class="was-validated text-center" @submit.prevent="emailSend">
             <div class="mt-4">
               <div class="success-box">
-                <div class="success-msg">
+
+                <div class="success-msg danger-message" data-aos="zoom-in" v-if="unexpected === true">
+                  Please try again! <br /><br />
+                  Check the input!
+                </div>
+
+                <div class="success-msg" data-aos="zoom-in" v-else>
                   Your application has been sent! <br /><br />
                   We will contact you shortly.
                 </div>
@@ -194,5 +187,9 @@ input::placeholder {
   line-height: 34px;
   text-align: center;
   margin: 20px 30px 0 30px;
+}
+
+.danger-message {
+  color: orange;
 }
 </style>

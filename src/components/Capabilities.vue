@@ -4,7 +4,7 @@
 
 <template>
   <div class="row">
-    <div class="col-12 text-center main-title" data-aos="fade-up">
+    <div class="col-12 text-center main-title mb-4 mb-lg-0" data-aos="fade-up">
       self.subsidy capabilities
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">

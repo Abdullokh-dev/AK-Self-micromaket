@@ -1,5 +1,66 @@
 <script setup>
 import MyButton from "./MyButton.vue";
+import Swal from 'sweetalert2'
+import axios from 'axios'
+import md5 from 'md5'
+import {reactive} from "vue";
+
+const obj = reactive({
+  name: '',
+  phone: '',
+  h: ''
+})
+
+const emailSend = () => {
+  obj.h = md5(obj.name + obj.phone + 'self-micromarket.com')
+  axios.post("https://self-micromarket.com/send.php", obj,{
+    headers: {
+      'content-type': 'multipart/form-data'
+    }
+  })
+    .then((response) => {
+      if(response.status === 201) {
+        obj.name = '';
+        obj.phone = '';
+        Swal.fire({
+          title: 'Your application has been sent! We will contact you shortly.',
+          text: ' ',
+          showConfirmButton: false,
+          timer: 3000,
+          icon: 'success',
+        })
+      }
+    })
+    .catch((error) => {
+      if(error.message === 'Request failed with status code 400') {
+        Swal.fire({
+          title: 'Please try again! Check the input!',
+          text: ' ',
+          buttons: {
+            text: "OK",
+            value: true,
+            visible: true,
+            className: "",
+            closeModal: true,
+          },
+          icon: 'warning',
+        })
+      } else {
+        Swal.fire({
+          title: 'Unexpected error occurred!',
+          text: ' ',
+          buttons: {
+            text: "OK",
+            value: true,
+            visible: true,
+            className: "",
+            closeModal: true,
+          },
+          icon: 'error',
+        })
+      }
+    })
+}
 </script>
 
 <template>
@@ -14,17 +75,6 @@ import MyButton from "./MyButton.vue";
         <!-- HALF -->
         <div class="col-12 col-lg-8 col-xl-7 col-xxl-6">
           <div class="row pe-xl-5 text-center">
-            <div class="col-12 col-lg-5 d-lg-none align-items-end">
-              <div data-aos="flip-down">
-                <input type="text" placeholder="name" class="ps-3 mt-lg-4">
-              </div>
-            </div>
-
-            <div class="col-12 col-lg-5 d-lg-none">
-              <div data-aos="flip-down">
-                <input type="text" placeholder="phone" class="ps-3 mt-3 mt-lg-4">
-              </div>
-            </div>
 
             <div class="d-none d-lg-block col-6 text-center mt-4 pt-3">
               <div class="phone-num">
@@ -33,14 +83,26 @@ import MyButton from "./MyButton.vue";
             </div>
 
             <div class="d-none d-lg-block col-2 pt-1 pb-4">
-              <MyButton text="request a call back" height="51" class="px-4 mt-4" />
+              <MyButton text="request a call back" height="51" class="px-4 mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop"/>
             </div>
 
-            <div class="col-12 col-lg-2 d-lg-none">
-              <div class="text-center mt-4 pt-lg-1" data-aos="zoom-in">
-                <button type="button" class="btn btn-dark rounded-pill px-4 py-2">Send</button>
+            <!-- mobile -->
+            <form @submit.prevent="emailSend">
+              <div class="col-12 d-lg-none align-items-end">
+                <div data-aos="flip-down">
+                  <input type="text" placeholder="name" v-model="obj.name" class="ps-3 mt-lg-4">
+                </div>
+
+                <div data-aos="flip-down">
+                  <input type="text" placeholder="phone" v-model="obj.phone" class="ps-3 mt-3 mt-lg-4">
+                </div>
+
+                <div class="text-center mt-4 pt-lg-1" data-aos="zoom-in">
+                  <button type="submit" class="btn btn-dark rounded-pill px-4 py-2">Send</button>
+                </div>
               </div>
-            </div>
+            </form>
+
           </div>
         </div>
 

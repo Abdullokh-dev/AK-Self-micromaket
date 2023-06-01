@@ -1,14 +1,16 @@
 <script setup>
-import MyButton from "./MyButton.vue";
-import md5 from 'md5';
+import {reactive} from 'vue'
+import MyButton from './MyButton.vue'
+import Swal from 'sweetalert2'
+import axios from 'axios'
+import md5 from 'md5'
+
 const obj = reactive({
   name: '',
   email: '',
   text: '',
   h: ''
 })
-import axios from "axios";
-import {reactive, ref} from "vue";
 
 const emailSend = () => {
   obj.h = md5(obj.name + obj.email + obj.text + 'self-micromarket.com')
@@ -17,16 +19,51 @@ const emailSend = () => {
       'content-type': 'multipart/form-data'
     }
   })
-    .then(function (response) {
-      console.log(response);
-      obj.name = '';
-      obj.email = '';
-      obj.text = '';
+    .then((response) => {
+      if(response.status === 201) {
+        obj.name = '';
+        obj.email = '';
+        obj.text = '';
+        Swal.fire({
+          title: 'Your application has been sent! We will contact you shortly.',
+          text: ' ',
+          showConfirmButton: false,
+          timer: 3000,
+          icon: 'success',
+        })
+      }
     })
-    .catch(function (error) {
-      console.warn(error);
-    });
+    .catch((error) => {
+      if(error.message === 'Request failed with status code 400') {
+        Swal.fire({
+          title: 'Please try again! Check the input!',
+          text: ' ',
+          buttons: {
+            text: "OK",
+            value: true,
+            visible: true,
+            className: "",
+            closeModal: true,
+          },
+          icon: 'warning',
+        })
+      } else {
+        Swal.fire({
+          title: 'Unexpected error occurred!',
+          text: ' ',
+          buttons: {
+            text: "OK",
+            value: true,
+            visible: true,
+            className: "",
+            closeModal: true,
+          },
+          icon: 'error',
+        })
+      }
+    })
 }
+
 </script>
 
 <template>

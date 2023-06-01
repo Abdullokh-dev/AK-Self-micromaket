@@ -51,7 +51,7 @@ const download = (url) => {
         </div>
 
         <div class="d-flex justify-content-center justify-content-lg-start" data-aos="flip-up">
-          <MyButton text="download the presentation" @click="download('presentation.pdf')" class="ms-0 ms-md-5 ms-xl-0 my-4 my-lg-0 mt-lg-5 px-4"/>
+          <MyButton text="download the presentation" @click="download('presentation.pdf')" class="ms-0 ms-md-5 ms-xl-0 my-4 my-lg-0 mt-lg-5 px-4 btn-component"/>
         </div>
       </div>
     </div>
@@ -60,6 +60,9 @@ const download = (url) => {
 </template>
 
 <style scoped>
+.btn-component {
+  font-size: 20px !important;
+}
 .title {
   font-size: 32px;
   font-weight: 800;
@@ -95,6 +98,12 @@ const download = (url) => {
   }
   .text-bottom {
     max-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 576px) {
+  .btn-component {
+    font-size: 22px !important;
   }
 }
 </style>
