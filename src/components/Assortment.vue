@@ -221,6 +221,12 @@ const download = (url) => {
   border: none;
   border-radius: 12px;
   box-shadow: 0 4px 29px 0 #0000001A;
+  transition: transform 750ms;
+}
+
+.card:hover,
+.card:focus {
+  transform: translateY(-10px);
 }
 
 .card-body {

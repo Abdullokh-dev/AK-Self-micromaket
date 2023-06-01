@@ -46,7 +46,7 @@ import MyButton from "./MyButton.vue";
 
         <!-- HALF end-->
         <div class="text-center d-lg-none">
-          <MyButton text="+ 971 58 528 86 07" background="#6357AD" class="px-4 py-2 mt-2"/>
+          <a class="btn rounded-pill call-btn py-2 mt-3" href="tel:+971585288607"> + 971 58 528 86 07 </a>
         </div>
 
         <!-- HALF -->
@@ -159,6 +159,15 @@ input::placeholder {
   width: 43px;
   height: 41px;
   margin-left: 10px;
+}
+
+.call-btn {
+  background-color: #6357AD;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 42px;
+  color: white;
+  padding: 0 30px;
 }
 
 .footer-text {

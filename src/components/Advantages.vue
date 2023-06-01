@@ -124,6 +124,12 @@ p {
 
 .rounded-4 {
   height: 185px !important;
+  transition: transform 750ms;
+}
+
+.rounded-4:hover,
+.rounded-4:focus {
+  transform: translateY(-10px);
 }
 
 @media only screen and (min-width: 992px) {

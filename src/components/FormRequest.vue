@@ -66,7 +66,7 @@ const emailSend = () => {
       <img alt="#" class="bg-index juice" src="../assets/home/juice.png" height="238" draggable="false">
     </div>
     <!-- Pizza -->
-    <div class="d-none d-xl-block" data-aos="fade-up" data-aos-delay="300">
+    <div class="d-none d-xl-block" data-aos="flip-up" data-aos-delay="300">
       <img alt="#" class="bg-index pizza" src="../assets/home/pizza.png" height="205" draggable="false">
     </div>
   </div>

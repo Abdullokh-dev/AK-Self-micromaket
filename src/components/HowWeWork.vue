@@ -86,6 +86,12 @@
   border-radius: 20px;
   box-shadow: 0 4px 30px 0 #0000001A;
   height: 120px;
+  transition: transform 750ms;
+}
+
+.my-card:hover,
+.my-card:focus {
+  transform: translateY(-10px);
 }
 
 .order-num {
