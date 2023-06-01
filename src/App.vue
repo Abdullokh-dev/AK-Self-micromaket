@@ -26,7 +26,6 @@ const emailSend = () => {
     }
   })
     .then(function (response) {
-      alert(response);
       obj.name = '';
       obj.phone = '';
       obj.email = '';
@@ -35,11 +34,8 @@ const emailSend = () => {
     })
     .catch(function (error) {
       if(error.message === 'Network Error') {
-        obj.name = '';
-        obj.phone = '';
-        obj.email = '';
-        obj.text = '';
-        submitted.value = true
+        submitted.value = false
+        alert('not working!!!')
       } else {
         alert('another problem')
       }
