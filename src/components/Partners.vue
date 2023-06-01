@@ -4,10 +4,10 @@
   <div class="row mt-5 main-row">
     <div class="col-12 text-center main-title">
       our partners
-    </div>
-    <!-- Bg INDEX -->
-    <div>
-      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
+      <!-- Bg INDEX -->
+      <div class="d-none d-lg-block">
+        <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
+      </div>
     </div>
   </div>
   <div class="row d-flex justify-content-center main-row">
@@ -61,9 +61,9 @@
 
 .bg-index-drop {
   position: relative;
-  left: 55%;
-  z-index: 0;
-  margin-top: -80px;
+  left: 90px;
+  z-index: -1;
+  margin-top: -60px;
 }
 
 @keyframes fade-in {

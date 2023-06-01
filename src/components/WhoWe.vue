@@ -17,10 +17,10 @@ const download = (url) => {
     <div class="row flex-row-reverse">
       <div class="col-12 text-center title">
         who are we?
-      </div>
-      <!-- Bg INDEX -->
-      <div>
-        <img alt="#" class="bg-index" src="../assets/home/bg-index.png" height="70" draggable="false">
+        <!-- Bg INDEX -->
+        <div class="d-none d-lg-block">
+          <img alt="#" class="bg-index" src="../assets/home/bg-index.png" height="70" draggable="false">
+        </div>
       </div>
 
       <div class="col-12 col-lg-6 d-flex justify-content-center">
@@ -65,10 +65,9 @@ const download = (url) => {
 .bg-index {
   position: relative;
   top: 50%;
-  left: 56%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  margin-top: -40px;
+  left: 90px;
+  z-index: -1;
+  margin-top: -85px;
 }
 
 .text-bolder {

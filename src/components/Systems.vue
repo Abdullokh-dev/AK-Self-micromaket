@@ -9,7 +9,7 @@
         <div class="col-12 text-center main-title">
           convenience of modular systems
           <!-- Bg INDEX -->
-          <div>
+          <div class="d-none d-lg-block">
             <img alt="#" class="bg-index" src="../assets/home/bg-index.png" height="70" draggable="false">
           </div>
         </div>

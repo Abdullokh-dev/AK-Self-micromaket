@@ -1,5 +1,12 @@
 <script setup>
 import Header from "../components/Header.vue";
+import {onMounted} from "vue";
+
+const scrollTop = () => {
+  window.scrollTo(0,0);
+}
+
+onMounted(scrollTop)
 </script>
 
 <template>

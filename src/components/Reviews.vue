@@ -27,10 +27,10 @@ watch(
   <div class="row main-row">
     <div class="col-12 text-center main-title">
       customer reviews
-    </div>
-    <!-- Bg INDEX -->
-    <div>
-      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
+      <!-- Bg INDEX -->
+      <div class="d-none d-lg-block">
+        <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
+      </div>
     </div>
   </div>
 
@@ -97,9 +97,9 @@ watch(
 
 .bg-index-drop {
   position: relative;
-  left: 57%;
-  z-index: 0;
-  margin-top: -50px;
+  left: 140px;
+  z-index: -1;
+  margin-top: -60px;
 }
 
 .rounded-5 {

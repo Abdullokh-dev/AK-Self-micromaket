@@ -6,7 +6,7 @@
     <div class="col-12 text-center main-title">
       how we work?
       <!-- Bg INDEX -->
-      <div>
+      <div class="d-none d-lg-block">
         <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
       </div>
     </div>

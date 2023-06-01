@@ -5,19 +5,19 @@
 <template>
   <div class="row">
     <!-- Bg INDEX -->
-    <div class="p-0">
+    <div class="p-0 d-none d-lg-block">
       <img alt="#" class="bg-index" src="../assets/home/cake.png" draggable="false">
     </div>
     <div class="col text-center main-title" id="advantages">
       advantages
-    </div>
-    <!-- Bg INDEX -->
-    <div>
-      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
+      <!-- Bg INDEX -->
+      <div class="d-none d-lg-block">
+        <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
+      </div>
     </div>
   </div>
 
-  <div class="row d-flex justify-content-center">
+  <div class="row d-flex justify-content-center mt-5 mt-xl-0">
     <div class="col-11">
 
       <div class="row">
@@ -89,13 +89,14 @@ p {
 
 .bg-index-drop {
   position: relative;
-  left: 53%;
-  z-index: 0;
-  margin-top: -150px;
+  top: 50%;
+  left: 90px;
+  z-index: -1;
+  margin-top: -70px;
 }
 
 .main-title {
-  margin-top: -80px;
+  margin-top: 96px;
   z-index: 1;
   font-size: 32px;
   font-weight: 800;
@@ -113,5 +114,12 @@ p {
 
 .rounded-4 {
   height: 185px !important;
+}
+
+@media only screen and (min-width: 992px) {
+  .main-title {
+    margin-top: -80px;
+  }
+
 }
 </style>

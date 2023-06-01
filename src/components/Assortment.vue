@@ -14,10 +14,10 @@ const download = (url) => {
   <div class="row mt-5">
     <div class="col-12 text-center main-title">
       assortment
-    </div>
-    <!-- Bg INDEX -->
-    <div>
-      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70">
+      <!-- Bg INDEX -->
+      <div class="d-none d-lg-block">
+        <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70">
+      </div>
     </div>
     <div class="col-12 d-flex justify-content-center text-center mt-4">
       <div class="main-description">
@@ -201,9 +201,10 @@ const download = (url) => {
 
 .bg-index-drop {
   position: relative;
-  left: 53%;
-  z-index: 0;
-  margin-top: -50px;
+  top: 52%;
+  left: 70px;
+  z-index: -1;
+  margin-top: -45px;
 }
 
 .main-description {

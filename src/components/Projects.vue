@@ -36,10 +36,10 @@ const foo = () => {
   <div class="row mt-5 p-0 m-0">
     <div class="col-12 text-center main-title p-0 m-0">
       completed projects
-    </div>
-    <!-- Bg INDEX -->
-    <div>
-      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
+      <!-- Bg INDEX -->
+      <div class="d-none d-lg-block">
+        <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
+      </div>
     </div>
   </div>
 
@@ -96,13 +96,6 @@ const foo = () => {
   z-index: 1;
 }
 
-.bg-index-drop {
-  position: relative;
-  left: 58%;
-  z-index: 0;
-  margin-top: -50px;
-}
-
 .main-title {
   font-size: 32px;
   font-weight: 800;
@@ -112,9 +105,10 @@ const foo = () => {
 
 .bg-index-drop {
   position: relative;
-  left: 57%;
-  z-index: 0;
-  margin-top: -50px;
+  top: 50%;
+  left: 140px;
+  z-index: -1;
+  margin-top: -60px;
 }
 
 .image > img {

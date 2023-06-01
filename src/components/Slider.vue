@@ -15,7 +15,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
     <div class="col-12 p-0">
       <Flicking :options="{align: 'center', circular: true, camera: '100%', panel: '100%'}" :plugins="plugins">
         <!-- First Slide -->
-        <div class="panel">
+        <div class="panel" style="position: relative">
           <div class="row my-setting-slide first-slide">
             <!-- First half 50% -->
             <div class="col-lg-1"></div>
@@ -24,14 +24,14 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
                 <img src="../assets/home/vector.png" width="185" alt="" class="vector">
               </div>
               <div class="mt-2 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
-                <span class="description">
-                  More than 400 ready-made dishes for every taste
-                </span>
+                <div class="description">
+                  more than 400 ready-made dishes for every taste
+                </div>
               </div>
               <div class="mt-4 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
-                <span class="addition">
+                <div class="addition">
                   Plus snacks, ice cream, and coffee
-                </span>
+                </div>
               </div>
               <div class="d-none d-lg-block">
                 <button type="button" class="btn px-4 rounded-pill mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -64,14 +64,14 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
                 <img src="../assets/home/vector-light.png" width="185" alt="" class="vector">
               </div>
               <div class="mt-2 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
-              <span class="description text-light">
-                Natural grain coffee from trusted suppliers
-              </span>
+              <div class="description text-light">
+                natural grain coffee from trusted suppliers
+              </div>
               </div>
               <div class="mt-4 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
-              <span class="addition text-light">
+              <div class="addition text-light">
                 20 types of drinks, 5 types of alternative milk
-              </span>
+              </div>
               </div>
               <div class="d-none d-lg-block">
                 <button type="button" class="btn px-4 rounded-pill mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
@@ -100,14 +100,14 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
                 <img src="../assets/home/vector-light.png" width="185" alt="" class="vector">
               </div>
               <div class="mt-2 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
-                <span class="description text-light">
-                  Micromarket with delicious and nutritious food
-                </span>
+                <div class="description text-light">
+                  micromarket with delicious and nutritious food
+                </div>
               </div>
               <div class="mt-4 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
-                <span class="addition text-light">
-                  Ready solution for organizing your employees' meals
-                </span>
+                <div class="addition text-light">
+                  ready solution for organizing your employees' meals
+                </div>
               </div>
               <div class="d-none d-lg-block">
                 <MyButton text="leave an application" background="#31C2B0" class="mt-4 px-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop" />
@@ -141,7 +141,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 <style scoped>
 .my-setting-slide {
   width: 100% !important;
-  height: 714px;
+  height: 1000px;
   margin: 0;
 }
 
@@ -166,7 +166,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 }
 
 .bottle {
-  margin: auto;
+  margin-right: -90px !important;
   width: 100%;
   min-width: 400px;
   max-width: 504px;
@@ -181,23 +181,25 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 }
 
 .vector {
-  margin-top: 182px;
+  margin-top: 91px;
 }
 
 .description {
-  font-size: 40px;
   font-weight: 800;
-  line-height: 56px;
   letter-spacing: 0;
   text-align: left;
+  font-size: 32px;
+  line-height: 38px;
+  max-width: 618px;
 }
 
 .addition {
-  font-size: 24px;
+  font-size: 18px;
+  line-height: 22px;
   font-weight: 400;
-  line-height: 34px;
   letter-spacing: 0;
   text-align: left;
+  max-width: 530px;
 }
 
 .rounded-pill {
@@ -211,34 +213,34 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
   text-align: center;
 }
 
-@media only screen and (max-width: 768px) {
-  .description {
-    font-size: 32px;
-    line-height: 38px;
-  }
-}
-
-@media only screen and (max-width: 991px) {
-  .my-setting-slide {
-    height: 1000px;
-  }
-  .bottle {
-    margin: auto 0;
-  }
-  .vector {
-    margin-top: 90px;
-  }
-}
-
-
 @media only screen and (min-width: 992px) {
+  .vector {
+    margin-top: 184px;
+  }
+
+  .my-setting-slide {
+    height: 714px;
+  }
+
+  .description {
+    font-size: 40px;
+    line-height: 56px;
+  }
+
+  .addition {
+    font-size: 24px;
+    line-height: 29px;
+  }
+
   .bottle {
-    margin: 170px;
+    margin: 127px 0 auto!important;
     min-width: 450px;
   }
+
   .second-slide {
     background: url(../assets/home/img-md-coffee.png) #31C2B0 no-repeat right fixed;
   }
+
   .third-slide {
     background: url(../assets/home/img_2.png) #6357AD no-repeat bottom right fixed;
   }
