@@ -256,11 +256,35 @@
   .system-img > img{
     max-height: 25vw !important;
   }
+
+  .circle {
+    height: 100%;
+    max-height: 25vw;
+    width: 100%;
+    max-width: 25vw;
+    top: 1%;
+    left: 23%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .system-img > img{
     max-height: 12vw !important;
+  }
+
+  .circle {
+    height: 100%;
+    max-height: 12vw;
+    width: 100%;
+    max-width: 12vw;
+    top: 1%;
+    left: 30%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .circle {
+    left: 24%;
   }
 }
 
