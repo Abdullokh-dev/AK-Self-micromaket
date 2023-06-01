@@ -76,6 +76,7 @@ import MyButton from "./MyButton.vue";
   .info {
     font-size: 32px;
     line-height: 45px;
+    max-width: 503px;
   }
 
   .additional-info {

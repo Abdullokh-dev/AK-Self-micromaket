@@ -55,7 +55,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
         </div>
 
         <!-- Second Slide -->
-        <div class="panel">
+        <div class="panel" style="position: relative">
           <div class="row my-setting-slide second-slide">
             <!-- Second Slide half 50% -->
             <div class="col-lg-1 d-none d-lg-block"></div>

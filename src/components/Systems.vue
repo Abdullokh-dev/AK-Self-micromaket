@@ -7,11 +7,11 @@
     <div class="col">
       <div class="row">
         <div class="col-12 text-center main-title">
-          Convenience of modular systems
-        </div>
-        <!-- Bg INDEX -->
-        <div>
-          <img alt="#" class="bg-index" src="../assets/home/bg-index.png" height="70" draggable="false">
+          convenience of modular systems
+          <!-- Bg INDEX -->
+          <div>
+            <img alt="#" class="bg-index" src="../assets/home/bg-index.png" height="70" draggable="false">
+          </div>
         </div>
         <div class="col-12 d-flex justify-content-center text-center">
           <div class="main-description mt-4">
@@ -26,38 +26,90 @@
 
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center">
               <div class="title my-5">light snacks</div>
-              <div class="system-img checked-img">
-                <img src="../assets/home/system-1.png" alt="" draggable="false">
+              <div class="system-container">
+                <div class="img-box system-img">
+                  <img src="../assets/home/system-1.png" alt="" />
+                  <div class="circle delay1"></div>
+                  <div class="circle delay2"></div>
+                  <div class="circle delay3"></div>
+                  <div class="circle delay4"></div>
+                  <div class="circle delay5"></div>
+                  <div class="circle delay6"></div>
+                  <div class="circle delay7"></div>
+                  <div class="circle delay8"></div>
+                  <div class="circle delay9"></div>
+                </div>
               </div>
               <div class="description my-5"> from 8,6 sq.feet </div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center">
               <div class="title my-5">coffee break</div>
-              <div class="system-img">
-                <img src="../assets/home/system-2.png" alt="" draggable="false">
+              <div class="system-container">
+                <div class="img-box system-img">
+                  <img src="../assets/home/system-2.png" alt="" />
+                  <div class="circle delay1"></div>
+                  <div class="circle delay2"></div>
+                  <div class="circle delay3"></div>
+                  <div class="circle delay4"></div>
+                  <div class="circle delay5"></div>
+                  <div class="circle delay6"></div>
+                  <div class="circle delay7"></div>
+                  <div class="circle delay8"></div>
+                  <div class="circle delay9"></div>
+                </div>
               </div>
               <div class="description my-5">from 12,9 sq.feet</div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center">
               <div class="title my-5">business lunch</div>
-              <div class="system-img">
-                <img src="../assets/home/system-3.png" alt="" draggable="false">
+              <div class="system-container">
+                <div class="img-box system-img">
+                  <img src="../assets/home/system-3.png" alt="" />
+                  <div class="circle delay1"></div>
+                  <div class="circle delay2"></div>
+                  <div class="circle delay3"></div>
+                  <div class="circle delay4"></div>
+                  <div class="circle delay5"></div>
+                  <div class="circle delay6"></div>
+                  <div class="circle delay7"></div>
+                  <div class="circle delay8"></div>
+                  <div class="circle delay9"></div>
+                </div>
               </div>
               <div class="description my-5">from 18,2 sq.feet</div>
             </div>
 
             <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center">
               <div class="title my-5">all inclusive</div>
-              <div class="system-img">
-                <img src="../assets/home/system-4.png" alt="" draggable="false">
+              <div class="system-container">
+                <div class="img-box system-img">
+                  <img src="../assets/home/system-4.png" alt="" />
+                  <div class="circle delay1"></div>
+                  <div class="circle delay2"></div>
+                  <div class="circle delay3"></div>
+                  <div class="circle delay4"></div>
+                  <div class="circle delay5"></div>
+                  <div class="circle delay6"></div>
+                  <div class="circle delay7"></div>
+                  <div class="circle delay8"></div>
+                  <div class="circle delay9"></div>
+                </div>
               </div>
               <div class="description my-5">from 21,5 sq.feet</div>
             </div>
 
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col">
+      <div class="box">
+        <span></span>
       </div>
     </div>
   </div>
@@ -81,8 +133,8 @@
 .bg-index {
   position: relative;
   top: 50%;
-  left: 66%;
-  z-index: 0;
+  left: 290px;
+  z-index: -1;
   margin-top: -60px;
 }
 
@@ -104,6 +156,97 @@
   font-weight: 400;
   line-height: 18px;
 }
+
+.system-container {
+  position: relative;
+  display: block;
+  max-height: 50vw !important;
+  z-index: 1;
+}
+
+.system-container:hover .delay1 {
+  -webkit-animation: waves 1.5s linear;
+  animation: waves 1.5s linear;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+
+.system-container:hover .delay2 {
+  -webkit-animation: waves 1.5s linear 0.5s forwards;
+  animation: waves 1.5s infinite linear 0.5s forwards;
+}
+.system-container:hover .delay3 {
+  -webkit-animation: waves 1.5s linear 0.9s forwards;
+  animation: waves 1.5s infinite linear 0.9s forwards;
+}
+.system-container:hover .delay4 {
+  -webkit-animation: waves 1.5s linear 1.3s forwards;
+  animation: waves 1.5s infinite linear 1.3s forwards;
+}
+
+.system-container:hover .delay5 {
+  -webkit-animation: waves 1.5s linear 1.7s forwards;
+  animation: waves 1.5s infinite linear 1.7s forwards;
+}
+
+.system-container:hover .delay6 {
+  -webkit-animation: waves 1.5s linear 2.1s forwards;
+  animation: waves 1.5s infinite linear 2.1s forwards;
+}
+
+.system-container:hover .delay7 {
+  -webkit-animation: waves infinite 1.5s linear 2.5s forwards;
+  animation: waves 1.5s linear 2.5s forwards;
+}
+
+.system-container:hover .delay8 {
+  -webkit-animation: waves infinite 1.5s linear 2.9s forwards;
+  animation: waves 1.5s linear 2.9s forwards;
+}
+
+.system-container:hover .delay9 {
+  -webkit-animation: waves infinite 1.5s linear 3.3s forwards;
+  animation: waves 1.5s linear 3.3s forwards;
+}
+
+
+.img-box {
+  position: relative;
+  z-index: 10;
+}
+
+.img-box:hover {
+  -webkit-animation: bloop 1s linear;
+  animation: bloop 1s linear;
+}
+
+.circle {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  height: 100%;
+  max-height: 48vw;
+  opacity: 0;
+  width: 100%;
+  max-width: 50vw;
+  border-radius: 100%;
+  background: #31C2B080;
+  transition: 2s ease;
+  top: 2%;
+  left: 24%;
+}
+
+@-webkit-keyframes waves {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.6);
+    opacity: 0;
+  }
+}
+
 
 .system-img > img{
   max-height: 50vw !important;

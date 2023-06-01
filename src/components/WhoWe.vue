@@ -16,7 +16,7 @@ const download = (url) => {
   <div class="col-12 col-xl-10">
     <div class="row flex-row-reverse">
       <div class="col-12 text-center title">
-        Who are we?
+        who are we?
       </div>
       <!-- Bg INDEX -->
       <div>
@@ -46,7 +46,7 @@ const download = (url) => {
         </div>
 
         <div class="d-flex justify-content-center justify-content-lg-start">
-          <MyButton text="Download the presentation" @click="download('presentation.pdf')" class="ms-0 ms-md-5 ms-xl-0 my-4 my-lg-0 mt-lg-5 px-4"/>
+          <MyButton text="download the presentation" @click="download('presentation.pdf')" class="ms-0 ms-md-5 ms-xl-0 my-4 my-lg-0 mt-lg-5 px-4"/>
         </div>
       </div>
     </div>

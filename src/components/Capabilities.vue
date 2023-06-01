@@ -4,11 +4,11 @@
 <template>
   <div class="row">
     <div class="col-12 text-center main-title">
-      self.Subsidy capabilities
-    </div>
-    <!-- Bg INDEX -->
-    <div>
-      <img alt="#" class="bg-index-drop" src="../assets/subsidy/bg-drop.png" height="70" draggable="false">
+      self.subsidy capabilities
+      <!-- Bg INDEX -->
+      <div class="d-none d-lg-block">
+        <img alt="#" class="bg-index-drop" src="../assets/subsidy/bg-drop.png" height="72" draggable="false">
+      </div>
     </div>
   </div>
   <div class="row d-flex justify-content-center">
@@ -73,9 +73,9 @@
 
 .bg-index-drop {
   position: relative;
-  left: 60%;
-  z-index: 0;
-  margin-top: -50px;
+  left: 188px;
+  z-index: -1;
+  margin-top: -60px;
 }
 
 .bg-index {

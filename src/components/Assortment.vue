@@ -31,7 +31,7 @@ const download = (url) => {
     <div class="col-11">
       <div class="row mt-4">
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-md-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-md-4 p-3">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -49,7 +49,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -67,7 +67,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -85,7 +85,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -103,7 +103,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -121,7 +121,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -139,7 +139,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
@@ -157,7 +157,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">

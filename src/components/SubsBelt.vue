@@ -9,7 +9,7 @@
       <div class="col-12 col-md-6">
         <div class="title-box">
           <div class="title mt-5 pe-lg-4">
-            We are the developers of our own Self.Subsidy program.
+            we are the developers of our own Self.Subsidy program.
           </div>
           <!-- Bg INDEX -->
           <div class="d-none d-lg-inline-block">
@@ -23,7 +23,7 @@
       </div>
       <div class="col-12 col-md-6 mt-md-5 ps-lg-5 my-4">
         <div class="info mt-md-3 pt-lg-2">
-          Self.supsidy allows companies to flexibly manage the subsidy provided and gives employees the opportunity to use the subsidy in our micromarkets at their discretion.
+          self.supsidy allows companies to flexibly manage the subsidy provided and gives employees the opportunity to use the subsidy in our micromarkets at their discretion.
         </div>
       </div>
 

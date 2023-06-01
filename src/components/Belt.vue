@@ -1,45 +1,45 @@
 <template>
-  <div class="row main-row">
+  <div class="row d-flex justify-content-center main-row">
+    <div class="col-11 col-xl-12">
+      <div class="row">
 
-    <div class="col-12 col-lg-4 text-center">
-      <div class="title">
-        <span>
-          N1
-        </span>
-      </div>
-      <div class="description px-5">
-        <span>
-          We were the first to install micromarkets in Russia and the UAE
-        </span>
+        <div class="col-12 col-lg-4 p-0 text-center">
+          <div class="title">
+            <div>
+              N1
+            </div>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="description">
+              we were the first to install micromarkets in the UAE
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 text-center">
+          <div class="title">
+            1000
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="description">
+              more than 1000 micromarkets in 57 cities of world
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-4 text-center">
+          <div class="title">
+            7
+          </div>
+          <div class="d-flex justify-content-center mb-5 mb-lg-0">
+            <div class="description">
+              we have been dealing with micromarkets for more than 7 years.
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
-
-    <div class="col-12 col-lg-4 text-center">
-      <div class="title">
-        <span>
-          1000
-        </span>
-      </div>
-      <div class="description px-5">
-        <span>
-          More than 1000 micromarkets in 54 cities in Russia and 3 cities in the UAE.
-        </span>
-      </div>
-    </div>
-
-    <div class="col-12 col-lg-4 text-center">
-      <div class="title">
-        <span>
-          7
-        </span>
-      </div>
-      <div class="description px-5 mb-5 mb-lg-0">
-        <span>
-          We have been dealing with micromarkets for more than 7 years.
-        </span>
-      </div>
-    </div>
-
   </div>
 </template>
 
@@ -48,7 +48,6 @@ export default {
   name: "Belt"
 }
 </script>
-
 
 <style scoped>
 .main-row {
@@ -68,9 +67,6 @@ export default {
   font-weight: 700;
   line-height: 27px;
   margin-top: 6px;
-}
-
-.description > span {
   max-width: 332px;
 }
 

@@ -6,10 +6,10 @@
   <div class="row mt-5">
     <div class="col-12 text-center main-title">
       we offer
-    </div>
-    <!-- Bg INDEX -->
-    <div>
-      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
+      <!-- Bg INDEX -->
+      <div>
+        <img alt="#" class="bg-index-drop d-none d-lg-block" src="../assets/home/bg-index.png" height="72" draggable="false">
+      </div>
     </div>
   </div>
 
@@ -56,9 +56,9 @@
 
 .bg-index-drop {
   position: relative;
-  left: 53%;
-  z-index: 0;
-  margin-top: -50px;
+  left: 55px;
+  z-index: -1;
+  margin-top: -60px;
 }
 
 * {

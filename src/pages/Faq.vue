@@ -187,7 +187,7 @@ import Header from "../components/Header.vue";
 
 h1 {
   font-size: 40px;
-  font-weight: 800;
+  font-weight: 900;
   line-height: 56px;
   text-align: left;
   margin-top: 183px;
@@ -195,6 +195,7 @@ h1 {
 
 h1 > span {
   border-bottom: 5px solid black;
+  font-weight: 800;
 }
 
 .accordion-header {

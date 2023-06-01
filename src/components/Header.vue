@@ -1,4 +1,6 @@
 <script setup>
+import {ref} from "vue";
+
 $(window).on('click', function(event){
   let clickOver = $(event.target)
   if ($('.navbar .navbar-toggler').attr('aria-expanded') === 'true' && clickOver.closest('.navbar').length === 0) {
@@ -17,11 +19,17 @@ window.onscroll = function() {
   }
   prevScrollpos = currentScrollPos;
 }
+
+const clicked = ref(false)
+
+const toggle = () => {
+  clicked.value =! clicked.value
+}
 </script>
 <template>
   <div class="row">
     <div class="col d-flex justify-content-center">
-      <nav class="navbar navbar-expand-xl" id="navbar">
+      <nav class="navbar navbar-expand-xxl" id="navbar">
         <div class="container-fluid">
           <a class="navbar-brand ms-4 mt-2 mb-3" href="#" @click="$router.push('/home')" draggable="false">
             <svg width="82" height="43" viewBox="0 0 82 43" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -55,7 +63,7 @@ window.onscroll = function() {
 
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Mobile Version -->
-            <div class="accordion accordion-flush d-flex-block d-xl-none mb-4" id="accordionFlushExample">
+            <div class="accordion accordion-flush d-flex-block d-xxl-none mb-4" id="accordionFlushExample">
               <div class="accordion-item">
                 <div class="accordion-header">
                   <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
@@ -94,7 +102,7 @@ window.onscroll = function() {
             </div>
 
             <!-- Desktop Version -->
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-xl-flex">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-none d-xxl-flex">
               <li class="nav-item dropdown ms-lg-3">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" draggable="false">
                   for clients
@@ -117,13 +125,14 @@ window.onscroll = function() {
               </li>
             </ul>
 
-            <form class="d-flex d-none d-xl-flex me-5" role="search">
-              <button type="button" class="btn-call me-2">
-                <a href="tel:+ 971 58 528 86 07">
-                  <svg width="19" height="27" viewBox="0 0 19 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M5.21031 0.643421C5.85886 0.425394 6.55481 0.461615 7.18232 0.746056C7.80983 1.0305 8.33103 1.546 8.65917 2.20674L8.76885 2.45297L9.75001 4.88388C10.0478 5.62172 10.1444 6.44089 10.028 7.23949C9.91149 8.0381 9.58702 8.78091 9.09492 9.37553L8.8978 9.59367L7.35196 11.2016C7.07332 11.4958 7.2823 12.6344 8.29013 14.5811C9.19718 16.3328 9.93527 17.1508 10.2984 17.1954H10.3621L10.4407 17.1789L13.479 16.1427C13.8873 16.0031 14.3231 15.9976 14.7342 16.1268C15.1452 16.2561 15.5142 16.5146 15.797 16.8715L15.9319 17.0616L17.9431 20.1684C18.3373 20.7773 18.5337 21.5178 18.5 22.2679C18.4663 23.0179 18.2046 23.7328 17.7578 24.2948L17.577 24.503L16.7737 25.3524C16.0524 26.1141 15.15 26.6289 14.174 26.8354C13.1979 27.0419 12.1891 26.9316 11.2677 26.5175C8.39981 25.2285 5.79426 22.2837 3.42734 17.7127C1.05597 13.1301 0.0703661 9.13591 0.510552 5.71512C0.643754 4.68106 1.02564 3.70653 1.61566 2.89502C2.20568 2.08352 2.9818 1.46534 3.8616 1.10614L4.14764 1.00037L5.21031 0.643421Z" fill="#6357AD"/>
-                  </svg>
-                </a>
+            <form class="d-flex d-none d-xxl-flex" role="search">
+              <button type="button" class="btn-call me-2 px-4" @click="toggle">
+                <span class="phone-number" v-if="clicked">
+                  + 971 58 528 86 07
+                </span>
+                <svg v-if="!clicked" width="19" height="27" viewBox="0 0 19 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.21031 0.643421C5.85886 0.425394 6.55481 0.461615 7.18232 0.746056C7.80983 1.0305 8.33103 1.546 8.65917 2.20674L8.76885 2.45297L9.75001 4.88388C10.0478 5.62172 10.1444 6.44089 10.028 7.23949C9.91149 8.0381 9.58702 8.78091 9.09492 9.37553L8.8978 9.59367L7.35196 11.2016C7.07332 11.4958 7.2823 12.6344 8.29013 14.5811C9.19718 16.3328 9.93527 17.1508 10.2984 17.1954H10.3621L10.4407 17.1789L13.479 16.1427C13.8873 16.0031 14.3231 15.9976 14.7342 16.1268C15.1452 16.2561 15.5142 16.5146 15.797 16.8715L15.9319 17.0616L17.9431 20.1684C18.3373 20.7773 18.5337 21.5178 18.5 22.2679C18.4663 23.0179 18.2046 23.7328 17.7578 24.2948L17.577 24.503L16.7737 25.3524C16.0524 26.1141 15.15 26.6289 14.174 26.8354C13.1979 27.0419 12.1891 26.9316 11.2677 26.5175C8.39981 25.2285 5.79426 22.2837 3.42734 17.7127C1.05597 13.1301 0.0703661 9.13591 0.510552 5.71512C0.643754 4.68106 1.02564 3.70653 1.61566 2.89502C2.20568 2.08352 2.9818 1.46534 3.8616 1.10614L4.14764 1.00037L5.21031 0.643421Z" fill="#6357AD"/>
+                </svg>
               </button>
               <button type="button" class="rounded-pill btn-header ms-2 px-3" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 leave an application
@@ -194,11 +203,18 @@ ul.dropdown-menu.show {
 }
 
 .btn-call {
-  width: 52px;
   height: 52px;
   border-radius: 10px;
   padding-bottom: 4px;
   border: none;
+}
+
+.phone-number {
+  max-width: 235px;
+  color: #6357AD;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 38px;
 }
 
 .btn-header {
@@ -261,6 +277,12 @@ ul.dropdown-menu.show {
 @media only screen and (max-width: 768px) {
   #navbar {
     width: 100%;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .container-fluid {
+    padding-right: 40px;
   }
 }
 </style>

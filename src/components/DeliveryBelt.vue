@@ -10,7 +10,7 @@
         <div class="col-12 col-lg-4 col-xl-5 d-flex justify-content-center justify-content-xl-start mt-5 pt-4">
           <div class="my-card mb-4">
             <div class="card-text">
-              more than 1000 micromarkets in 54 cities in Russia and 3 cities in the UAE.
+              More than 1000 micromarkets in 57 cities of world
             </div>
             <!-- ICON -->
             <span class="icon">
@@ -27,7 +27,7 @@
             <ul class="mt-2">
               <li>
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7.5" cy="7.5" r="7.5" fill="#FFC54A"/></svg>
-                Ready-made food
+                ready-made food
               </li>
               <li>
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7.5" cy="7.5" r="7.5" fill="#FFC54A"/></svg>
@@ -51,7 +51,7 @@
             <ul>
               <li>
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7.5" cy="7.5" r="7.5" fill="#FFC54A"/></svg>
-                Business centers
+                business centers
               </li>
               <li>
                 <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="7.5" cy="7.5" r="7.5" fill="#FFC54A"/></svg>

@@ -19,15 +19,17 @@ watch(
     if(width.value <= 767) {
       options.perPage = 1
       options.padding = '0%'
-    } else if(width.value <= 1200) {
-      options.perPage = 2
-      options.padding = '10%'
     } else if(width.value >= 1200) {
       options.perPage = 3
+      options.padding = '10%'
     }
   },
   {immediate: true}
 )
+
+const foo = () => {
+  console.log("foo ishladi")
+}
 </script>
 
 <template>
@@ -45,7 +47,7 @@ watch(
     <div class="col-11 col-md-12 p-0">
       <div class="col-12 p-0 m-0">
         <Splide :options="options" aria-label="My Favorite Images">
-          <SplideSlide>
+          <SplideSlide @click="foo">
             <div class="image d-flex align-items-center">
               <img src="../assets/home/slide-1.png" alt="">
             </div>
@@ -120,7 +122,10 @@ watch(
 }
 
 .splide {
-  padding: 3em 0;
+  padding: 2em 0;
 }
 
+.splide__slide {
+  padding-bottom: 25px;
+}
 </style>

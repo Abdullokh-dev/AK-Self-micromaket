@@ -5,10 +5,10 @@
   <div class="row mt-5">
     <div class="col-12 text-center main-title">
       how we work?
-    </div>
-    <!-- Bg INDEX -->
-    <div>
-      <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
+      <!-- Bg INDEX -->
+      <div>
+        <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
+      </div>
     </div>
   </div>
 
@@ -20,7 +20,7 @@
           <div class="my-card">
             <div class="order-num">1</div>
             <div class="my-card-info">
-              We coordinate the equipment and design
+              we coordinate the equipment and design
             </div>
           </div>
         </div>
@@ -28,7 +28,7 @@
           <div class="my-card">
             <div class="order-num">2</div>
             <div class="my-card-info">
-              We conduct tastings and form the assortment
+              we conduct tastings and form the assortment
             </div>
           </div>
         </div>
@@ -36,7 +36,7 @@
           <div class="my-card">
             <div class="order-num">3</div>
             <div class="my-card-info">
-              We assemble and configure the micromarket in an hour
+              we assemble and configure the micromarket in an hour
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@
           <div class="my-card">
             <div class="order-num">4</div>
             <div class="my-card-info">
-              Load up with products
+              load up with products
             </div>
           </div>
         </div>
@@ -72,9 +72,9 @@
 
 .bg-index-drop {
   position: relative;
-  left: 53%;
-  z-index: 0;
-  margin-top: -50px;
+  left: 100px;
+  z-index: -1;
+  margin-top: -60px;
 }
 
 .my-card {

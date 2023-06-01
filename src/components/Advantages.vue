@@ -9,7 +9,7 @@
       <img alt="#" class="bg-index" src="../assets/home/cake.png" draggable="false">
     </div>
     <div class="col text-center main-title" id="advantages">
-      Advantages
+      advantages
     </div>
     <!-- Bg INDEX -->
     <div>
@@ -23,9 +23,9 @@
       <div class="row">
         <div class="col-12 col-md-6 col-xl-4">
           <div class="colored rounded-4 h-100 px-4 pt-4 pb-3">
-            <h1>Assortment</h1>
+            <h1>assortment</h1>
             <p>
-              over 400 dishes in the assortment,
+              Over 400 dishes in the assortment,
               including healthy, vegan food and organic dishes.
             </p>
           </div>
@@ -33,32 +33,32 @@
 
         <div class="col-12 col-md-6 col-xl-4 mt-4 mt-md-0">
           <div class="light rounded-4 px-4 pt-4 pb-3">
-            <h1>Service</h1>
-            <p>online monitoring of technical errors and 24/7 service support.</p>
+            <h1>service</h1>
+            <p>Online monitoring of technical errors and 24/7 service support.</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-xl-4 mt-4 mt-xl-0">
           <div class="rounded-4 colored px-4 pt-4 pb-3">
-            <h1>Convenient payment methods</h1>
-            <p>contactless payment by bank cards, Apple Pay, Samsung Pay.</p>
+            <h1>convenient payment methods</h1>
+            <p>Contactless payment by bank cards, Apple Pay, Samsung Pay.</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-xl-4 mt-4">
           <div class="rounded-4 light px-4 pt-4 pb-3">
-            <h1>Free</h1>
-            <p>free installation, there is a trial period.</p>
+            <h1>free</h1>
+            <p>Free installation, there is a trial period.</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-xl-4 mt-4">
           <div class="rounded-4 colored px-4 pt-4 pb-3">
-            <h1>Area</h1>
-            <p>maximum opportunities on a minimum area.</p>
+            <h1>area</h1>
+            <p>Maximum opportunities on a minimum area.</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-xl-4 my-4">
           <div class="rounded-4 light px-4 pt-4 pb-3">
-            <h1>Design</h1>
-            <p>we can make an individual design according to your identity.</p>
+            <h1>design</h1>
+            <p>We can make an individual design according to your identity.</p>
           </div>
         </div>
       </div>

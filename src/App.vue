@@ -87,7 +87,7 @@ const emailSend = () => {
             </div>
 
             <div class="mt-4">
-              <MyButton text="Send" type="submit" class="my-3 px-4"/>
+              <MyButton text="send" type="submit" class="my-3 px-4"/>
             </div>
           </form>
         </div>
