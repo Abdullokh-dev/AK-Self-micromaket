@@ -8,7 +8,7 @@ import MyButton from "./MyButton.vue";
       <div class="row flex-md-row-reverse">
         <div class="col d-lg-none">
           <div class="title text-center mt-5 mb-4">
-            Request a call back
+            request a call back
           </div>
         </div>
         <!-- HALF -->

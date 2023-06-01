@@ -56,9 +56,9 @@
 
 .bg-index-drop {
   position: relative;
-  left: 55px;
+  left: 51%;
   z-index: -1;
-  margin-top: -60px;
+  margin-top: -50px;
 }
 
 * {

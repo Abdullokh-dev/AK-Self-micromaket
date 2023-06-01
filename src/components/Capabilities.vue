@@ -14,7 +14,7 @@
   <div class="row d-flex justify-content-center">
     <div class="col-12 col-md-11">
       <!-- Bg INDEX -->
-      <div>
+      <div class="d-none d-lg-block">
         <img alt="#" class="bg-index" src="../assets/subsidy/bg.png" width="70" draggable="false">
       </div>
       <div class="row">
@@ -92,16 +92,18 @@
 }
 
 h1 {
-  font-size: 24px;
+  /*font-size: 24px;*/
+  /*line-height: 34px;*/
+  line-height: 28px;
+  font-size: 20px;
   font-weight: 700;
-  line-height: 34px;
   text-align: left;
 }
 
 .info {
-  font-size: 20px;
+  /*font-size: 20px;*/
+  line-height: 25px;
   font-weight: 400;
-  line-height: 28px;
   text-align: left;
 }
 
@@ -112,6 +114,15 @@ h1 {
 @media only screen and (min-width: 768px) {
   .my-card {
     border-radius: 20px;
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 34px;
+  }
+
+  .info {
+    font-size: 20px;
   }
 }
 </style>

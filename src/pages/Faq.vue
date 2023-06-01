@@ -197,7 +197,7 @@ h1 {
   font-weight: 900;
   line-height: 56px;
   text-align: left;
-  margin-top: 183px;
+  margin-top: 91px;
 }
 
 h1 > span {
@@ -220,15 +220,17 @@ h1 > span {
   border: none;
   outline: none;
   background-color: #F5F5F5;
-  font-size: 24px;
+  font-size: 18px;
+  line-height: 25px;
   font-weight: 700;
-  line-height: 38px;
 }
 
 .accordion-body {
-  font-size: 20px;
+  font-size: 18px;
+  /*font-size: 20px;*/
   font-weight: 400;
-  line-height: 28px;
+  line-height: 25px;
+  /*line-height: 28px;*/
   text-align: left;
   background-color: #F5F5F5;
 }
@@ -250,5 +252,21 @@ h1 > span {
   top: 60%;
   left: 0;
   z-index: -1;
+}
+
+@media only screen and (min-width: 992px) {
+  h1 {
+    margin-top: 183px;
+  }
+
+  .accordion-button {
+    line-height: 38px;
+    font-size: 18px;
+  }
+
+  .accordion-body {
+    font-size: 20px;
+    line-height: 28px;
+  }
 }
 </style>

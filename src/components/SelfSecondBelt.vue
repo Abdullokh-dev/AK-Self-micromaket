@@ -5,7 +5,7 @@ import MyButton from "./MyButton.vue";
 
 <template>
 <div class="row my-5 d-flex justify-content-center">
-  <div class="col-11 rounded-5 main-row ps-0">
+  <div class="col-12 col-md-11 main-row ps-0">
 
     <div class="row flex-md-row-reverse">
       <div class="col-12 col-md-6 mt-5 pt-md-5">
@@ -49,5 +49,11 @@ import MyButton from "./MyButton.vue";
 .drop > img {
   border-bottom-left-radius: 30px;
   margin-top: -136px;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-row {
+    border-radius: 50px;
+  }
 }
 </style>

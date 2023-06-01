@@ -14,13 +14,15 @@ input {
 
 iframe {
     width: 100% !important;
-    height: 335px !important;
     border-radius: 20px;
     object-fit: cover;
+    max-height: 56vw;
 }
-
-@media only screen and (max-width: 992px) {
+#videoCard {
+    max-height: 56vw;;
+}
+@media only screen and (min-width: 992px) {
     iframe {
-        max-height: 360px;
+        max-height: 90%;
     }
 }

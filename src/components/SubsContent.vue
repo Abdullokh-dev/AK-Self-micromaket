@@ -38,7 +38,7 @@ import MyButton from "./MyButton.vue";
   font-weight: 800;
   font-size: 28px;
   line-height: 34px;
-  margin-top: 130px;
+  margin-top: 90px;
 }
 
 .title > span {

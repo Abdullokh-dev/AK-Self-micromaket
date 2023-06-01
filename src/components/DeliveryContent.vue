@@ -34,11 +34,12 @@ import MyButton from "./MyButton.vue";
 * {
   color: black;
 }
+
 .title {
   font-weight: 800;
   font-size: 28px;
   line-height: 34px;
-  margin-top: 130px;
+  margin-top: 90px;
 }
 
 .title > span {
@@ -68,7 +69,7 @@ import MyButton from "./MyButton.vue";
 
 @media only screen and (min-width: 992px) {
   .title {
-    margin-top: 191px;
+    margin-top: 183px;
     font-size: 40px;
     line-height: 40px;
   }

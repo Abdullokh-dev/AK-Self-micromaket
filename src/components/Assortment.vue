@@ -217,7 +217,7 @@ const download = (url) => {
 
 .card {
   border: none;
-  border-radius: 10px;
+  border-radius: 12px;
   box-shadow: 0 4px 29px 0 #0000001A;
 }
 
@@ -226,9 +226,9 @@ const download = (url) => {
 }
 
 .card-image > img {
-  padding: 22px;
+  padding: 22px 0;
   background-color: #FFC54A;
-  border-radius: 10px 0 0 10px;
+  border-radius: 12px 0 0 12px;
   width: 100%;
 }
 

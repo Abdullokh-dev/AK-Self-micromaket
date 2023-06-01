@@ -6,7 +6,7 @@
         <div class="col-12 col-lg-4 p-0 text-center">
           <div class="title">
             <div>
-              N1
+              №1
             </div>
           </div>
           <div class="d-flex justify-content-center">
@@ -22,7 +22,7 @@
           </div>
           <div class="d-flex justify-content-center">
             <div class="description">
-              more than 1000 micromarkets in 57 cities of world
+              more than 1000 in 57 cities of world
             </div>
           </div>
         </div>

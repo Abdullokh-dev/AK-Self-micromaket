@@ -66,9 +66,9 @@
 
 .bg-index-drop {
   position: absolute;
-  right: 0;
+  right: 50px;
   z-index: 0;
-  margin-top: -70px;
+  margin-top: -60px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -101,8 +101,10 @@
     height: auto;
   }
   .bg-index-drop-2 {
-    left: 45vw;
-    margin-top: -220px;
+    position: relative;
+    right: -100%;
+    margin-left: -150px;
+    margin-top: -450px;
   }
 }
 </style>

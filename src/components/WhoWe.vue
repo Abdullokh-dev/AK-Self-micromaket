@@ -15,7 +15,7 @@ const download = (url) => {
 <div class="row d-flex justify-content-center">
   <div class="col-12 col-xl-10">
     <div class="row flex-row-reverse">
-      <div class="col-12 text-center title">
+      <div class="col-12 text-center title mb-4">
         who are we?
         <!-- Bg INDEX -->
         <div class="d-none d-lg-block">
@@ -31,18 +31,22 @@ const download = (url) => {
         />
       </div>
 
-      <div class="col-12 col-lg-6 mt-2 mt-lg-0">
-        <div class="d-flex justify-content-start">
-          <span class="text-bolder ms-3 ms-md-5 ms-xl-0 text-start">
-            micromarket with delicious and
-            nutritious food according to your preferences
-          </span>
-        </div>
-        <div class="d-flex justify-content-start mt-4">
-          <span class="text-bottom ms-3 ms-md-5 ms-xl-0 text-start">
-            Salads, first and hot dishes, rolls, desserts, fruits,
-            snacks, coffee, soft drinks, ice cream, and much more
-          </span>
+      <div class="col-12 col-lg-6 mt-2 mt-lg-0 mt-4">
+        <div class="row d-flex justify-content-center justify-content-xl-start">
+          <div class="col-12 col-md-11 col-lg-10">
+            <div>
+              <div class="text-bolder text-start">
+                micromarket with delicious and
+                nutritious food according to your preferences
+              </div>
+            </div>
+            <div class="mt-4">
+              <div class="text-bottom text-start">
+                Salads, first and hot dishes, rolls, desserts, fruits,
+                snacks, coffee, soft drinks, ice cream, and much more
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="d-flex justify-content-center justify-content-lg-start">
@@ -84,20 +88,12 @@ const download = (url) => {
   max-width: 430px;
 }
 
-.video-card {
-  width: 100% !important; border-radius: 20px!important;
-}
-
 @media only screen and (max-width: 992px) {
   .text-bolder {
     max-width: 100%;
   }
   .text-bottom {
     max-width: 100%;
-  }
-  .video-card {
-    width: 90% !important;
-    border-radius: 20px!important;
   }
 }
 </style>

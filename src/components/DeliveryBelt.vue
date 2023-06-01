@@ -10,7 +10,7 @@
         <div class="col-12 col-lg-4 col-xl-5 d-flex justify-content-center justify-content-xl-start mt-5 pt-4">
           <div class="my-card mb-4">
             <div class="card-text">
-              More than 1000 micromarkets in 57 cities of world
+              more than 1000 micromarkets in 57 cities of world
             </div>
             <!-- ICON -->
             <span class="icon">
@@ -97,9 +97,9 @@
 }
 
 .card-text {
-  font-size: 32px;
+  font-size: 20px;
+  line-height: 28px;
   font-weight: 700;
-  line-height: 45px;
   text-align: left;
   margin: 32px 65px 38px 32px;
 }
@@ -130,6 +130,11 @@ ul > li {
 @media only screen and (min-width: 992px) {
   .my-card {
     max-width: 550px;
+  }
+
+  .card-text {
+    line-height: 45px;
+    font-size: 32px;
   }
 }
 </style>

@@ -46,13 +46,13 @@
         <div class="col-12 col-md-6 col-xl-4 mt-4">
           <div class="rounded-4 light px-4 pt-4 pb-3">
             <h1>free</h1>
-            <p>Free installation, there is a trial period.</p>
+            <p class="my-width">Free installation, there is a trial period.</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-xl-4 mt-4">
           <div class="rounded-4 colored px-4 pt-4 pb-3">
             <h1>area</h1>
-            <p>Maximum opportunities on a minimum area.</p>
+            <p class="my-width"> Maximum opportunities on a minimum area.</p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-xl-4 my-4">
@@ -78,6 +78,10 @@ p {
   font-size: 18px;
   font-weight: 400;
   line-height: 29px;
+}
+
+.my-width {
+  max-width: 244px;
 }
 
 .bg-index {
@@ -119,6 +123,10 @@ p {
 @media only screen and (min-width: 992px) {
   .main-title {
     margin-top: -80px;
+  }
+
+  .my-width {
+    max-width: 100%;
   }
 
 }

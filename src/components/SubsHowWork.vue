@@ -32,7 +32,7 @@
           <div class="my-card row">
             <div class="order-num col-12">2</div>
             <div class="my-card-info col-12">
-              employees make purchases in the micro-market in a free mode, using electronic cards.
+              employees make purchases in the micromarket in a free mode, using electronic cards.
             </div>
             <div class="col-12 d-flex align-items-end justify-content-center mb-4">
               <img src="../assets/subsidy/btn.png" alt="#" width="80" draggable="false">

@@ -19,9 +19,11 @@ watch(
     if(width.value <= 767) {
       options.perPage = 1
       options.padding = '0%'
+    } else if(width.value >= 767) {
+      options.perPage = 2
+      options.padding = '10%'
     } else if(width.value >= 1200) {
       options.perPage = 3
-      options.padding = '10%'
     }
   },
   {immediate: true}

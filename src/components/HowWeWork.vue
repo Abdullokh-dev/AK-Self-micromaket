@@ -99,6 +99,7 @@
   line-height: 28px;
   text-align: left;
   padding: 6px 0 0 16px;
+  max-width: 309px;
 }
 
 @media only screen and (min-width: 768px) {
