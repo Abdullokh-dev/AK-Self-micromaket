@@ -25,8 +25,10 @@ watch(
 
 <template>
   <div class="row main-row">
-    <div class="col-12 text-center main-title" data-aos="flip-up">
-      customer reviews
+    <div class="col-12 text-center main-title">
+      <div data-aos="flip-up">
+        customer reviews
+      </div>
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
         <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">

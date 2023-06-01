@@ -45,13 +45,13 @@ const emailSend = () => {
 
         <div class="col-12 col-md-6 ps-lg-5 mt-2 mt-md-5 pt-md-4">
           <form @submit.prevent="emailSend">
-            <div class="mb-3" data-aos="fade-right">
+            <div class="mb-3" data-aos="flip-down">
               <input type="text" class="form-control ps-4" placeholder="name" v-model="obj.name" required>
             </div>
-            <div class="mb-3" data-aos="fade-left">
+            <div class="mb-3" data-aos="flip-down">
               <input type="email" class="form-control ps-4" placeholder="email" v-model="obj.email" required>
             </div>
-            <div class="mb-3" data-aos="fade-right">
+            <div class="mb-3" data-aos="flip-down">
               <input type="text" class="form-control ps-4" placeholder="text" v-model="obj.text" required>
             </div>
             <div class="text-center">

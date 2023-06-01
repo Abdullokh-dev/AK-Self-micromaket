@@ -12,8 +12,10 @@ const download = (url) => {
 
 <template>
   <div class="row mt-5">
-    <div class="col-12 text-center main-title" data-aos="flip-up">
-      assortment
+    <div class="col-12 text-center main-title">
+      <div data-aos="flip-up">
+        assortment
+      </div>
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
         <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70">
@@ -177,10 +179,10 @@ const download = (url) => {
 
         <div class="col-12 my-4 mt-5">
           <div class="row">
-            <div class="col-12 col-md-6 text-center text-md-end" data-aos="fade-left">
+            <div class="col-12 col-md-6 text-center text-md-end" data-aos="flip-down">
               <MyButton text="I want a free tasting" background="#6357AD" class="me-1 w-100" max-width="396" data-bs-toggle="modal" data-bs-target="#staticBackdrop" />
             </div>
-            <div class="col-12 col-md-6 text-center text-md-start mt-4 mb-4 mt-md-0" data-aos="fade-right">
+            <div class="col-12 col-md-6 text-center text-md-start mt-4 mb-4 mt-md-0" data-aos="flip-up">
               <MyButton text="download the assortment" @click="download('assortment.pdf')" class="w-100 ms-1" max-width="396" />
             </div>
           </div>

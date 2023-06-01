@@ -4,8 +4,8 @@ import MyButton from "./MyButton.vue";
 
 <template>
   <div class="row d-flex justify-content-center" id="footer">
-    <div class="col-11 col-sm-9 col-lg-12 main-row">
-      <div class="row flex-md-row-reverse">
+    <div class="col-12 pb-3 pb-lg-0 col-12 col-lg-12 main-row">
+      <div class="row flex-md-row-reverse justify-content-center">
         <div class="col d-lg-none">
           <div class="title text-center mt-5 mb-4">
             request a call back
@@ -13,7 +13,7 @@ import MyButton from "./MyButton.vue";
         </div>
         <!-- HALF -->
         <div class="col-12 col-lg-8 col-xl-7 col-xxl-6">
-          <div class="row pe-xl-5">
+          <div class="row pe-xl-5 text-center">
             <div class="col-12 col-lg-5 d-lg-none align-items-end">
               <div>
                 <input type="text" placeholder="name" class="ps-3 mt-lg-4">
@@ -43,10 +43,12 @@ import MyButton from "./MyButton.vue";
             </div>
           </div>
         </div>
+
         <!-- HALF end-->
         <div class="text-center d-lg-none">
           <MyButton text="+ 971 58 528 86 07" background="#6357AD" class="px-4 py-2 mt-2"/>
         </div>
+
         <!-- HALF -->
         <div class="col-12 col-lg-4 col-xl-5 col-xxl-6">
           <div class="d-flex mt-5 mt-lg-4 pt-lg-2 ps-lg-5 align-items-end align-items-lg-center">
@@ -138,7 +140,7 @@ input {
   font-size: 18px;
   font-weight: 400;
   line-height: 18px;
-  width: 100%;
+  width: 80%;
 }
 
 input::placeholder {

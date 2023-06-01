@@ -2,8 +2,10 @@
 </script>
 <template>
   <div class="row mt-5 main-row">
-    <div class="col-12 text-center main-title" data-aos="flip-up">
-      our partners
+    <div class="col-12 text-center main-title">
+      <div data-aos="flip-up">
+        our partners
+      </div>
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
         <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">
@@ -11,7 +13,7 @@
     </div>
   </div>
   <div class="row d-flex justify-content-center main-row">
-    <div class="col p-0 d-flex justify-content-center" data-aos="flip-down">
+    <div class="col p-0 d-flex justify-content-center">
       <!-- First Belt -->
       <div class="brand-wheel">
         <div class="brand-slide">

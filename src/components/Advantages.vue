@@ -8,8 +8,10 @@
     <div class="p-0 d-none d-lg-block" data-aos="fade-right"  data-aos-delay="500">
       <img alt="#" class="bg-index" src="../assets/home/cake.png" draggable="false">
     </div>
-    <div class="col text-center main-title" id="advantages" data-aos="flip-up">
-      advantages
+    <div class="col text-center main-title" id="advantages">
+      <div data-aos="flip-up">
+        advantages
+      </div>
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
         <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">

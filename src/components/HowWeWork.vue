@@ -3,8 +3,10 @@
 </script>
 <template>
   <div class="row mt-5">
-    <div class="col-12 text-center main-title" data-aos="flip-up">
-      how we work?
+    <div class="col-12 text-center main-title">
+      <div data-aos="flip-up">
+        how we work?
+      </div>
       <!-- Bg INDEX -->
       <div class="d-none d-lg-block">
         <img alt="#" class="bg-index-drop" src="../assets/home/bg-index.png" height="70" draggable="false">

@@ -6,8 +6,10 @@
   <div class="row main-row">
     <div class="col">
       <div class="row">
-        <div class="col-12 text-center main-title" data-aos="flip-up">
-          convenience of modular systems
+        <div class="col-12 text-center main-title">
+          <div data-aos="flip-up">
+            convenience of modular systems
+          </div>
           <!-- Bg INDEX -->
           <div class="d-none d-lg-block">
             <img alt="#" class="bg-index" src="../assets/home/bg-index.png" height="70" draggable="false">
