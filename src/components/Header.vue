@@ -205,12 +205,12 @@ ul.dropdown-menu.show {
 }
 
 .btn-sm-call > svg {
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
 
 .btn-sm-call {
-  width: 28px;
-  height: 28px;
+  width: 31px;
+  height: 31px;
   border-radius: 5px;
   background-color: white;
   text-align: center !important;
