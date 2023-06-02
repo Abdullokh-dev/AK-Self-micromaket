@@ -154,11 +154,10 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 }
 
 .second-slide {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  /*-webkit-background-size: cover;*/
+  /*-moz-background-size: cover;*/
+  /*-o-background-size: cover;*/
   background-size: cover;
-  /*-webkit-background-image: url(../assets/home/img-coffee.png);*/
   background: url(../assets/home/img-coffee.png) #31C2B0 no-repeat bottom center fixed;
 }
 
