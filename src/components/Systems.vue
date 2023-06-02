@@ -10,6 +10,7 @@
         <div class="modal-body mx-auto">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           <img src="../assets/systems/img.png" style="width: 100%;" alt="Light Snaks">
+          <button type="button" class="btn btn-dark rounded-pill text-center" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#staticBackdrop">i want to install</button>
         </div>
       </div>
     </div>
@@ -22,6 +23,7 @@
         <div class="modal-body mx-auto">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           <img src="../assets/systems/img_1.png" style="width: 100%;" alt="Light Snaks">
+          <button type="button" class="btn btn-dark rounded-pill coffee-btn" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#staticBackdrop">i want to install</button>
         </div>
       </div>
     </div>
@@ -34,6 +36,7 @@
         <div class="modal-body mx-auto">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           <img src="../assets/systems/img_2.png" style="width: 100%;" alt="Light Snaks">
+          <button type="button" class="btn btn-dark rounded-pill coffee-btn" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#staticBackdrop">i want to install</button>
         </div>
       </div>
     </div>
@@ -46,6 +49,7 @@
         <div class="modal-body mx-auto">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           <img src="../assets/systems/img_3.png" style="width: 100%;" alt="Light Snaks">
+          <button type="button" class="btn btn-dark rounded-pill inclusive-btn" data-bs-dismiss="modal" aria-label="Close" data-bs-toggle="modal" data-bs-target="#staticBackdrop">i want to install</button>
         </div>
       </div>
     </div>
@@ -157,6 +161,26 @@
 </template>
 
 <style scoped>
+.rounded-pill {
+  position: absolute;
+  top: 85%;
+  right: 24%;
+  z-index: 1;
+  width: 19.5%;
+  height: 8%;
+  font-size: 1.5vw;
+  font-weight: 800;
+  --bs-btn-padding-x: 0;
+  --bs-btn-padding-y: 0;
+}
+
+.coffee-btn {
+  right: 19.6%;
+}
+
+.inclusive-btn {
+  right: 15.3%;
+}
 .btn-close {
   position: absolute;
   top: 10px;
