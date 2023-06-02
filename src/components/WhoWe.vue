@@ -15,8 +15,10 @@ const download = (url) => {
   <div class="row d-flex justify-content-center">
   <div class="col-12 col-xl-10">
     <div class="row flex-row-reverse">
-      <div class="col-12 text-center title mb-4" data-aos="flip-up">
-        who are we?
+      <div class="col-12 text-center title mb-4">
+        <div data-aos="flip-up">
+          who are we?
+        </div>
         <!-- Bg INDEX -->
         <div class="d-none d-lg-block">
           <img alt="#" class="bg-index" src="../assets/home/bg-index.png" height="70" draggable="false">

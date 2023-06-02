@@ -7,7 +7,7 @@ import "../styles/pagination.css";
 
 import {ref} from "vue";
 import MyButton from "./MyButton.vue";
-const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration: 5000, direction: "NEXT", stopOnHover: false })])
+const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration: 8000, direction: "NEXT", stopOnHover: false })])
 </script>
 
 <template>
@@ -80,9 +80,9 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
               </div>
             </div>
             <!--Second Slide mobile button-->
-            <div class="row align-items-end m-0">
-              <div class="col-12 d-block d-lg-none text-center mb-5 pb-4">
-                <button type="button" class="btn px-4 rounded-pill" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <div class="row align-items-center mt-5">
+              <div class="col-12 d-block d-lg-none text-center mt-5 pt-5">
+                <button type="button" class="btn px-4 rounded-pill mt-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   leave an application
                 </button>
               </div>
@@ -154,15 +154,11 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 }
 
 .second-slide {
-  background-image: url(../assets/home/imgCoffee.png);
-  background-color: #31C2B0;
-  background-repeat: no-repeat;
-  background-position: bottom center;
-  background-attachment: fixed;
-  -o-background-size:cover;
-  -moz-background-size:cover;
-  -webkit-background-size:cover;
-  background-size: cover;
+  background: url(../assets/home/imgCoffee.jpg) #31C2B0 no-repeat center center fixed;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
 }
 
 .third-slide {
@@ -261,7 +257,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 
 @media only screen and (min-width: 1199px) {
   .second-slide {
-    background: url(../assets/home/imgCoffee.png) #31C2B0 no-repeat right fixed;
+    background: url(../assets/home/imgCoffee.jpg) #31C2B0 no-repeat right fixed;
   }
 }
 
