@@ -19,7 +19,6 @@ watch(
     if(width.value <= 767) {
       options.perPage = 1
       options.padding = '0%'
-      console.log('lll')
     } else if(width.value <= 1200) {
       options.perPage = 2
       options.padding = '10%'
