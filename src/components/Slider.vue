@@ -56,7 +56,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 
         <!-- Second Slide -->
         <div class="panel" style="position: relative">
-          <div class="row my-setting-slide second-slide">
+          <div class="row my-setting-slide second-slide m-0">
             <!-- Second Slide half 50% -->
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-lg-5">
@@ -68,7 +68,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
                 natural grain coffee from trusted suppliers
               </div>
               </div>
-              <div class="mt-4 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
+              <div class="mt-4 ms-3 mb-5 pb-5 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
               <div class="addition text-light">
                 20 types of drinks, 5 types of alternative milk
               </div>
@@ -80,9 +80,9 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
               </div>
             </div>
             <!--Second Slide mobile button-->
-            <div class="row align-items-center mt-5">
-              <div class="col-12 d-block d-lg-none text-center mt-5 pt-5">
-                <button type="button" class="btn px-4 rounded-pill mt-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <div class="row mt-5 m-0 align-self-end">
+              <div class="col-12 d-block d-lg-none text-center mb-5 d-flex justify-content-center">
+                <button type="button" class="btn px-4 rounded-pill mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   leave an application
                 </button>
               </div>
@@ -129,6 +129,8 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             </div>
           </div>
         </div>
+
+        <!-- Dot Pagination -->
         <template #viewport>
           <div class="flicking-pagination"></div>
         </template>
@@ -154,7 +156,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 }
 
 .second-slide {
-  background: url(../assets/home/imgCoffee.jpg) #31C2B0 no-repeat center center fixed;
+  background: url(../assets/home/imgCoffe2.png) #31C2B0 no-repeat center center fixed;
   -webkit-background-size: auto;
   -moz-background-size: auto;
   -o-background-size: auto;
