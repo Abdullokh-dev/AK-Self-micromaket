@@ -3,6 +3,54 @@
 </script>
 
 <template>
+  <!-- Open Image 1-->
+  <div class="modal fade" id="snacks" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body mx-auto">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <img src="../assets/systems/img.png" style="width: 100%;" alt="Light Snaks">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Open Image 2-->
+  <div class="modal fade" id="coffee" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body mx-auto">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <img src="../assets/systems/img_1.png" style="width: 100%;" alt="Light Snaks">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Open Image 3-->
+  <div class="modal fade" id="lunch" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body mx-auto">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <img src="../assets/systems/img_2.png" style="width: 100%;" alt="Light Snaks">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Open Image 4-->
+  <div class="modal fade" id="inclusive" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body mx-auto">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <img src="../assets/systems/img_3.png" style="width: 100%;" alt="Light Snaks">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="row main-row">
     <div class="col">
       <div class="row">
@@ -26,7 +74,7 @@
         <div class="col-12">
           <div class="row d-flex justify-content-center">
 
-            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="100">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="100" data-bs-toggle="modal" data-bs-target="#snacks">
               <div class="title my-5">light snacks</div>
               <div class="system-container">
                 <div class="img-box system-img">
@@ -45,7 +93,7 @@
               <div class="description my-5"> from 8,6 sq.feet </div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="200">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="200" data-bs-toggle="modal" data-bs-target="#coffee">
               <div class="title my-5">coffee break</div>
               <div class="system-container">
                 <div class="img-box system-img">
@@ -64,7 +112,7 @@
               <div class="description my-5">from 12,9 sq.feet</div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="300">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="300" data-bs-toggle="modal" data-bs-target="#lunch">
               <div class="title my-5">business lunch</div>
               <div class="system-container">
                 <div class="img-box system-img">
@@ -83,7 +131,7 @@
               <div class="description my-5">from 18,2 sq.feet</div>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="400">
+            <div class="col-12 col-md-6 col-lg-4 col-xxl-3 text-center" data-aos="zoom-in" data-aos-delay="400" data-bs-toggle="modal" data-bs-target="#inclusive">
               <div class="title my-5">all inclusive</div>
               <div class="system-container">
                 <div class="img-box system-img">
@@ -106,17 +154,36 @@
       </div>
     </div>
   </div>
-
-  <div class="row">
-    <div class="col">
-      <div class="box">
-        <span></span>
-      </div>
-    </div>
-  </div>
 </template>
 
 <style scoped>
+.btn-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  margin-bottom: -100px;
+  z-index: 1;
+}
+
+.modal {
+  --bs-modal-width: 90vw;
+  --bs-modal-padding: 0;
+  --bs-modal-border-radius: 30px;
+  --bs-modal-bg: none;
+  --bs-modal-border-width: 0;
+  margin: auto;
+}
+
+.modal-body {
+  width: 100%;
+  max-width: 1200px;
+  height: 100%;
+}
+
+.modal-content {
+  padding: 0 !important;
+}
+
 .main-title {
   font-size: 32px;
   font-weight: 800;
@@ -161,6 +228,7 @@
   display: block;
   max-height: 50vw !important;
   z-index: 1;
+  cursor: pointer;
 }
 
 .system-container:hover .delay1 {
@@ -252,6 +320,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .btn-close {
+    top: 25px;
+    right: 25px;
+    margin-bottom: -100px;
+  }
   .system-img > img{
     max-height: 25vw !important;
   }
