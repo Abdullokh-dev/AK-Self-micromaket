@@ -154,11 +154,15 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 }
 
 .second-slide {
-  /*-webkit-background-size: cover;*/
-  /*-moz-background-size: cover;*/
-  /*-o-background-size: cover;*/
+  background-image: url(../assets/home/imgCoffee.png);
+  background-color: #31C2B0;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  background-attachment: fixed;
+  -o-background-size:cover;
+  -moz-background-size:cover;
+  -webkit-background-size:cover;
   background-size: cover;
-  background: url(../assets/home/img-coffee.png) #31C2B0 no-repeat bottom center fixed;
 }
 
 .third-slide {
@@ -257,7 +261,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 
 @media only screen and (min-width: 1199px) {
   .second-slide {
-    background: url(../assets/home/img-coffee.png) #31C2B0 no-repeat right fixed;
+    background: url(../assets/home/imgCoffee.png) #31C2B0 no-repeat right fixed;
   }
 }
 
