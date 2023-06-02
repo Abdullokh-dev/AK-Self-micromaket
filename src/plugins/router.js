@@ -7,11 +7,11 @@ const router = createRouter({
   base: import.meta.env.BASE_URL,
   routes: [
     {
-      path: '/home',
+      path: '/:pathMatch(.*)*',
       component: Home
     },
     {
-      path: '/:pathMatch(.*)*',
+      path: '/home',
       component: Home
     },
     {
