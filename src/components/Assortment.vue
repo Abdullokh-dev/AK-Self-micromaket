@@ -51,7 +51,7 @@ const download = (url) => {
           </div>
         </div>
 
-        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-3 mt-md-4 p-md-3" data-aos="zoom-in"  data-aos-delay="300">
+        <div class="col-12 col-md-6 col-lg-4 col-xl-3 mt-md-4 p-md-3" data-aos="zoom-in"  data-aos-delay="300">
           <div class="card">
             <div class="row">
               <div class="col-6 col-md-12">
