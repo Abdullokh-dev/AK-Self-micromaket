@@ -20,8 +20,8 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
           <div class="row my-setting-slide">
             <!-- LEFT SIDE 50% -->
             <div class="col-lg-1 d-none d-lg-block"></div>
-            <div class="col-12 col-lg-5">
-              <div class="ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0 mt-4 mt-lg-0">
+            <div class="col-12 col-lg-5" data-aos="fade-up">
+              <div class="ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0 mt-4 mt-lg-0" data-aos="zoom-out-down" data-aos-delay="400">
                 <img src="../assets/home/vector-light.png" width="185" alt="" class="vector">
               </div>
               <div class="mt-2 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
@@ -34,7 +34,7 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
                   ready solution for organizing your employees' meals
                 </div>
               </div>
-              <div class="text-center text-lg-start">
+              <div class="text-center text-lg-start" data-aos="flip-up">
                 <button type="button" class="btn px-4 main-btn rounded-pill mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   leave an application
                 </button>
