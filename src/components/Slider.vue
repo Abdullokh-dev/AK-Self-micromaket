@@ -2,21 +2,77 @@
 import Flicking from "@egjs/vue3-flicking";
 import '@egjs/vue3-flicking/dist/flicking.css';
 import '../styles/flicking-inline.css';
-import { Pagination, AutoPlay } from "@egjs/flicking-plugins";
+import { Pagination } from "@egjs/flicking-plugins";
 import "../styles/pagination.css";
 
 import {ref} from "vue";
 import MyButton from "./MyButton.vue";
-const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration: 8000, direction: "NEXT", stopOnHover: false })])
+const plugins = ref([new Pagination({ type: 'bullet' })])
 </script>
 
 <template>
   <div class="row">
     <div class="col-12 p-0">
       <Flicking :options="{align: 'center', circular: true, camera: '100%', panel: '100%'}" :plugins="plugins">
+
         <!-- First Slide -->
+        <div class="panel main-slide">
+          <div class="row my-setting-slide">
+            <!-- LEFT SIDE 50% -->
+            <div class="col-lg-1 d-none d-lg-block"></div>
+            <div class="col-12 col-lg-5">
+              <div class="ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0 mt-4 mt-lg-0">
+                <img src="../assets/home/vector-light.png" width="185" alt="" class="vector">
+              </div>
+              <div class="mt-2 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
+                <div class="description text-light">
+                  micromarket with delicious and nutritious food
+                </div>
+              </div>
+              <div class="mt-4 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
+                <div class="addition text-light">
+                  ready solution for organizing your employees' meals
+                </div>
+              </div>
+              <div class="d-none d-lg-block">
+                <button type="button" class="btn px-4 main-btn rounded-pill mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  leave an application
+                </button>
+              </div>
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="col-12 col-lg-6 d-flex justify-content-center">
+              <div class="row">
+                <div class="col d-flex align-items-end">
+                  <img src="../assets/home/shelf.png" alt="#" draggable="false" class="first-slide-img mt-lg-5 pt-lg-5">
+                </div>
+              </div>
+            </div>
+
+            <!--First mobile button -->
+            <div class="col-12 text-center">
+              <div class="d-block d-lg-none">
+                <button type="button" class="btn px-4 rounded-pill mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  leave an application
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <!-- Second Slide -->
         <div class="panel" style="position: relative">
-          <div class="row my-setting-slide first-slide">
+          <div class="row my-setting-slide second-slide">
             <!-- First half 50% -->
             <div class="col-lg-1"></div>
             <div class="col-12 col-lg-5">
@@ -41,47 +97,11 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
             </div>
             <!-- First half 50% -->
             <div class="col-12 col-lg-6 d-flex justify-content-center">
-                <img src="../assets/home/bottle.png" alt="#" draggable="false" class="bottle" height="509" data-aos="fade-left" data-aos-duration="1500">
+              <img src="../assets/home/bottle.png" alt="#" draggable="false" class="bottle" height="509" data-aos="fade-left" data-aos-duration="1500">
             </div>
             <!-- mobile button -->
             <div class="col-12 text-center">
               <div class="d-block d-lg-none">
-                <button type="button" class="btn px-4 rounded-pill mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  leave an application
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Second Slide -->
-        <div class="panel" style="position: relative">
-          <div class="row my-setting-slide second-slide m-0">
-            <!-- Second Slide half 50% -->
-            <div class="col-lg-1 d-none d-lg-block"></div>
-            <div class="col-12 col-lg-5">
-              <div class="ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0 mt-4 mt-lg-0">
-                <img src="../assets/home/vector-light.png" width="185" alt="" class="vector">
-              </div>
-              <div class="mt-2 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
-              <div class="description text-light">
-                natural grain coffee from trusted suppliers
-              </div>
-              </div>
-              <div class="mt-4 ms-3 mb-5 pb-5 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
-              <div class="addition text-light">
-                20 types of drinks, 5 types of alternative milk
-              </div>
-              </div>
-              <div class="d-none d-lg-block">
-                <button type="button" class="btn px-4 rounded-pill mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  leave an application
-                </button>
-              </div>
-            </div>
-            <!--Second Slide mobile button-->
-            <div class="row mt-5 m-0 align-self-end">
-              <div class="col-12 d-block d-lg-none text-center mb-5 d-flex justify-content-center">
                 <button type="button" class="btn px-4 rounded-pill mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   leave an application
                 </button>
@@ -147,7 +167,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
   margin: 0;
 }
 
-.first-slide {
+.second-slide {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -155,15 +175,16 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
   background: url(../assets/home/img.png) no-repeat bottom right fixed;
 }
 
-.second-slide {
-  background: url(../assets/home/imgCoffe2.png) #31C2B0 no-repeat center center fixed;
-  -webkit-background-size: auto;
-  -moz-background-size: auto;
-  -o-background-size: auto;
-  background-size: auto;
+.main-slide {
+  background: url("../assets/home/img_1.png") no-repeat top center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  z-index: 1;
 }
 
-.third-slide {
+.third-slide, .main-btn {
   background-color: #6357AD;
 }
 
@@ -171,6 +192,11 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
   margin-right: -130px !important;
   width: 367px;
   height: 350px;
+}
+
+.first-slide-img {
+  width: 100%;
+  max-width: 500px;
 }
 
 .third-slide-img {
@@ -224,6 +250,11 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 }
 
 @media only screen and (min-width: 992px) {
+  .first-slide-img {
+    width: 90%;
+    max-width: 500px;
+  }
+
   .vector {
     margin-top: 184px;
   }
@@ -248,19 +279,13 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
     height: auto;
   }
 
-  .second-slide {
-    background: url(../assets/home/img-md-coffee.png) #31C2B0 no-repeat right fixed;
-  }
-
   .third-slide {
     background: url(../assets/home/img_2.png) #6357AD no-repeat bottom right fixed;
   }
 }
 
 @media only screen and (min-width: 1199px) {
-  .second-slide {
-    background: url(../assets/home/imgCoffee.jpg) #31C2B0 no-repeat right fixed;
-  }
+
 }
 
 </style>
