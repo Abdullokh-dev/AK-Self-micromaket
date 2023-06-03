@@ -34,7 +34,7 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
                   ready solution for organizing your employees' meals
                 </div>
               </div>
-              <div class="d-none d-lg-block">
+              <div class="text-center text-lg-start">
                 <button type="button" class="btn px-4 main-btn rounded-pill mt-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                   leave an application
                 </button>
@@ -42,9 +42,9 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
             </div>
 
             <!-- RIGHT SIDE -->
-            <div class="col-12 col-lg-6 d-flex justify-content-center">
+            <div class="col-12 col-lg-6 d-flex justify-content-center mt-lg-5 pt-lg-5">
               <div class="row">
-                <div class="col d-flex align-items-end">
+                <div class="col d-flex align-items-top">
                   <img src="../assets/home/shelf.png" alt="#" draggable="false" class="first-slide-img mt-lg-5 pt-lg-5">
                 </div>
               </div>
@@ -53,9 +53,9 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
             <!--First mobile button -->
             <div class="col-12 text-center">
               <div class="d-block d-lg-none">
-                <button type="button" class="btn px-4 rounded-pill mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-                  leave an application
-                </button>
+<!--                <button type="button" class="btn px-4 rounded-pill mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">-->
+<!--                  leave an application-->
+<!--                </button>-->
               </div>
             </div>
           </div>
