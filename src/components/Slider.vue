@@ -21,7 +21,7 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
             <!-- LEFT SIDE 50% -->
             <div class="col-lg-1 d-none d-lg-block"></div>
             <div class="col-12 col-lg-5" data-aos="fade-up">
-              <div class="ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0 mt-4 mt-lg-0" data-aos="zoom-out-down" data-aos-delay="400">
+              <div class="ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0 mt-4 mt-lg-0" data-aos="flip-up" data-aos-delay="400">
                 <img src="../assets/home/vector-light.png" width="185" alt="" class="vector">
               </div>
               <div class="mt-2 ms-3 ms-md-5 ps-md-5 ms-lg-0 ps-lg-0">
