@@ -2,12 +2,12 @@
 import Flicking from "@egjs/vue3-flicking";
 import '@egjs/vue3-flicking/dist/flicking.css';
 import '../styles/flicking-inline.css';
-import { Pagination } from "@egjs/flicking-plugins";
+import { Pagination, AutoPlay } from "@egjs/flicking-plugins";
 import "../styles/pagination.css";
 
 import {ref} from "vue";
 import MyButton from "./MyButton.vue";
-const plugins = ref([new Pagination({ type: 'bullet' })])
+const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration: 8000, direction: "NEXT", stopOnHover: false })])
 </script>
 
 <template>
@@ -45,7 +45,7 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
             <div class="col-12 col-lg-6 d-flex justify-content-center mt-lg-5 pt-lg-5">
               <div class="row">
                 <div class="col d-flex align-items-top">
-                  <img src="../assets/home/shelf.png" alt="#" draggable="false" class="first-slide-img mt-lg-5 pt-lg-5">
+                  <img src="../assets/home/img_4.png" alt="#" draggable="false" class="first-slide-img mt-lg-5 pt-lg-5">
                 </div>
               </div>
             </div>
@@ -53,22 +53,10 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
             <!--First mobile button -->
             <div class="col-12 text-center">
               <div class="d-block d-lg-none">
-<!--                <button type="button" class="btn px-4 rounded-pill mb-5" data-bs-toggle="modal" data-bs-target="#staticBackdrop">-->
-<!--                  leave an application-->
-<!--                </button>-->
               </div>
             </div>
           </div>
         </div>
-
-
-
-
-
-
-
-
-
 
         <!-- Second Slide -->
         <div class="panel" style="position: relative">
@@ -176,7 +164,7 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
 }
 
 .main-slide {
-  background: url("../assets/home/img_1.png") no-repeat top center fixed;
+  background: url("../assets/home/img_3.png") no-repeat top center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -282,10 +270,6 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
   .third-slide {
     background: url(../assets/home/img_2.png) #6357AD no-repeat bottom right fixed;
   }
-}
-
-@media only screen and (min-width: 1199px) {
-
 }
 
 </style>
