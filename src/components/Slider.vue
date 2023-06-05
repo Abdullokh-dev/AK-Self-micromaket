@@ -164,7 +164,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 }
 
 .main-slide {
-  background: url("../assets/home/img_3.png") no-repeat top center fixed;
+  background: url("../assets/home/img_3.png") no-repeat center bottom;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
